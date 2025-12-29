@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10th Standard Subjects - Parth New</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f7ff;
+            color: #2c3e50;
+        }
+
+        /* Top Navigation */
+        nav {
+            background: #ffffff;
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; color: #007bff; text-decoration: none; }
+        .nav-links a { text-decoration: none; color: #555; margin-left: 20px; font-weight: 500; }
+
+        /* Header Area */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
+            color: white;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { opacity: 0.9; margin-top: 10px; font-size: 1.1rem; }
+
+        /* Subject Grid */
+        .subject-grid {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .subject-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #e1e8ed;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .subject-card:hover {
+            transform: scale(1.03);
+            border-color: #007bff;
+            box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1);
+        }
+
+        .subject-icon {
+            width: 60px;
+            height: 60px;
+            background: #e7f3ff;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .subject-info h3 { margin: 0; font-size: 1.3rem; color: #0056b3; }
+        .subject-info p { margin: 5px 0 0; color: #6c757d; font-size: 0.9rem; }
+
+        /* YouTube Promo Footer */
+        .yt-footer {
+            max-width: 1100px;
+            margin: 20px auto 60px;
+            padding: 0 20px;
+        }
+
+        .yt-banner {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            border: 2px dashed #ff0000;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .yt-banner strong { color: #ff0000; }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .subject-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Parth New</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Coming Soon</h1>
+        <p>Workbook Solutions</p>
+    </header>
+
+
+    <div class="yt-footer">
+        <a href="https://www.youtube.com/channel/UCtN0X3lKq-gQiR9EuTyLfMg" target="_blank" class="yt-banner">
+            <span style="font-size: 24px;">▶</span>
+            <span>Need video help? <strong>Subscribe to our YouTube Channel</strong></span>
+        </a>
+    </div>
+</body>
+</html>

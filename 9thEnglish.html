@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Chapter | Maharashtra State Board</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #e9ecef;
+            --text: #333;
+            --accent: #ffc107;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+        body { background-color: #f8f9fa; color: var(--text); padding-bottom: 50px; }
+
+        /* Navigation Header */
+        .top-nav {
+            background: #fff;
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--secondary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { font-weight: 700; font-size: 1.5rem; color: var(--primary); }
+
+        /* Hero Title */
+        .section-title {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            margin-bottom: 30px;
+        }
+
+        .section-title h1 { font-size: 1.8rem; margin-bottom: 10px; }
+        .section-title p { color: #666; font-size: 0.95rem; }
+
+        /* Main Container */
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Chapter List Design */
+        .chapter-list {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0e0;
+        }
+
+        .chapter-link {
+            display: flex;
+            align-items: center;
+            padding: 18px 25px;
+            text-decoration: none;
+            color: var(--text);
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .chapter-link:last-child { border-bottom: none; }
+
+        .chapter-link:hover {
+            background-color: #f0f7ff;
+            padding-left: 35px;
+            color: var(--primary);
+        }
+
+        .chapter-index {
+            background: var(--secondary);
+            color: #555;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-right: 15px;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .chapter-link:hover .chapter-index {
+            background: var(--primary);
+            color: white;
+        }
+
+        .arrow { margin-left: auto; color: #ccc; font-weight: bold; }
+
+        /* Category Badge */
+        .subject-badge {
+            display: inline-block;
+            background: var(--accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="logo">Parth New</div>
+        <div style="font-size: 0.9rem; font-weight: 600; color: #666;">Std 9th - Workbook</div>
+    </nav>
+
+    <div class="section-title">
+        <span class="subject-badge">ENGLISH</span>
+        <h1>Select Chapter</h1>
+        <p>Workbook ke answers dekhne ke liye chapter par click karein</p>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="chapter-list">
+            
+            <a href="E1.html" class="chapter-link">
+                <span class="chapter-index">1.1</span>
+                <span class="chapter-name">Walk A Little Slower</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E2.html" class="chapter-link">
+                <span class="chapter-index">1.2</span>
+                <span class="chapter-name">The Fun They Had</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E3.html" class="chapter-link">
+                <span class="chapter-index">1.3</span>
+                <span class="chapter-name">'Hope' is the thing with feathers</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E4.html" class="chapter-link">
+                <span class="chapter-index">1.4</span>
+                <span class="chapter-name">The Story Of Tea</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E5.html" class="chapter-link">
+                <span class="chapter-index">1.5</span>
+                <span class="chapter-name">The Necklace</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E6.html" class="chapter-link">
+                <span class="chapter-index">2.1</span>
+                <span class="chapter-name">Comparisons</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E7.html" class="chapter-link">
+                <span class="chapter-index">2.2</span>
+                <span class="chapter-name">Hellen Keller and Anne Sullivan</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E8.html" class="chapter-link">
+                <span class="chapter-index">2.3</span>
+                <span class="chapter-name">Mark Twain</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E9.html" class="chapter-link">
+                <span class="chapter-index">2.4</span>
+                <span class="chapter-name">Please Listen!</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E10.html" class="chapter-link">
+                <span class="chapter-index">2.5</span>
+                <span class="chapter-name">A Play</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E11.html" class="chapter-link">
+                <span class="chapter-index">*</span>
+                <span class="chapter-name">Non-textual Passage (UNIT 1-2)</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E12.html" class="chapter-link">
+                <span class="chapter-index">3.1</span>
+                <span class="chapter-name">Coromandel Fishers</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E131.html" class="chapter-link">
+                <span class="chapter-index">3.2</span>
+                <span class="chapter-name">The Fall of Troy (part 1)</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E132.html" class="chapter-link">
+                <span class="chapter-index">3.2</span>
+                <span class="chapter-name">The Fall of Troy(part 2)</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E14.html" class="chapter-link">
+                <span class="chapter-index">3.3</span>
+                <span class="chapter-name">To a Butterfly</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E15.html" class="chapter-link">
+                <span class="chapter-index">3.4</span>
+                <span class="chapter-name">Think Before You Speak!</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E16.html" class="chapter-link">
+                <span class="chapter-index">3.5</span>
+                <span class="chapter-name">Great Scientists</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E17.html" class="chapter-link">
+                <span class="chapter-index">4.1</span>
+                <span class="chapter-name">What is Success?</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E18.html" class="chapter-link">
+                <span class="chapter-index">4.2</span>
+                <span class="chapter-name">Reading Works of Art</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E19.html" class="chapter-link">
+                <span class="chapter-index">4.3</span>
+                <span class="chapter-name">Silver</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E20.html" class="chapter-link">
+                <span class="chapter-index">4.4</span>
+                <span class="chapter-name">The Tempest</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E21.html" class="chapter-link">
+                <span class="chapter-index">4.5</span>
+                <span class="chapter-name">The Last Lesson</span>
+                <span class="arrow">❯</span>
+            </a>
+
+            <a href="E22.html" class="chapter-link">
+                <span class="chapter-index">*</span>
+                <span class="chapter-name">Non-textual Passages (UNIT 3-4)</span>
+                <span class="arrow">❯</span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
