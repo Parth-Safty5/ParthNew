@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <!-- Google tag (gtag.js) -->
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,7 +10,9 @@
 
   gtag('config', 'G-S146W8G7MB');
 </script>
-    <meta name="google-site-verification" content="UG9eTLvRXZL37v4vzbAZxZcuVakERGY1997KfeNbJvc" />
+
+<link rel="icon" href="./logo.png" type="image/png">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ParthNew | Excellence in Learning</title>
@@ -151,14 +153,110 @@
         <span>📍 Standard 9th and 10th Learning Platform</span>
     </div>
 
-    <nav>
-        <a href="index.html" class="logo">Parth<span>New</span></a>
-        <div class="nav-links">
-            <a href="about.html">About</a>
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
+<style>
+  /* Navigation Bar ki Designing */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+
+  /* Hamburger Menu Icon (3 Lines) */
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* Menu Links (Shuruat me chhupa rahega) */
+  .nav-links {
+    display: none; 
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+    z-index: 99;
+  }
+
+  .nav-links li {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+
+  /* Jab "active" class add hogi tab menu dikhega */
+  .nav-links.active {
+    display: flex;
+  }
+
+<nav>
+</style>  
+<nav class="navbar">
+        <a href="index.html" class="logo"><h3>Parth<span>New</h3></span></a>
+
+
+<a href="index.html" class="logo">
+  <img src="logo.png" alt="ParthNew" 
+       style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd;">
+</a>
+
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+  </ul>
+</nav>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
+</script>
+</nav>
 
     <header class="hero">
         <h1>Padhai Hogi Easy, <br>Ab Har Ghar Banega Topper!</h1>
@@ -194,7 +292,7 @@
     </footer>
 
 </body>
-
 </html>
+
 
 
