@@ -13,37 +13,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>ParthNew / Excellence in Learning</title>
+    <meta name="description" content="Maharashtra State Board Std 9th and 10th Workbook and Exercise Answers. Padhai hogi easy ParthNew ke saath.">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "ParthNew",
-  "url": "https://parthnew.netlify.app/"
-}
-</script>
-
-<meta name="description" content="Maharashtra State Board Std 9th and 10th Workbook and Exercise Answers. Padhai hogi easy ParthNew ke saath.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ParthNew",
+      "url": "https://parthnew.netlify.app/"
+    }
+    </script>
 
     <link rel="icon" type="image/png" href="./logo.png">
-    <link rel="apple-touch-icon" href="./logo.png">
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
-
-
         :root {
             --primary-blue: #004aad;
             --secondary-blue: #003087;
             --accent-yellow: #ffc107;
-            --light-gray: #f8f9fa;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
         body { background-color: #f1f4f8; }
 
-        /* Top Info Bar */
+        /* Top Bar */
         .top-bar {
             background: var(--secondary-blue);
             color: white;
@@ -53,57 +47,58 @@
             font-size: 0.9rem;
         }
 
-        /* Sticky Navigation */
-        nav {
-            background: #fff;
-            padding: 15px 10%;
+        /* Navbar */
+        .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            padding: 15px 10%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
-        .logo { font-size: 1.8rem; font-weight: 700; color: var(--primary-blue); text-decoration: none; }
-        .logo span { color: var(--accent-yellow); }
+        /* LOGO DESIGN: IMAGE LEFT, NAME RIGHT */
+        .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+        .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
+        
+        /* NAME COLORS: PARTH BLACK, NEW YELLOW */
+        .logo h3 { font-size: 1.8rem; font-weight: 700; color: #000000; } 
+        .logo h3 span { color: var(--accent-yellow); } 
 
-        .nav-links a {
+        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; }
+        .menu-icon span { width: 25px; height: 3px; background-color: #333; border-radius: 2px; }
+
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li a {
             text-decoration: none;
             color: #333;
             margin-left: 25px;
             font-weight: 500;
-            transition: 0.3s;
+            font-size: 18px;
         }
 
-        .nav-links a:hover { color: var(--primary-blue); }
-
-        /* Hero Section with Books Image */
+        /* Hero Section */
         .hero {
             background: linear-gradient(to right, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.2) 100%), 
                         url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
             padding: 80px 10%;
-            height: 500px;
+            min-height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
-        .hero h1 { font-size: 3rem; color: #1a1a1a; margin-bottom: 15px; line-height: 1.2; }
+        .hero h1 { font-size: 3rem; color: #1a1a1a; margin-bottom: 15px; }
         .hero p { font-size: 1.2rem; color: #444; max-width: 550px; margin-bottom: 25px; font-weight: 500; }
 
-        /* Course Selection Grid */
+        /* Grid */
         .selection-section { padding: 80px 10%; text-align: center; }
-        .selection-title { margin-bottom: 40px; font-size: 2.2rem; color: #333; }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 
         .class-card {
             background: white;
@@ -112,19 +107,11 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
             text-decoration: none;
             color: #333;
-            transition: all 0.4s ease;
             border: 1px solid #eee;
             position: relative;
         }
-
-        .class-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 74, 173, 0.15);
-            border-color: var(--primary-blue);
-        }
-
-        .class-card h3 { font-size: 2rem; margin-bottom: 10px; color: var(--secondary-blue); }
-        .class-card .badge {
+        .class-card h3 { font-size: 2rem; color: var(--secondary-blue); }
+        .badge {
             background: var(--accent-yellow);
             color: #000;
             padding: 4px 12px;
@@ -136,29 +123,29 @@
             right: 20px;
         }
 
-        /* About & Contact Mini Footer */
-        .info-grid {
-            background: #fff;
-            padding: 60px 10%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            border-top: 1px solid #eee;
-        }
+        /* Footer */
+        .mini-footer { background-color: blue; padding: 15px 0; text-align: center; border-top: 1px solid #ddd; }
+        .footer-link { color: white; text-decoration: none; font-size: 14px; margin: 0 10px; }
+        .separator { color: #ccc; }
 
-        .info-box h2 { color: var(--primary-blue); margin-bottom: 15px; }
-        .info-box p { line-height: 1.6; color: #666; }
-
-        footer {
-            background: #1a1a1a;
-            color: #888;
-            padding: 30px 10%;
-            text-align: center;
-        }
-
+        /* Mobile View */
         @media (max-width: 768px) {
+            .navbar { padding: 10px 5%; }
+            .menu-icon { display: flex; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px; right: 0; width: 100%;
+                background-color: #ffffff;
+                box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+                z-index: 99;
+            }
+            .nav-links.active { display: flex; }
+            .nav-links li { text-align: center; border-bottom: 1px solid #eee; }
+            .nav-links li a { margin: 0; padding: 15px; display: block; }
             .hero { text-align: center; align-items: center; background: #fff; height: auto; padding: 50px 5%; }
-            .info-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.2rem; }
         }
     </style>
 </head>
@@ -168,110 +155,25 @@
         <span>📍 Standard 9th and 10th Learning Platform</span>
     </div>
 
-<style>
-  /* Navigation Bar ki Designing */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: relative;
-    font-family: Arial, sans-serif;
-  }
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="ParthNew" class="logo-img">
+            <h3>Parth<span>New</span></h3> 
+        </a>
 
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-  }
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-  /* Hamburger Menu Icon (3 Lines) */
-  .menu-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
-    z-index: 100;
-  }
-
-  .menu-icon span {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-    transition: 0.3s;
-  }
-
-  /* Menu Links (Shuruat me chhupa rahega) */
-  .nav-links {
-    display: none; 
-    list-style: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    background-color: #ffffff;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
-    z-index: 99;
-  }
-
-  .nav-links li {
-    text-align: center;
-    border-bottom: 1px solid #eee;
-  }
-
-  .nav-links li a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-  }
-
-  /* Jab "active" class add hogi tab menu dikhega */
-  .nav-links.active {
-    display: flex;
-  }
-
-<nav>
-</style>  
-<nav class="navbar">
-        <a href="index.html" class="logo"><h3>Parth<span>New</h3></span></a>
-
-
-<a href="index.html" class="logo">
-  <img src="logo.png" alt="ParthNew" 
-       style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd;">
-</a>
-
-
-  <div class="menu-icon" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-  </ul>
-</nav>
-
-<script>
-  function toggleMenu() {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("active");
-  }
-</script>
-</nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
 
     <header class="hero">
         <h1>Padhai Hogi Easy, <br>Ab Har Ghar Banega Topper!</h1>
@@ -280,7 +182,7 @@
     </header>
 
     <section class="selection-section" id="courses">
-        <h2 class="selection-title">Select Your Class</h2>
+        <h2 style="margin-bottom: 40px; font-size: 2.2rem; color: #333;">Select Your Class</h2>
         <div class="grid-container">
             <a href="testing1.html" class="class-card">
                 <span class="badge">LATEST</span>
@@ -303,19 +205,21 @@
                 <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Syllabus →</div>
             </a>
         </div>
-<br>
-<style> 
-.mini-footer {background-color: blue; /* Gray background */padding: 15px 0;text-align: center;font-family: sans-serif;border-top: 1px solid #ddd;}
-.footer-link {color: white;text-decoration: none;font-size: 14px;margin: 0 10px;transition: color 0.3s;}
-.footer-link:hover {color: yellow; /* Hover karne par yellow ho jayega */text-decoration: underline;}
-.separator {color: #ccc;}
-</style>
-<footer class="mini-footer">
-  <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-  <span class="separator">|</span>
-  <a href="contact.html" class="footer-link">Contact Us</a>
-  <span class="separator">|</span>
-  <a href="index.html" class="footer-link">© 2026 ParthNew</a>
-</footer>
-   </body>
+    </section>
+
+    <footer class="mini-footer">
+        <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+        <span class="separator">|</span>
+        <a href="contact.html" class="footer-link">Contact Us</a>
+        <span class="separator">|</span>
+        <a href="index.html" class="footer-link">© 2026 ParthNew</a>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+</body>
 </html>
