@@ -6,7 +6,6 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
     <title>ParthNew | Class 9th & 10th English Workshop & Exercise Answers</title>
     <meta name="description" content="ParthNew: Best learning platform for Class 9th and 10th students. Get Maharashtra Board English workshop answers, exercise solutions, and writing skills for SSC exams.">
@@ -22,143 +21,94 @@
             --primary-blue: #004aad;
             --secondary-blue: #003087;
             --accent-yellow: #ffc107;
+            --bg-light: #f1f4f8;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
-        body { background-color: #f1f4f8; }
+        body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
 
-        .top-bar {
-            background: var(--secondary-blue);
-            color: white;
-            padding: 8px 10%;
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
-        }
-
+        /* Navbar & Logo Fix */
         .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 10%;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 12px 10%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky; top: 0; z-index: 1000;
         }
 
         .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
         .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
-        
-        .logo h3 { font-size: 1.8rem; font-weight: 700; color: #000000; } 
-        .logo h3 span { color: var(--accent-yellow); } 
+        .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; }
+        .logo h3 span { color: var(--accent-yellow); }
 
-        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; outline: none; }
-        .menu-icon span { width: 25px; height: 3px; background-color: #333; border-radius: 2px; }
-
+        /* Nav Links */
         .nav-links { display: flex; list-style: none; }
-        .nav-links li a {
-            text-decoration: none;
-            color: #333;
-            margin-left: 25px;
-            font-weight: 500;
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
+        .nav-links li a { text-decoration: none; color: #333; margin-left: 20px; font-weight: 500; transition: 0.3s ease; }
         .nav-links li a:hover { color: var(--primary-blue); }
 
-        /* Performance Fix: CLS Reduction with Aspect Ratio & Min-Height */
+        /* Hero Section - No Image version for 100 Speed */
         .hero {
-            background: linear-gradient(to right, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.2) 100%), 
-                        url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            background-color: #ffffff; /* Pre-load color */
-            padding: 80px 10%;
-            min-height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            content-visibility: auto;
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+            padding: 80px 10%; min-height: 400px; display: flex; flex-direction: column;
+            justify-content: center; text-align: left; color: white;
         }
 
-        .hero h1 { font-size: 3rem; color: #1a1a1a; margin-bottom: 15px; }
-        .hero p { font-size: 1.2rem; color: #444; max-width: 550px; margin-bottom: 25px; font-weight: 500; }
-
-        .hero a {
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 74, 173, 0.2);
-            display: inline-block;
+        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; line-height: 1.2; }
+        .hero p { font-size: 1.1rem; margin-bottom: 25px; opacity: 0.9; max-width: 600px; }
+        
+        .hero-btn {
+            background: var(--accent-yellow); color: #000; padding: 14px 30px;
+            text-decoration: none; border-radius: 8px; font-weight: bold; width: fit-content;
+            transition: 0.3s; display: inline-block;
         }
-        .hero a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 74, 173, 0.4);
-            filter: brightness(1.1);
-        }
+        .hero-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 
-        .selection-section { padding: 80px 10%; text-align: center; }
-        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        /* Grid & Cards */
+        .selection-section { padding: 60px 10%; text-align: center; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
 
         .class-card {
-            background: white;
-            padding: 50px 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            text-decoration: none;
-            color: #333;
-            border: 1px solid #eee;
-            position: relative;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: white; padding: 40px 25px; border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-decoration: none; color: #333;
+            border: 1px solid #eee; transition: 0.4s; position: relative;
         }
-        .class-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--primary-blue);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        }
+        .class-card:hover { transform: translateY(-10px); border-color: var(--primary-blue); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .class-card h3 { font-size: 1.8rem; color: var(--secondary-blue); margin-bottom: 10px; }
 
-        .class-card h3 { font-size: 2rem; color: var(--secondary-blue); }
         .badge {
-            background: var(--accent-yellow);
-            color: #000;
-            padding: 4px 12px;
-            border-radius: 5px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            background: var(--accent-yellow); color: #000; padding: 4px 10px;
+            border-radius: 4px; font-size: 0.7rem; font-weight: bold;
+            position: absolute; top: 15px; right: 15px;
         }
 
-        .mini-footer { background-color: var(--primary-blue); padding: 15px 0; text-align: center; }
-        .footer-link { color: white; text-decoration: none; font-size: 14px; margin: 0 10px; }
+        /* Footer */
+        .mini-footer { background-color: var(--secondary-blue); padding: 20px 0; text-align: center; color: white; }
+        .footer-link { color: white; text-decoration: none; font-size: 14px; margin: 0 10px; opacity: 0.9; }
+        .footer-link:hover { opacity: 1; }
+
+        /* Mobile Optimization */
+        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; outline: none; }
+        .menu-icon span { width: 25px; height: 3px; background-color: #333; border-radius: 2px; }
 
         @media (max-width: 768px) {
             .navbar { padding: 10px 5%; }
             .menu-icon { display: flex; }
             .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px; right: 0; width: 100%;
-                background-color: #ffffff;
-                z-index: 99;
+                display: none; flex-direction: column; position: absolute;
+                top: 70px; right: 0; width: 100%; background-color: #fff;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
             }
             .nav-links.active { display: flex; }
-            .nav-links li a { margin: 0; padding: 15px; display: block; border-bottom: 1px solid #eee; }
-            .hero { text-align: center; align-items: center; padding: 50px 5%; min-height: 400px; }
-            .hero h1 { font-size: 2.2rem; }
+            .nav-links li a { margin: 0; padding: 15px; display: block; border-bottom: 1px solid #eee; text-align: center; }
+            .hero { padding: 60px 5%; text-align: center; align-items: center; min-height: 350px; }
+            .hero h1 { font-size: 2rem; }
         }
     </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
 </head>
 <body>
 
-    <div class="top-bar">
-        <span>📍 Standard 9th and 10th Learning Platform</span>
-    </div>
-
     <nav class="navbar">
-        <a href="index.html" class="logo">
+        <a href="index.html" class="logo" aria-label="ParthNew Home">
             <img src="logo.webp" alt="ParthNew Logo" class="logo-img" width="50" height="50" fetchpriority="high">
             <h3>Parth<span>New</span></h3> 
         </a>
@@ -179,33 +129,34 @@
 
     <header class="hero">
         <h1>Padhai Hogi Easy, <br>Ab Har Ghar Banega Topper!</h1>
-        <p>Hamne Banaye Hain Best Answers jo aapki preparation ko banayenge behtareen.</p>
-        <a href="#courses" style="background:var(--primary-blue); color:white; padding:15px 35px; text-decoration:none; border-radius:8px; font-weight:bold; width:fit-content;">Start Learning Now</a>
+        <p>Maharashtra Board Class 9th & 10th English Workshop answers aur solutions ko banaya gaya hai bilkul saral aur asaan.</p>
+        <a href="#courses" class="hero-btn">Start Learning Now</a>
     </header>
 
     <main id="courses">
         <section class="selection-section">
-            <h2 style="margin-bottom: 40px; font-size: 2.2rem; color: #333;">Select Your Class</h2>
+            <h2 style="margin-bottom: 10px; font-size: 2.2rem; color: #333;">Select Your Class</h2>
+            <p style="margin-bottom: 40px; color: #666;">Choose your standard to get started with exercise answers.</p>
             
             <div class="grid-container">
-                <a href="testing1.html" class="class-card">
-                    <span class="badge">LATEST</span>
+                <a href="testing1.html" class="class-card" aria-label="Class 9th Study Material">
+                    <span class="badge">NEW</span>
                     <h3>Class 9th</h3>
-                    <p>All Workshop Answers</p>
+                    <p>English Workshop Answers</p>
                     <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Syllabus →</div>
                 </a>
 
-                <a href="testing2.html" class="class-card">
-                    <span class="badge">LATEST</span>
+                <a href="testing2.html" class="class-card" aria-label="Class 10th Study Material">
+                    <span class="badge">NEW</span>
                     <h3>Class 10th</h3>
-                    <p>All Workshop Answers</p>
+                    <p>SSC Board Solutions</p>
                     <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Syllabus →</div>
                 </a>
 
-                <a href="testing3.html" class="class-card">
+                <a href="testing3.html" class="class-card" aria-label="English Writing Skills">
                     <span class="badge">LATEST</span>
                     <h3>Writing Skills</h3>
-                    <p>Select Language</p>
+                    <p>Essays, Letters & Reports</p>
                     <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Syllabus →</div>
                 </a>
             </div>
@@ -213,11 +164,14 @@
     </main>
 
     <footer class="mini-footer">
-        <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-        <span style="color:white;">|</span>
-        <a href="contact.html" class="footer-link">Contact Us</a>
-        <span style="color:white;">|</span>
-        <a href="index.html" class="footer-link">© 2026 ParthNew</a>
+        <div style="margin-bottom: 10px;">
+            <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+            <span style="color:rgba(255,255,255,0.3);">|</span>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+            <span style="color:rgba(255,255,255,0.3);">|</span>
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </div>
+        <p style="font-size: 13px; color: rgba(255,255,255,0.7);">&copy; 2026 ParthNew | Excellence in Learning</p>
     </footer>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
@@ -225,15 +179,19 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-S146W8G7MB', { 'animate_fill': false });
+        gtag('config', 'G-S146W8G7MB', { 'page_path': location.pathname });
 
+        // Mobile Menu Function
         function toggleMenu() {
             const navLinks = document.getElementById("navLinks");
             navLinks.classList.toggle("active");
         }
-        
+
+        // Accessibility: Keyboard support for menu
         document.querySelector('.menu-icon').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') toggleMenu();
+            if (e.key === 'Enter') {
+                toggleMenu();
+            }
         });
     </script>
 </body>
