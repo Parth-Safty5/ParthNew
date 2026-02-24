@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>9th Standard Poem Appreciation | Maharashtra State Board | ParthNew</title>
+    <meta name="description" content="All 8 poems appreciation for Class 9th Maharashtra Board. Get the latest marking scheme, figure of speech, and central ideas for SSC English.">
+    <meta name="keywords" content="9th Class Poem Appreciation, Maharashtra Board English, Walk a little slower appreciation, Hope is the thing with feathers, ParthNew">
+    <meta name="theme-color" content="#004aad">
+
+    <style>
+        :root {
+            --primary-blue: #004aad;
+            --secondary-blue: #003087;
+            --accent-yellow: #ffc107;
+            --bg-light: #f1f4f8;
+        }
+
+        /* Standardized Styling */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; font-display: swap; }
+        body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
+
+        /* Navbar & Logo (Consistent) */
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center;
+            height: 75px; padding: 0 10%; background: #fff; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+        .logo-img { height: 50px; width: 50px; border-radius: 50%; border: 2px solid #ddd; object-fit: cover; }
+        .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; }
+        .logo h3 span { color: var(--accent-yellow); margin-left: 4px; text-shadow: 1px 1px 1px rgba(0,0,0,0.2); }
+
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li a { text-decoration: none; color: #333; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        .nav-links li a:hover { color: var(--primary-blue); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+            padding: 60px 10%; color: white; text-align: left;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 700; }
+
+        /* Container */
+        .container { max-width: 1000px; margin: -40px auto 50px; padding: 0 20px; }
+
+        /* Marking Scheme Card */
+        .marking-card {
+            background: white; padding: 30px; border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px;
+            border-top: 5px solid var(--accent-yellow);
+        }
+        .marking-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        .marking-table td { padding: 10px; border-bottom: 1px solid #eee; }
+        .marking-table td:last-child { text-align: right; font-weight: bold; color: var(--primary-blue); }
+
+        /* Accordion Style for Poems */
+        .poem-accordion { margin-top: 20px; }
+        .poem-item { background: white; margin-bottom: 15px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        
+        .poem-header {
+            padding: 20px; background: white; cursor: pointer;
+            display: flex; justify-content: space-between; align-items: center;
+            font-weight: 700; color: var(--secondary-blue); transition: 0.3s;
+        }
+        .poem-header:hover { background: #f0f7ff; }
+        .poem-header::after { content: '+'; font-size: 1.5rem; color: var(--accent-yellow); }
+        .poem-item.active .poem-header::after { content: '-'; }
+
+        .poem-content { 
+            padding: 0 20px; max-height: 0; overflow: hidden; 
+            transition: max-height 0.4s ease-out, padding 0.3s ease;
+            background: #fafafa;
+        }
+        .poem-item.active .poem-content { max-height: 1000px; padding: 20px; border-top: 1px solid #eee; }
+
+        .info-row { margin-bottom: 12px; }
+        .info-label { font-weight: bold; color: var(--primary-blue); display: block; margin-bottom: 2px; }
+
+        /* Footer */
+        .mini-footer { background: var(--secondary-blue); color: white; padding: 30px 0; text-align: center; }
+
+        /* Mobile Adjustments */
+        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; }
+        .menu-icon span { width: 25px; height: 3px; background: #333; }
+
+        @media (max-width: 768px) {
+            .menu-icon { display: flex; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 75px; right: 0; width: 100%; background: #fff; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .nav-links.active { display: flex; }
+            .nav-links li a { padding: 15px; margin: 0; border-bottom: 1px solid #eee; text-align: center; }
+            .hero { padding: 40px 5%; text-align: center; }
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.webp" alt="ParthNew Logo" class="logo-img">
+            <h3>Parth<span>New</span></h3> 
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Poem Appreciation</h1>
+        <p>Complete appreciation of all 8 poems for Class 9th Maharashtra Board students with 5-mark marking scheme.</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="marking-card">
+            <h2 style="color: var(--secondary-blue); margin-bottom: 10px;">🎯 Marking Scheme</h2>
+            <table class="marking-table">
+                <tr><td>Title</td><td>½ Mark</td></tr>
+                <tr><td>Poet</td><td>½ Mark</td></tr>
+                <tr><td>Rhyme Scheme</td><td>1 Mark</td></tr>
+                <tr><td>Figure of Speech</td><td>1 Mark</td></tr>
+                <tr><td>Central Idea / Theme</td><td>2 Marks</td></tr>
+                <tr style="border-top: 2px solid #333;"><td><strong>Total</strong></td><td><strong>5 Marks</strong></td></tr>
+            </table>
+        </section>
+
+        <div class="poem-accordion">
+            
+            <div class="poem-item">
+                <div class="poem-header" onclick="togglePoem(this)">1.1 Walk a little slower...</div>
+                <div class="poem-content">
+                    <div class="info-row"><span class="info-label">Title:</span> Walk a little slower...</div>
+                    <div class="info-row"><span class="info-label">Poet:</span> Anonymous (Unknown)</div>
+                    <div class="info-row"><span class="info-label">Rhyme Scheme:</span> The rhyme scheme of the poem is 'abcb'.</div>
+                    <div class="info-row"><span class="info-label">Figures of Speech:</span> Metaphor, Alliteration, Repetition.</div>
+                    <div class="info-row"><span class="info-label">Central Idea / Theme:</span> The poem is a plea (request) by a small child to his father. The child wants to observe and imitate his father’s actions and way of life. He wants his father to guide him properly so that when the child grows up, he can guide his own child in the right way. It highlights the importance of a father as a role model.</div>
+                </div>
+            </div>
+
+            <div class="poem-item">
+                <div class="poem-header" onclick="togglePoem(this)">1.3 'Hope' is the thing with feathers</div>
+                <div class="poem-content">
+                    <div class="info-row"><span class="info-label">Title:</span> 'Hope' is the thing with feathers</div>
+                    <div class="info-row"><span class="info-label">Poet:</span> Emily Dickinson</div>
+                    <div class="info-row"><span class="info-label">Rhyme Scheme:</span> Stanza 1 & 2: 'abab', Stanza 3: 'abcb'.</div>
+                    <div class="info-row"><span class="info-label">Figures of Speech:</span> Metaphor, Personification, Alliteration.</div>
+                    <div class="info-row"><span class="info-label">Central Idea / Theme:</span> This poem describes 'Hope' as a bird that lives in the human soul. Hope is ever-lasting and it sings even in the most difficult times (storms). It tells us that hope is a selfless quality that helps us survive even when things are very hard.</div>
+                </div>
+            </div>
+
+            <div class="poem-item">
+                <div class="poem-header" onclick="togglePoem(this)">2.1 Comparisons</div>
+                <div class="poem-content">
+                    <div class="info-row"><span class="info-label">Title:</span> Comparisons</div>
+                    <div class="info-row"><span class="info-label">Poet:</span> Anonymous</div>
+                    <div class="info-row"><span class="info-label">Rhyme Scheme:</span> The rhyme scheme is 'abcb'.</div>
+                    <div class="info-row"><span class="info-label">Figures of Speech:</span> Simile, Alliteration, Antithesis.</div>
+                    <div class="info-row"><span class="info-label">Central Idea / Theme:</span> The poem celebrates the diversity in the world. It compares different things like size, speed, temperature, and shape. The central idea is that everything in this world is unique, and its beauty lies in its comparison with others.</div>
+                </div>
+            </div>
+
+            <div class="poem-item">
+                <div class="poem-header" onclick="togglePoem(this)">2.4 Please Listen!</div>
+                <div class="poem-content">
+                    <div class="info-row"><span class="info-label">Title:</span> Please Listen!</div>
+                    <div class="info-row"><span class="info-label">Poet:</span> Anonymous</div>
+                    <div class="info-row"><span class="info-label">Rhyme Scheme:</span> Free Verse (No regular rhyme scheme).</div>
+                    <div class="info-row"><span class="info-label">Figures of Speech:</span> Repetition, Alliteration, Simile.</div>
+                    <div class="info-row"><span class="info-label">Central Idea / Theme:</span> The poem expresses the feelings of a teenager who wants to be heard. The speaker asks elders to just listen instead of giving advice. It shows that people sometimes just need to be heard silently to find their own solutions.</div>
+                </div>
+            </div>
+
+            <div class="poem-item">
+                <div class="poem-header" onclick="togglePoem(this)">3.1 Coromandel Fishers</div>
+                <div class="poem-content">
+                    <div class="info-row"><span class="info-label">Title:</span> Coromandel Fishers</div>
+                    <div class="info-row"><span class="info-label">Poet:</span> Sarojini Naidu</div>
+                    <div class="info-row"><span class="info-label">Rhyme Scheme:</span> The rhyme scheme is 'aabb'.</div>
+                    <div class="info-row"><span class="info-label">Figures of Speech:</span> Metaphor, Personification, Simile.</div>
+                    <div class="info-row"><span class="info-label">Central Idea / Theme:</span> The poem is a call to the fishermen to start their work at dawn. It describes the deep bond between the fishermen and nature, reflecting their courage and hard work.</div>
+                </div>
+            </div>
+
+            <div class="poem-item">
+                <div class="poem-header" onclick="togglePoem(this)">3.3 To a Butterfly</div>
+                <div class="poem-content">
+                    <div class="info-row"><span class="info-label">Title:</span> To a Butterfly</div>
+                    <div class="info-row"><span class="info-label">Poet:</span> William Wordsworth</div>
+                    <div class="info-row"><span class="info-label">Rhyme Scheme:</span> Stanza 1: 'aabbcddcc', Stanza 2: 'aabbcdeec'.</div>
+                    <div class="info-row"><span class="info-label">Figures of Speech:</span> Apostrophe, Personification, Inversion.</div>
+                    <div class="info-row"><span class="info-label">Central Idea / Theme:</span> The poet is fascinated by the beauty of a butterfly. It reminds him of his happy childhood days and expresses his desire to stay connected with nature's simple joys.</div>
+                </div>
+            </div>
+
+            <div class="poem-item">
+                <div class="poem-header" onclick="togglePoem(this)">4.1 What is Success?</div>
+                <div class="poem-content">
+                    <div class="info-row"><span class="info-label">Title:</span> What is Success?</div>
+                    <div class="info-row"><span class="info-label">Poet:</span> Ralph Waldo Emerson</div>
+                    <div class="info-row"><span class="info-label">Rhyme Scheme:</span> Free Verse.</div>
+                    <div class="info-row"><span class="info-label">Figures of Speech:</span> Repetition, Alliteration, Metaphor.</div>
+                    <div class="info-row"><span class="info-label">Central Idea / Theme:</span> The poet redefines success as laughing often, winning respect, and leaving the world a bit better—whether by a healthy child or a garden patch. Success is helping even one life breathe easier.</div>
+                </div>
+            </div>
+
+            <div class="poem-item">
+                <div class="poem-header" onclick="togglePoem(this)">4.3 The Silver House</div>
+                <div class="poem-content">
+                    <div class="info-row"><span class="info-label">Title:</span> The Silver House</div>
+                    <div class="info-row"><span class="info-label">Poet:</span> John Lea</div>
+                    <div class="info-row"><span class="info-label">Rhyme Scheme:</span> The rhyme scheme is 'abab'.</div>
+                    <div class="info-row"><span class="info-label">Figures of Speech:</span> Metaphor, Alliteration, Personification.</div>
+                    <div class="info-row"><span class="info-label">Central Idea / Theme:</span> A fantasy about the Moon, described as a 'Silver House'. It poetically explains the phases of the moon and the "man in the moon" who lives inside it.</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="mini-footer">
+        <p>&copy; 2026 ParthNew | Quality Content for SSC Students</p>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById("navLinks").classList.toggle("active"); }
+        
+        function togglePoem(header) {
+            const item = header.parentElement;
+            const isActive = item.classList.contains('active');
+            
+            // Optional: Close other open poems
+            document.querySelectorAll('.poem-item').forEach(i => i.classList.remove('active'));
+            
+            if(!isActive) {
+                item.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

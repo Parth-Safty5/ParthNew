@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Information Transfer SSC | Non-Verbal to Verbal & Vice Versa | ParthNew</title>
+    <meta name="description" content="Master Maharashtra Board Information Transfer. Solved examples of Tree Diagrams to Paragraphs and Tables for SSC 2026.">
+    <meta name="keywords" content="Information Transfer SSC, Non-Verbal to Verbal, Verbal to Non-Verbal, Tree Diagram, SSC English Writing Skills, ParthNew">
+    <meta name="theme-color" content="#004aad">
+
+    <style>
+        :root {
+            --primary-blue: #004aad;
+            --secondary-blue: #003087;
+            --accent-yellow: #ffc107;
+            --bg-light: #f1f4f8;
+        }
+
+        /* Standardized Styling for all pages */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; font-display: swap; }
+        body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
+
+        /* Navbar & Logo (Consistent with other pages) */
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center;
+            height: 75px; padding: 0 10%; background: #fff; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+        .logo-img { height: 50px; width: 50px; border-radius: 50%; border: 2px solid #ddd; object-fit: cover; }
+        .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; }
+        .logo h3 span { color: var(--accent-yellow); margin-left: 4px; text-shadow: 1px 1px 1px rgba(0,0,0,0.2); }
+
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li a { text-decoration: none; color: #333; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        .nav-links li a:hover { color: var(--primary-blue); }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+            padding: 60px 10%; color: white; text-align: left;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 700; }
+
+        /* Container & Tabs */
+        .container { max-width: 1000px; margin: -40px auto 50px; padding: 0 20px; }
+        .tabs { display: flex; justify-content: center; gap: 15px; margin-bottom: 30px; }
+        .tab-btn { 
+            padding: 12px 30px; border: none; border-radius: 8px; 
+            background: white; color: var(--primary-blue); font-weight: bold; 
+            cursor: pointer; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+        }
+        .tab-btn.active { background: var(--accent-yellow); color: #000; }
+
+        /* Content Card Style */
+        .content-card { 
+            background: white; padding: 40px; border-radius: 15px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05); display: none; animation: fadeIn 0.4s ease; 
+        }
+        .content-card.active { display: block; }
+        
+        .marking-box { background: #fff8e1; padding: 20px; border-radius: 10px; border-left: 5px solid var(--accent-yellow); margin-bottom: 25px; }
+        .diagram-box { background: #f8fafc; border: 2px dashed #cbd5e1; padding: 20px; border-radius: 10px; margin: 20px 0; text-align: center; }
+        .answer-box { background: #f9fafb; padding: 25px; border-radius: 12px; border: 1px solid #e5e7eb; }
+
+        /* Table Style for Verbal to Non-Verbal */
+        .info-table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
+        .info-table th, .info-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        .info-table th { background: var(--primary-blue); color: white; }
+
+        /* Footer (Consistent) */
+        .mini-footer { background: var(--secondary-blue); color: white; padding: 30px 0; text-align: center; }
+
+        /* Mobile Menu (Consistent) */
+        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; }
+        .menu-icon span { width: 25px; height: 3px; background: #333; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        @media (max-width: 768px) {
+            .menu-icon { display: flex; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 75px; right: 0; width: 100%; background: #fff; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .nav-links.active { display: flex; }
+            .nav-links li a { padding: 15px; margin: 0; border-bottom: 1px solid #eee; text-align: center; }
+            .hero { padding: 40px 5%; text-align: center; }
+            .tabs { flex-direction: column; width: 100%; }
+            .tab-btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.webp" alt="ParthNew Logo" class="logo-img">
+            <h3>Parth<span>New</span></h3> 
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Information Transfer</h1>
+        <p>Master Section VI: Strategies to convert diagrams into paragraphs and data into tables for SSC Exams.</p>
+    </header>
+
+    <main class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('nonverbal', this)">A1: Non-Verbal to Verbal</button>
+            <button class="tab-btn" onclick="showTab('verbal', this)">A2: Verbal to Non-Verbal</button>
+        </div>
+
+        <article id="nonverbal" class="content-card active">
+            <div class="marking-box">
+                <strong>Marking Scheme (5 Marks):</strong> Title (1M) | Body/Content (2M) | Grammar (1M) | Conclusion (1M).
+            </div>
+            
+            <h3>Question: Write a paragraph based on the Tree Diagram.</h3>
+            <div class="diagram-box">
+                <h4>[ Tree Diagram: Means of Transport ]</h4>
+                <p><b>Transport</b></p>
+                <p>↓</p>
+                <p><b>Land:</b> (Roadways, Railways) | <b>Water:</b> (Ships, Boats) | <b>Air:</b> (Aeroplanes, Helicopters)</p>
+            </div>
+
+            <div class="answer-box">
+                <h4 style="text-align: center; text-decoration: underline; margin-bottom: 15px;">The Diverse Modes of Transport</h4>
+                <p>Transport is an essential part of our daily lives, connecting people and goods across the world. It can be broadly divided into three main modes: Land, Water, and Air transport. Land transport is the most common, consisting of roadways for shorter distances and railways for longer journeys. Water transport, using ships and boats, is vital for international trade. Finally, air transport via aeroplanes and helicopters is the fastest way to travel globally. Each mode has its own significance in human development.</p>
+            </div>
+        </article>
+
+        <article id="verbal" class="content-card">
+            <div class="marking-box">
+                <strong>Marking Scheme (5 Marks):</strong> Appropriate Graphic (1M) | Covering all points (2M) | Punctuality/Accuracy (1M) | Presentation (1M).
+            </div>
+
+            <h3>Question: Convert the paragraph into a Table.</h3>
+            <p style="margin: 10px 0; font-style: italic; color: #666;">"A Mango tree is known for its sweet fruit and green leaves. It grows in tropical climates. On the other hand, an Apple tree grows in cooler regions and bears crunchy red fruit."</p>
+
+            <div class="answer-box">
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Mango Tree</th>
+                            <th>Apple Tree</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>Fruit Type</b></td>
+                            <td>Sweet and Pulpy</td>
+                            <td>Crunchy and Red</td>
+                        </tr>
+                        <tr>
+                            <td><b>Preferred Climate</b></td>
+                            <td>Tropical (Hot)</td>
+                            <td>Cooler regions</td>
+                        </tr>
+                        <tr>
+                            <td><b>Leaf Color</b></td>
+                            <td>Green</td>
+                            <td>Green</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+
+    <footer class="mini-footer">
+        <p>&copy; 2026 ParthNew | Excellence in Learning</p>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.getElementById("navLinks").classList.toggle("active"); }
+        function showTab(id, btn) {
+            document.querySelectorAll('.content-card').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            btn.classList.add('active');
+        }
+    </script>
+</body>
+</html>
