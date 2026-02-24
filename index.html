@@ -6,6 +6,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
     <title>ParthNew | Class 9th & 10th English Workshop & Exercise Answers</title>
     <meta name="description" content="ParthNew: Best learning platform for Class 9th and 10th students. Get Maharashtra Board English workshop answers, exercise solutions, and writing skills for SSC exams.">
@@ -26,7 +27,6 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
         body { background-color: #f1f4f8; }
 
-        /* Top Bar */
         .top-bar {
             background: var(--secondary-blue);
             color: white;
@@ -36,7 +36,6 @@
             font-size: 0.9rem;
         }
 
-        /* Navbar */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -50,7 +49,6 @@
         }
 
         .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
-        /* Performance Fix: Added transition for logo */
         .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
         
         .logo h3 { font-size: 1.8rem; font-weight: 700; color: #000000; } 
@@ -70,33 +68,34 @@
         }
         .nav-links li a:hover { color: var(--primary-blue); }
 
-        /* Hero Section */
+        /* Performance Fix: CLS Reduction with Aspect Ratio & Min-Height */
         .hero {
             background: linear-gradient(to right, rgba(255,255,255,0.95) 30%, rgba(255,255,255,0.2) 100%), 
                         url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
+            background-color: #ffffff; /* Pre-load color */
             padding: 80px 10%;
             min-height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            content-visibility: auto;
         }
 
         .hero h1 { font-size: 3rem; color: #1a1a1a; margin-bottom: 15px; }
         .hero p { font-size: 1.2rem; color: #444; max-width: 550px; margin-bottom: 25px; font-weight: 500; }
 
-        /* Button & Card Effects */
         .hero a {
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 74, 173, 0.2);
+            display: inline-block;
         }
         .hero a:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 74, 173, 0.4);
             filter: brightness(1.1);
         }
-        .hero a:active { transform: translateY(1px); }
 
         .selection-section { padding: 80px 10%; text-align: center; }
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
@@ -117,10 +116,8 @@
             border-color: var(--primary-blue);
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
-        .class-card h3 { font-size: 2rem; color: var(--secondary-blue); }
-        .class-card div { transition: transform 0.3s ease; }
-        .class-card:hover div { transform: translateX(8px); }
 
+        .class-card h3 { font-size: 2rem; color: var(--secondary-blue); }
         .badge {
             background: var(--accent-yellow);
             color: #000;
@@ -133,12 +130,9 @@
             right: 20px;
         }
 
-        /* Footer */
-        .mini-footer { background-color: var(--primary-blue); padding: 15px 0; text-align: center; border-top: 1px solid #ddd; }
+        .mini-footer { background-color: var(--primary-blue); padding: 15px 0; text-align: center; }
         .footer-link { color: white; text-decoration: none; font-size: 14px; margin: 0 10px; }
-        .separator { color: #ccc; }
 
-        /* Mobile View */
         @media (max-width: 768px) {
             .navbar { padding: 10px 5%; }
             .menu-icon { display: flex; }
@@ -148,19 +142,12 @@
                 position: absolute;
                 top: 70px; right: 0; width: 100%;
                 background-color: #ffffff;
-                box-shadow: 0 4px 5px rgba(0,0,0,0.1);
                 z-index: 99;
             }
             .nav-links.active { display: flex; }
-            .nav-links li { text-align: center; border-bottom: 1px solid #eee; }
-            .nav-links li a { margin: 0; padding: 15px; display: block; }
-            .hero { text-align: center; align-items: center; background: #fff; height: auto; padding: 50px 5%; }
+            .nav-links li a { margin: 0; padding: 15px; display: block; border-bottom: 1px solid #eee; }
+            .hero { text-align: center; align-items: center; padding: 50px 5%; min-height: 400px; }
             .hero h1 { font-size: 2.2rem; }
-        }
-
-        .menu-icon:active {
-            opacity: 0.6;
-            transform: scale(0.9);
         }
     </style>
 </head>
@@ -172,7 +159,7 @@
 
     <nav class="navbar">
         <a href="index.html" class="logo">
-            <img src="logo.webp" alt="ParthNew Educational Logo" class="logo-img" width="50" height="50">
+            <img src="logo.webp" alt="ParthNew Logo" class="logo-img" width="50" height="50" fetchpriority="high">
             <h3>Parth<span>New</span></h3> 
         </a>
 
@@ -227,23 +214,26 @@
 
     <footer class="mini-footer">
         <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-        <span class="separator">|</span>
+        <span style="color:white;">|</span>
         <a href="contact.html" class="footer-link">Contact Us</a>
-        <span class="separator">|</span>
+        <span style="color:white;">|</span>
         <a href="index.html" class="footer-link">© 2026 ParthNew</a>
     </footer>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
     <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S146W8G7MB', { 'animate_fill': false });
+
         function toggleMenu() {
             const navLinks = document.getElementById("navLinks");
             navLinks.classList.toggle("active");
         }
         
-        // Accessibility: Keyboard support for menu
         document.querySelector('.menu-icon').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                toggleMenu();
-            }
+            if (e.key === 'Enter') toggleMenu();
         });
     </script>
 </body>
