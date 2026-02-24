@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://parthnew.netlify.app/sitemap.xml
