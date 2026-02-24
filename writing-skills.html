@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="theme-color" content="#004aad">
+    <title>English Writing Skills Guide | Class 9th & 10th SSC | ParthNew</title>
+    <meta name="description" content="Master Maharashtra Board Class 9th and 10th English Writing Skills. Access formal letter formats, report writing, dialogue writing, and solved examples for SSC exams.">
+    
+    <style>
+        :root {
+            --primary-blue: #004aad;
+            --secondary-blue: #003087;
+            --accent-yellow: #ffc107;
+            --bg-light: #f1f4f8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; font-display: swap; }
+        body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
+
+        /* Navbar & Logo (Homepage Style) */
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center;
+            height: 75px; padding: 0 10%; background: #fff; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+        .logo-img { height: 50px; width: 50px; border-radius: 50%; border: 2px solid #ddd; }
+        .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; }
+        .logo h3 span { color: var(--accent-yellow); margin-left: 4px; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); }
+
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li a { text-decoration: none; color: #333; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        .nav-links li a:hover { color: var(--primary-blue); }
+
+        /* Hero Section (Homepage Style) */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+            padding: 60px 10%; color: white; text-align: left;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 700; }
+        .hero p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin-bottom: 20px; }
+
+        /* Main Container */
+        .container { padding: 40px 10%; }
+
+        /* Grid System (Homepage Style) */
+        .grid-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px; 
+        }
+
+        .skill-card {
+            background: white; padding: 35px 25px; border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-decoration: none; color: #333;
+            border: 1px solid #eee; transition: 0.4s; position: relative;
+            display: flex; flex-direction: column;
+        }
+        .skill-card:hover { transform: translateY(-10px); border-color: var(--primary-blue); }
+        .skill-card h3 { font-size: 1.5rem; color: var(--secondary-blue); margin-bottom: 12px; }
+        .skill-card p { font-size: 0.95rem; color: #666; margin-bottom: 20px; flex-grow: 1; }
+
+        .btn-link { color: var(--primary-blue); font-weight: bold; text-decoration: none; }
+
+        /* Marking Scheme Section */
+        .marking-section {
+            margin-top: 50px; background: white; padding: 30px;
+            border-radius: 12px; border-left: 5px solid var(--accent-yellow);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .marking-section h2 { margin-bottom: 20px; color: var(--secondary-blue); }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        table th, table td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+        table th { color: var(--primary-blue); }
+
+        /* Footer (Homepage Style) */
+        .mini-footer { background: var(--secondary-blue); color: white; padding: 30px 0; text-align: center; margin-top: 50px; }
+        .footer-link { color: white; text-decoration: none; margin: 0 10px; font-size: 14px; opacity: 0.8; }
+
+        /* Mobile Menu */
+        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; }
+        .menu-icon span { width: 25px; height: 3px; background: #333; }
+
+        @media (max-width: 768px) {
+            .navbar { padding: 0 5%; }
+            .menu-icon { display: flex; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 75px; right: 0; width: 100%; background: #fff; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+            .nav-links.active { display: flex; }
+            .nav-links li a { padding: 15px; margin: 0; border-bottom: 1px solid #eee; text-align: center; }
+            .hero { padding: 40px 5%; text-align: center; }
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.webp" alt="ParthNew Logo" class="logo-img">
+            <h3>Parth<span>New</span></h3> 
+        </a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Master English Writing Skills</h1>
+        <p>Step-by-step formats, marking schemes, and solved examples designed specifically for Maharashtra Board SSC students.</p>
+    </header>
+
+    <main class="container">
+        <h2 style="text-align: center; margin-bottom: 30px; font-size: 2rem;">Writing Section Topics</h2>
+        
+        <div class="grid-container">
+            <a href="letter-writing.html" class="skill-card">
+                <h3>Letter Writing</h3>
+                <p>Master Formal & Informal letters with the latest block formats and 5/5 marking tips.</p>
+                <div class="btn-link">View Formats →</div>
+            </a>
+
+            <a href="report-writing.html" class="skill-card">
+                <h3>Report Writing</h3>
+                <p>Learn to draft News Reports with professional headlines, datelines, and lead paragraphs.</p>
+                <div class="btn-link">Learn More →</div>
+            </a>
+
+            <a href="dialogue-writing.html" class="skill-card">
+                <h3>Dialogue & Speech</h3>
+                <p>Draft natural dialogues and powerful speeches for Board Exams with easy templates.</p>
+                <div class="btn-link">View Lessons →</div>
+            </a>
+
+            <a href="information.html" class="skill-card">
+                <h3>Information Transfer</h3>
+                <p>Convert Diagrams to Paragraphs (Non-verbal to Verbal) and vice versa seamlessly.</p>
+                <div class="btn-link">Explore Topics →</div>
+            </a>
+
+            <a href="expansion.html" class="skill-card">
+                <h3>Expansion of Ideas</h3>
+                <p>Elaborate proverbs and quotations into meaningful paragraphs with relevant examples.</p>
+                <div class="btn-link">Read Samples →</div>
+            </a>
+
+            <a href="story-writing.html" class="skill-card">
+                <h3>Story Writing</h3>
+                <p>Develop creative stories with proper titles and morals using given outlines.</p>
+                <div class="btn-link">View Stories →</div>
+            </a>
+
+            <a href="essay.html" class="skill-card">
+                <h3>Essay Writing</h3>
+                <p>Write impactful essays on trending topics with structured introductions and conclusions.</p>
+                <div class="btn-link">Read Essays →</div>
+            </a>
+        </div>
+
+        <section class="marking-section">
+            <h2>Board Marking Scheme (5 Marks)</h2>
+            <p>Every writing skill question is evaluated based on these key points:</p>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Criteria</th>
+                            <th>Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Format & Presentation</td><td>1 Mark</td></tr>
+                        <tr><td>Content (Relevant Ideas)</td><td>2 Marks</td></tr>
+                        <tr><td>Grammar & Vocabulary</td><td>1 Mark</td></tr>
+                        <tr><td>Opening & Closing</td><td>1 Mark</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mini-footer">
+        <div style="margin-bottom: 15px;">
+            <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+            <span style="color:rgba(255,255,255,0.3);">|</span>
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </div>
+        <p style="font-size: 13px; color: rgba(255,255,255,0.7);">&copy; 2026 ParthNew | Excellence in Learning</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navLinks").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
