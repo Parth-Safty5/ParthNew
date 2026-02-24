@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <title>ParthNew | Class 9th & 10th English Workshop & Exercise Answers</title>
+    <meta name="title" content="ParthNew | Class 9th & 10th English Workshop & Exercise Answers">
     <meta name="description" content="ParthNew: Best learning platform for Class 9th and 10th students. Get Maharashtra Board English workshop answers, exercise solutions, and writing skills for SSC exams.">
     <meta name="keywords" content="Class 10 English Workshop Answers, Class 9th Study Material, SSC Writing Skills, Maharashtra Board Exercise Solutions, ParthNew, English Workshop PDF">
     <meta name="author" content="ParthNew">
-    
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://parthnew.netlify.app/">
     <meta property="og:title" content="ParthNew | Excellence in Learning">
     <meta property="og:description" content="Class 9th & 10th Workshop and Exercise answers made easy.">
-    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://parthnew.netlify.app/logo.png">
 
     <style>
         :root {
@@ -27,42 +27,47 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
         body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
 
-        /* Navbar & Logo Fix */
+        /* Navbar: Performance Fix */
         .navbar {
             display: flex; justify-content: space-between; align-items: center;
-            padding: 12px 10%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            height: 75px; padding: 0 10%; background: #fff; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky; top: 0; z-index: 1000;
         }
 
+        /* Logo Design: Parth (Black) & New (Yellow) with Accessibility Fix */
         .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
-        .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
-        .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; }
-        .logo h3 span { color: var(--accent-yellow); }
+        .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 1px solid #ddd; }
+        .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000000; display: flex; align-items: center; }
+        .logo h3 span { 
+            color: var(--accent-yellow); 
+            margin-left: 4px;
+            /* Contrast check pass karne ke liye shadow */
+            text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.3); 
+        }
 
-        /* Nav Links */
         .nav-links { display: flex; list-style: none; }
-        .nav-links li a { text-decoration: none; color: #333; margin-left: 20px; font-weight: 500; transition: 0.3s ease; }
+        .nav-links li a { text-decoration: none; color: #333; margin-left: 20px; font-weight: 500; transition: 0.3s; }
         .nav-links li a:hover { color: var(--primary-blue); }
 
-        /* Hero Section - No Image version for 100 Speed */
+        /* Hero: CLS Fix (Fixed Min-Height) */
         .hero {
             background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
             padding: 80px 10%; min-height: 400px; display: flex; flex-direction: column;
             justify-content: center; text-align: left; color: white;
         }
 
-        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; line-height: 1.2; }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; line-height: 1.2; font-weight: 700; }
         .hero p { font-size: 1.1rem; margin-bottom: 25px; opacity: 0.9; max-width: 600px; }
         
         .hero-btn {
-            background: var(--accent-yellow); color: #000; padding: 14px 30px;
+            background: var(--accent-yellow); color: #000 !important; padding: 14px 30px;
             text-decoration: none; border-radius: 8px; font-weight: bold; width: fit-content;
             transition: 0.3s; display: inline-block;
         }
-        .hero-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 
         /* Grid & Cards */
-        .selection-section { padding: 60px 10%; text-align: center; }
+        .selection-section { padding: 60px 10%; text-align: center; min-height: 550px; }
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
 
         .class-card {
@@ -70,40 +75,36 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-decoration: none; color: #333;
             border: 1px solid #eee; transition: 0.4s; position: relative;
         }
-        .class-card:hover { transform: translateY(-10px); border-color: var(--primary-blue); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .class-card:hover { transform: translateY(-10px); border-color: var(--primary-blue); }
         .class-card h3 { font-size: 1.8rem; color: var(--secondary-blue); margin-bottom: 10px; }
 
+        /* Badge Fix: Must be Black text on Yellow for 100 Score */
         .badge {
-            background: var(--accent-yellow); color: #000; padding: 4px 10px;
-            border-radius: 4px; font-size: 0.7rem; font-weight: bold;
+            background: var(--accent-yellow); color: #000 !important; 
+            padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: bold;
             position: absolute; top: 15px; right: 15px;
         }
 
-        /* Footer */
-        .mini-footer { background-color: var(--secondary-blue); padding: 20px 0; text-align: center; color: white; }
-        .footer-link { color: white; text-decoration: none; font-size: 14px; margin: 0 10px; opacity: 0.9; }
-        .footer-link:hover { opacity: 1; }
+        .mini-footer { background: var(--secondary-blue); color: white; padding: 30px 0; text-align: center; }
+        .footer-link { color: white; text-decoration: none; margin: 0 10px; font-size: 14px; opacity: 0.8; }
 
-        /* Mobile Optimization */
-        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; outline: none; }
-        .menu-icon span { width: 25px; height: 3px; background-color: #333; border-radius: 2px; }
+        /* Menu Mobile */
+        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; }
+        .menu-icon span { width: 25px; height: 3px; background: #333; border-radius: 2px; }
 
         @media (max-width: 768px) {
-            .navbar { padding: 10px 5%; }
             .menu-icon { display: flex; }
             .nav-links {
                 display: none; flex-direction: column; position: absolute;
-                top: 70px; right: 0; width: 100%; background-color: #fff;
+                top: 75px; right: 0; width: 100%; background: #fff;
                 box-shadow: 0 5px 10px rgba(0,0,0,0.1);
             }
             .nav-links.active { display: flex; }
-            .nav-links li a { margin: 0; padding: 15px; display: block; border-bottom: 1px solid #eee; text-align: center; }
+            .nav-links li a { padding: 15px; margin: 0; border-bottom: 1px solid #eee; text-align: center; }
             .hero { padding: 60px 5%; text-align: center; align-items: center; min-height: 350px; }
             .hero h1 { font-size: 2rem; }
         }
     </style>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
 </head>
 <body>
 
@@ -113,7 +114,7 @@
             <h3>Parth<span>New</span></h3> 
         </a>
 
-        <div class="menu-icon" onclick="toggleMenu()" role="button" aria-label="Toggle Navigation Menu" tabindex="0">
+        <div class="menu-icon" onclick="toggleMenu()" role="button" aria-label="Menu" tabindex="0">
             <span></span>
             <span></span>
             <span></span>
@@ -129,42 +130,42 @@
 
     <header class="hero">
         <h1>Padhai Hogi Easy, <br>Ab Har Ghar Banega Topper!</h1>
-        <p>Maharashtra Board Class 9th & 10th English Workshop answers aur solutions ko banaya gaya hai bilkul saral aur asaan.</p>
+        <p>Maharashtra Board Class 9th aur 10th ke English Workshop answers aur writing skills ko ab saral bhasha mein seekhein.</p>
         <a href="#courses" class="hero-btn">Start Learning Now</a>
     </header>
 
     <main id="courses">
         <section class="selection-section">
             <h2 style="margin-bottom: 10px; font-size: 2.2rem; color: #333;">Select Your Class</h2>
-            <p style="margin-bottom: 40px; color: #666;">Choose your standard to get started with exercise answers.</p>
+            <p style="margin-bottom: 40px; color: #666;">Choose your standard to access complete exercise solutions.</p>
             
             <div class="grid-container">
-                <a href="testing1.html" class="class-card" aria-label="Class 9th Study Material">
+                <a href="testing1.html" class="class-card" aria-label="Class 9th English Workshop">
                     <span class="badge">NEW</span>
                     <h3>Class 9th</h3>
                     <p>English Workshop Answers</p>
-                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Syllabus →</div>
+                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">Learn More →</div>
                 </a>
 
-                <a href="testing2.html" class="class-card" aria-label="Class 10th Study Material">
+                <a href="testing2.html" class="class-card" aria-label="Class 10th SSC Board Solutions">
                     <span class="badge">NEW</span>
                     <h3>Class 10th</h3>
                     <p>SSC Board Solutions</p>
-                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Syllabus →</div>
+                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">Learn More →</div>
                 </a>
 
-                <a href="testing3.html" class="class-card" aria-label="English Writing Skills">
+                <a href="testing3.html" class="class-card" aria-label="Writing Skills Study Material">
                     <span class="badge">LATEST</span>
                     <h3>Writing Skills</h3>
-                    <p>Essays, Letters & Reports</p>
-                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Syllabus →</div>
+                    <p>Essay, Letter & Report Writing</p>
+                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">Learn More →</div>
                 </a>
             </div>
         </section>
     </main>
 
     <footer class="mini-footer">
-        <div style="margin-bottom: 10px;">
+        <div style="margin-bottom: 15px;">
             <a href="disclaimer.html" class="footer-link">Disclaimer</a>
             <span style="color:rgba(255,255,255,0.3);">|</span>
             <a href="contact.html" class="footer-link">Contact Us</a>
@@ -174,24 +175,15 @@
         <p style="font-size: 13px; color: rgba(255,255,255,0.7);">&copy; 2026 ParthNew | Excellence in Learning</p>
     </footer>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-S146W8G7MB', { 'page_path': location.pathname });
-
-        // Mobile Menu Function
+        // Mobile Menu
         function toggleMenu() {
-            const navLinks = document.getElementById("navLinks");
-            navLinks.classList.toggle("active");
+            document.getElementById("navLinks").classList.toggle("active");
         }
 
-        // Accessibility: Keyboard support for menu
+        // Keyboard accessibility for Menu
         document.querySelector('.menu-icon').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                toggleMenu();
-            }
+            if (e.key === 'Enter') toggleMenu();
         });
     </script>
 </body>
