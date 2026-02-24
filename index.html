@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <title>ParthNew | Class 9th & 10th English Workshop & Exercise Answers</title>
     <meta name="description" content="ParthNew: Best learning platform for Class 9th and 10th students. Get Maharashtra Board English workshop answers, exercise solutions, and writing skills for SSC exams.">
     <meta name="keywords" content="Class 10 English Workshop Answers, Class 9th Study Material, SSC Writing Skills, Maharashtra Board Exercise Solutions, ParthNew, English Workshop PDF">
@@ -47,12 +50,13 @@
         }
 
         .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+        /* Performance Fix: Added transition for logo */
         .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
         
         .logo h3 { font-size: 1.8rem; font-weight: 700; color: #000000; } 
         .logo h3 span { color: var(--accent-yellow); } 
 
-        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; }
+        .menu-icon { display: none; flex-direction: column; gap: 4px; cursor: pointer; outline: none; }
         .menu-icon span { width: 25px; height: 3px; background-color: #333; border-radius: 2px; }
 
         .nav-links { display: flex; list-style: none; }
@@ -62,7 +66,9 @@
             margin-left: 25px;
             font-weight: 500;
             font-size: 18px;
+            transition: color 0.3s ease;
         }
+        .nav-links li a:hover { color: var(--primary-blue); }
 
         /* Hero Section */
         .hero {
@@ -80,7 +86,18 @@
         .hero h1 { font-size: 3rem; color: #1a1a1a; margin-bottom: 15px; }
         .hero p { font-size: 1.2rem; color: #444; max-width: 550px; margin-bottom: 25px; font-weight: 500; }
 
-        /* Grid */
+        /* Button & Card Effects */
+        .hero a {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 74, 173, 0.2);
+        }
+        .hero a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 74, 173, 0.4);
+            filter: brightness(1.1);
+        }
+        .hero a:active { transform: translateY(1px); }
+
         .selection-section { padding: 80px 10%; text-align: center; }
         .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
 
@@ -93,8 +110,17 @@
             color: #333;
             border: 1px solid #eee;
             position: relative;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .class-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         }
         .class-card h3 { font-size: 2rem; color: var(--secondary-blue); }
+        .class-card div { transition: transform 0.3s ease; }
+        .class-card:hover div { transform: translateX(8px); }
+
         .badge {
             background: var(--accent-yellow);
             color: #000;
@@ -131,53 +157,11 @@
             .hero { text-align: center; align-items: center; background: #fff; height: auto; padding: 50px 5%; }
             .hero h1 { font-size: 2.2rem; }
         }
-/* --- Button aur Card Effects --- */
 
-/* 1. Nav Links par hover effect */
-.nav-links li a {
-    transition: color 0.3s ease;
-}
-.nav-links li a:hover {
-    color: var(--primary-blue);
-}
-
-/* 2. Hero Button (Start Learning Now) par effect */
-.hero a {
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 74, 173, 0.2);
-}
-.hero a:hover {
-    transform: translateY(-3px); /* Thoda upar uthega */
-    box-shadow: 0 6px 20px rgba(0, 74, 173, 0.4);
-    filter: brightness(1.1); /* Thoda glow karega */
-}
-.hero a:active {
-    transform: translateY(1px); /* Dabne par niche jayega */
-}
-
-/* 3. Class Cards par smooth hover effect */
-.class-card {
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth bounce effect */
-}
-.class-card:hover {
-    transform: translateY(-10px); /* Card upar uthega */
-    border-color: var(--primary-blue);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-}
-
-/* 4. Card ke andar ke link (View Syllabus) par effect */
-.class-card div {
-    transition: transform 0.3s ease;
-}
-.class-card:hover div {
-    transform: translateX(8px); /* Arrow thoda aage khiskega */
-}
-
-/* 5. Menu Icon par effect */
-.menu-icon:active {
-    opacity: 0.6;
-    transform: scale(0.9);
-}
+        .menu-icon:active {
+            opacity: 0.6;
+            transform: scale(0.9);
+        }
     </style>
 </head>
 <body>
@@ -188,11 +172,11 @@
 
     <nav class="navbar">
         <a href="index.html" class="logo">
-            <img src="logo.png" alt="ParthNew Logo" class="logo-img">
+            <img src="logo.webp" alt="ParthNew Educational Logo" class="logo-img" width="50" height="50">
             <h3>Parth<span>New</span></h3> 
         </a>
 
-        <div class="menu-icon" onclick="toggleMenu()" role="button" aria-label="Menu">
+        <div class="menu-icon" onclick="toggleMenu()" role="button" aria-label="Toggle Navigation Menu" tabindex="0">
             <span></span>
             <span></span>
             <span></span>
@@ -254,6 +238,13 @@
             const navLinks = document.getElementById("navLinks");
             navLinks.classList.toggle("active");
         }
+        
+        // Accessibility: Keyboard support for menu
+        document.querySelector('.menu-icon').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                toggleMenu();
+            }
+        });
     </script>
 </body>
 </html>
