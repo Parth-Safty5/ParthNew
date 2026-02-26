@@ -1,18 +1,18 @@
-console.log("Script loaded successfully!"); // Check karne ke liye
-
 async function loadComponent(id, file) {
-    console.log("Attempting to load: " + file);
+    // Hum current location ke hisab se path set kar rahe hain
+    const path = window.location.pathname.includes('ParthNew') ? `/ParthNew/${file}` : `/${file}`;
+    
     try {
-        const res = await fetch(file);
-        if (!res.ok) throw new Error("Could not find " + file);
+        const res = await fetch(path);
+        if (!res.ok) throw new Error("File not found: " + path);
         const html = await res.text();
         document.getElementById(id).innerHTML = html;
-        console.log(file + " injected successfully!");
+        console.log(file + " loaded!");
     } catch (err) {
-        console.error("Error: ", err);
+        console.error("Error loading " + file + ":", err);
     }
 }
 
-// Bina kisi wait ke seedha call karein
+// Dono ko call karein
 loadComponent('navbar-placeholder', 'navbar.html');
 loadComponent('footer-placeholder', 'footer.html');
