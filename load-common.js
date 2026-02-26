@@ -8,7 +8,7 @@ async function loadComponent(id, file) {
         const data = await response.text();
         document.getElementById(id).innerHTML = data;
 
-        // Links correction
+        // Fix links
         const container = document.getElementById(id);
         container.querySelectorAll('a').forEach(link => {
             const href = link.getAttribute('href');
@@ -16,23 +16,28 @@ async function loadComponent(id, file) {
                 link.href = basePath + href.replace(/^\//, '');
             }
         });
-    } catch (e) { console.error(e); }
+
+        // NAVBAR LOAD HONE KE BAAD CLICK KAM KAREGA
+        if (file === 'navbar.html') {
+            activateMobileMenu();
+        }
+    } catch (e) { console.error("Error:", e); }
 }
 
-// Mobile Menu Toggle Logic
-document.addEventListener('click', function (e) {
-    const hamburger = e.target.closest('.hamburger');
-    if (hamburger) {
-        const navMenu = document.getElementById('navMenu');
-        // Toggle Active Classes
-        hamburger.classList.toggle('active');
-        if (navMenu.style.right === "0px") {
-            navMenu.style.right = "-100%";
-        } else {
-            navMenu.style.right = "0px";
-        }
+function activateMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    if (hamburger && navMenu) {
+        hamburger.onclick = function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            
+            // Debugging ke liye (Aap console mein dekh sakte hain)
+            console.log("Menu toggled!"); 
+        };
     }
-});
+}
 
 loadComponent('navbar-placeholder', 'navbar.html');
 loadComponent('footer-placeholder', 'footer.html');
