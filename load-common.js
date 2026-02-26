@@ -10,15 +10,25 @@ async function loadComponent(id, file) {
         const container = document.getElementById(id);
         container.innerHTML = data;
 
-        // --- Ye hai Magic Part: Saare links ko theek karna ---
+        // Links ko theek karna
         const links = container.querySelectorAll('a');
         links.forEach(link => {
             const href = link.getAttribute('href');
             if (href && !href.startsWith('http') && !href.startsWith('#')) {
-                // Link ke aage sahi folder path joda ja raha hai
                 link.href = basePath + href.replace(/^\//, '');
             }
         });
+
+        // --- MOBILE MENU LOGIC (Add this) ---
+        const hamburger = container.querySelector('.hamburger');
+        const navMenu = container.querySelector('.nav-links');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
 
     } catch (error) {
         console.error("Error loading " + file + ":", error);
