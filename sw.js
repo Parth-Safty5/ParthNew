@@ -1,19 +1,53 @@
-const cacheName = 'parthnew-v1';
-const staticAssets = [
+const cacheName = 'parthnew-v3'; // Is baar v3 kar dete hain, iske baad tension khatam
+
+// Sirf shuruati zaroori files
+const coreAssets = [
   './',
   './index.html',
-  './manifest.json'
+  './manifest.json',
+  './logo.webp',
+  './load-common.js'
 ];
 
-self.addEventListener('install', async event => {
-  const cache = await caches.open(cacheName);
-  await cache.addAll(staticAssets);
+// Install Event
+self.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open(cacheName).then(cache => {
+      return cache.addAll(coreAssets);
+    })
+  );
+  self.skipWaiting();
 });
 
+// Activate Event: Purane version ka kachra saaf karne ke liye
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys => {
+      return Promise.all(
+        keys.filter(key => key !== cacheName)
+            .map(key => caches.delete(key))
+      );
+    })
+  );
+});
+
+// FETCH EVENT: Network-First Strategy (Best for SEO)
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request);
-    })
+    fetch(event.request)
+      .then(networkResponse => {
+        // Agar internet hai, toh naya content dikhao aur use cache mein save/update karo
+        if (networkResponse && networkResponse.status === 200) {
+          const responseToCache = networkResponse.clone();
+          caches.open(cacheName).then(cache => {
+            cache.put(event.request, responseToCache);
+          });
+        }
+        return networkResponse;
+      })
+      .catch(() => {
+        // Agar internet nahi hai, sirf tabhi cache (offline data) check karo
+        return caches.match(event.request);
+      })
   );
 });
