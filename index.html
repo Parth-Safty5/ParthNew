@@ -145,10 +145,10 @@
 
     <div id="footer-placeholder"></div>
 
-    <script src="load-common.js"></script>
+<script src="load-common.js"></script>
 
     <script>
-        // Modal Functions
+        // 2. Modal Functions (Turant chalne chahiye)
         function openModal() { document.getElementById("appreciationModal").style.display = "flex"; }
         function closeModal() { document.getElementById("appreciationModal").style.display = "none"; }
         window.onclick = function(event) {
@@ -156,27 +156,22 @@
             if (event.target == modal) { modal.style.display = "none"; }
         }
 
-        // PWA Service Worker
+        // 3. PWA Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js'); });
         }
 
-        // Performance Booster: Analytics Delay
+        // 4. Analytics ko sabse aakhri mein rakhein
         window.addEventListener('load', function() {
             setTimeout(function() {
                 var script = document.createElement('script');
                 script.async = true;
                 script.src = "https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB";
                 document.head.appendChild(script);
-                script.onload = function() {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-S146W8G7MB');
-                };
             }, 3000); 
         });
-</script>
+    </script>
 </body>
 
 </html>
+
