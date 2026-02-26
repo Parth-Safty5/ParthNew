@@ -26,19 +26,21 @@
     }
 </style>
 
-<nav class="nav-container">
-    <a href="/" class="nav-logo">Parth<span>New</span></a>
-    <div class="hamburger" onclick="toggleNav()">
-        <span></span><span></span><span></span>
-    </div>
-    <ul class="nav-menu" id="navLinks">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/privacy-policy.html">Privacy</a></li>
+<nav class="navbar">
+    <a href="index.html" class="nav-logo" style="color: #004aad; font-weight: bold; text-decoration: none; font-size: 1.5rem;">
+        Parth<span style="color: #ffc107;">New</span>
+    </a>
+
+    <ul class="nav-menu" style="list-style: none; display: flex; gap: 20px;">
+        <li><a href="index.html" style="text-decoration: none; color: #333;">Home</a></li>
+        <li><a href="9th.html" style="text-decoration: none; color: #333;">Class 9th</a></li>
+        <li><a href="10th.html" style="text-decoration: none; color: #333;">Class 10th</a></li>
+        <li><a href="about.html" style="text-decoration: none; color: #333;">About</a></li>
+        <li><a href="contact.html" style="text-decoration: none; color: #333;">Contact</a></li>
     </ul>
 </nav>
 
 <script>
     function toggleNav() { document.getElementById("navLinks").classList.toggle("active"); }
+
 </script>
