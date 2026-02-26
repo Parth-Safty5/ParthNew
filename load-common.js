@@ -7,10 +7,10 @@ async function loadComponent(id, file) {
         const response = await fetch(path);
         if (!response.ok) throw new Error("File not found");
         const data = await response.text();
-        const container = document.getElementById(id);
-        container.innerHTML = data;
+        document.getElementById(id).innerHTML = data;
 
-        // Links ko theek karna
+        // Links correct karne ka logic
+        const container = document.getElementById(id);
         const links = container.querySelectorAll('a');
         links.forEach(link => {
             const href = link.getAttribute('href');
@@ -18,22 +18,21 @@ async function loadComponent(id, file) {
                 link.href = basePath + href.replace(/^\//, '');
             }
         });
-
-        // --- MOBILE MENU LOGIC (Add this) ---
-        const hamburger = container.querySelector('.hamburger');
-        const navMenu = container.querySelector('.nav-links');
-
-        if (hamburger && navMenu) {
-            hamburger.addEventListener('click', () => {
-                hamburger.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-        }
-
     } catch (error) {
         console.error("Error loading " + file + ":", error);
     }
 }
+
+// --- YE SABSE ZARURI HAI: CLICK DETECT KARNE KE LIYE ---
+document.addEventListener('click', function (e) {
+    // Check karein ki kya user ne hamburger ya uske kisi bar par click kiya hai
+    const hamburger = e.target.closest('.hamburger');
+    if (hamburger) {
+        const navMenu = document.getElementById('navMenu');
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    }
+});
 
 loadComponent('navbar-placeholder', 'navbar.html');
 loadComponent('footer-placeholder', 'footer.html');
