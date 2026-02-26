@@ -1,3 +1,50 @@
+// 1. COPY PROTECTION (Sabse pehle chalu hoga taaki koi copy na kar sake)
+function enableProtection() {
+    const disableEvt = e => e.preventDefault();
+    document.addEventListener('contextmenu', disableEvt);
+    document.addEventListener('selectstart', disableEvt);
+    document.addEventListener('copy', disableEvt);
+
+    document.onkeydown = e => {
+        if (
+            e.keyCode == 123 || // F12
+            (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74 || e.keyCode == 67)) || 
+            (e.ctrlKey && e.keyCode == 85) // Ctrl+U
+        ) {
+            return false;
+        }
+    };
+}
+enableProtection(); // Ise turant call kiya hai
+
+// 2. SEO, FAVICON & FONTS INJECTOR
+function injectHeadElements() {
+    // Favicon link
+    let link = document.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/png';
+    link.href = './logo.png';
+    document.head.appendChild(link);
+
+    // Google Fonts
+    let fontLink = document.createElement('link');
+    fontLink.rel = 'stylesheet';
+    fontLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap';
+    document.head.appendChild(fontLink);
+
+    // Schema.org Structured Data for SEO
+    let schemaScript = document.createElement('script');
+    schemaScript.type = 'application/ld+json';
+    schemaScript.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ParthNew",
+        "url": window.location.origin
+    });
+    document.head.appendChild(schemaScript);
+}
+
+// 3. COMPONENT LOADER (Navbar & Footer)
 async function loadComponent(id, file) {
     const isGitHub = window.location.pathname.includes('ParthNew');
     const basePath = isGitHub ? '/ParthNew/' : './';
@@ -33,45 +80,7 @@ function activateMobileMenu() {
     }
 }
 
-// 1. SEO, Favicon aur Fonts Injector
-function injectHeadElements() {
-    // Favicon
-    let link = document.createElement('link');
-    link.rel = 'icon';
-    link.type = 'image/png';
-    link.href = './logo.png';
-    document.head.appendChild(link);
-
-    // Google Fonts
-    let fontLink = document.createElement('link');
-    fontLink.rel = 'stylesheet';
-    fontLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap';
-    document.head.appendChild(fontLink);
-
-    // Schema.org SEO (URL updated to Vercel)
-    let schemaScript = document.createElement('script');
-    schemaScript.type = 'application/ld+json';
-    schemaScript.text = JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "ParthNew",
-        "url": window.location.origin // Ye automatic aapka current URL le lega
-    });
-    document.head.appendChild(schemaScript);
-}
-
-// 2. Copy Protection
-function enableProtection() {
-    document.addEventListener('contextmenu', e => e.preventDefault());
-    document.addEventListener('selectstart', e => e.preventDefault());
-    document.onkeydown = e => {
-        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'C'.charCodeAt(0))) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
-            return false;
-        }
-    };
-}
-
-// 3. Analytics & Speed Insights (Vercel & Google)
+// 4. ANALYTICS & SPEED INSIGHTS (Vercel & Google)
 function loadAllAnalytics() {
     // Google Analytics
     var ga = document.createElement('script');
@@ -89,14 +98,14 @@ function loadAllAnalytics() {
     va.defer = true;
     document.head.appendChild(va);
 
-    // Vercel Speed Insights (Specifically for performance tracking)
+    // Vercel Speed Insights
     var vsi = document.createElement('script');
     vsi.src = '/_vercel/speed-insights/script.js';
     vsi.defer = true;
     document.head.appendChild(vsi);
 }
 
-// 4. PWA Service Worker
+// 5. PWA REGISTRATION
 function registerPWA() {
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
@@ -107,10 +116,9 @@ function registerPWA() {
     }
 }
 
-// --- All Executions ---
+// --- SABHI EXECUTIONS ---
 injectHeadElements();
 loadComponent('navbar-placeholder', 'navbar.html');
 loadComponent('footer-placeholder', 'footer.html');
-enableProtection();
 loadAllAnalytics();
 registerPWA();
