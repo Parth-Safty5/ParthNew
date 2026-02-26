@@ -1,15 +1,16 @@
-async function loadComponent(id, file) {
-    try {
-        const response = await fetch(file);
-        const data = await response.text();
-        document.getElementById(id).innerHTML = data;
-    } catch (error) {
-        console.error("Error loading " + file, error);
+document.addEventListener("DOMContentLoaded", function() {
+    async function loadComponent(id, file) {
+        try {
+            // Humne yahan './' lagaya hai taaki browser usi folder mein dhoondhe
+            const res = await fetch('./' + file); 
+            if (!res.ok) throw new Error("File not found: " + file);
+            const html = await res.text();
+            document.getElementById(id).innerHTML = html;
+        } catch (err) {
+            console.error("Error loading component:", err);
+        }
     }
-}
 
-// Dono ko load karo
-window.onload = () => {
     loadComponent('navbar-placeholder', 'navbar.html');
     loadComponent('footer-placeholder', 'footer.html');
-};
+});
