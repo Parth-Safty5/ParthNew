@@ -1,79 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-S146W8G7MB');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-S146W8G7MB');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Std 9th All Textbooks Solutions - ParthNew</title>
 
-    <meta name="description" content="ParthNew: The ultimate learning platform for Class 9th and 10th students. Access comprehensive workshop and Exercise answers, detailed syllabus guides, and writing skills to excel in your studies. Making education easy for every student.">
-
-    <meta name="keywords" content="​Class 9th Learning Platform, English Workshop Answers, ​Writing Skills, ​Study Material, ​Syllabus Guide, Textbook Solutions, ParthNew">
-
+    <meta name="description" content="ParthNew: Access comprehensive workshop and exercise answers for Class 9th. Making education easy for every student.">
+    <meta name="keywords" content="Class 9th Learning Platform, English Workshop Answers, Study Material, ParthNew">
     <meta name="author" content="ParthNew">
-
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "ParthNew",
-      "url": "https://parthnew.netlify.app/"
-    }
-    </script>
 
     <link rel="icon" type="image/png" href="./logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <body>
-<style>
+    <style>
+        :root {
+            --primary-blue: #004aad;
+            --secondary-blue: #003087;
+            --accent-yellow: #ffc107;
+            --bg-light: #f0f7ff;
+        }
+
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f7ff;
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-light);
             color: #2c3e50;
         }
-
-        /* Top Navigation */
-
-         nav {
-            background: #fff;
-            padding: 15px 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo { font-size: 1.8rem; font-weight: 700; color:black; text-decoration: none; }
-        .logo span { color:#ffc107; }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            margin-left: 25px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover { color: var(--primary-blue); }
-
 
         /* Header Area */
         header {
             text-align: center;
             padding: 60px 20px;
-            background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
             color: white;
             border-bottom-left-radius: 40px;
             border-bottom-right-radius: 40px;
@@ -107,58 +73,38 @@ function gtag(){dataLayer.push(arguments);}
 
         .subject-card:hover {
             transform: scale(1.03);
-            border-color: #007bff;
+            border-color: var(--primary-blue);
             box-shadow: 0 10px 20px rgba(0, 123, 255, 0.1);
         }
 
         .subject-icon {
-            width: 60px;
-            height: 60px;
+            width: 60px; height: 60px;
             background: #e7f3ff;
             border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            margin-right: 20px;
+            display: flex; justify-content: center; align-items: center;
+            font-size: 30px; margin-right: 20px;
         }
 
-        .subject-info h3 { margin: 0; font-size: 1.3rem; color: #0056b3; }
-        .subject-info p { margin: 5px 0 0; color: #6c757d; font-size: 0.9rem; }
+        .subject-info h3 { margin: 0; font-size: 1.3rem; color: var(--secondary-blue); }
 
         /* YouTube Promo Footer */
-        .yt-footer {
-            max-width: 1100px;
-            margin: 20px auto 60px;
-            padding: 0 20px;
-        }
-
+        .yt-footer { max-width: 1100px; margin: 20px auto 60px; padding: 0 20px; }
         .yt-banner {
-            background: #fff;
-            padding: 20px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            border: 2px dashed #ff0000;
-            text-decoration: none;
-            color: #333;
+            background: #fff; padding: 20px; border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            gap: 15px; border: 2px dashed #ff0000;
+            text-decoration: none; color: #333;
         }
-
         .yt-banner strong { color: #ff0000; }
 
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             header h1 { font-size: 1.8rem; }
-            .subject-card { padding: 20px; }
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="index.html" class="logo">Parth<span>New</span></a>
-    </nav>
+ <div id="navbar-placeholder"></div>
 
 
     <header>
@@ -169,48 +115,32 @@ function gtag(){dataLayer.push(arguments);}
     <div class="subject-grid">
         <a href="9thEnglish.html" class="subject-card">
             <div class="subject-icon">📝</div>
-            <div class="subject-info">
-                <h3>English</h3>
-            </div>
+            <div class="subject-info"><h3>English</h3></div>
         </a>
 
         <a href="9thmarathi.html" class="subject-card">
             <div class="subject-icon">🗣️</div>
-            <div class="subject-info">
-                <h3>Marathi</h3>
-            </div>
+            <div class="subject-info"><h3>Marathi</h3></div>
         </a>
 
         <a href="9thhindi.html" class="subject-card">
             <div class="subject-icon">✍️</div>
-            <div class="subject-info">
-                <h3>Hindi</h3>
-            </div>
+            <div class="subject-info"><h3>Hindi</h3></div>
         </a>
 
         <a href="9thhistory.html" class="subject-card">
-            <div class="subject-info" style="margin-left: 0;">
-                <div style="display: flex; align-items: center;">
-                    <div class="subject-icon">🏛️</div>
-                    <div>
-                        <h3>History</h3>
-                    </div>
-                </div>
-            </div>
+            <div class="subject-icon">🏛️</div>
+            <div class="subject-info"><h3>History</h3></div>
         </a>
 
         <a href="9thcivics.html" class="subject-card">
             <div class="subject-icon">⚖️</div>
-            <div class="subject-info">
-                <h3>Civics/Political Science</h3>
-            </div>
+            <div class="subject-info"><h3>Civics/Political Science</h3></div>
         </a>
 
         <a href="9thgeography.html" class="subject-card">
             <div class="subject-icon">🌍</div>
-            <div class="subject-info">
-                <h3>Geography</h3>
-            </div>
+            <div class="subject-info"><h3>Geography</h3></div>
         </a>
     </div>
 
@@ -220,42 +150,9 @@ function gtag(){dataLayer.push(arguments);}
             <span>Need video help? <strong>Subscribe to our YouTube Channel</strong></span>
         </a>
     </div>
-</div>
 
-<style>
-  .mini-footer {
-    background-color: blue; /* Gray background */
-    padding: 15px 0;
-    text-align: center;
-    font-family: sans-serif;
-    border-top: 1px solid #ddd;
-  }
+<div id="footer-placeholder"></div>
 
-  .footer-link {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
-
-  .footer-link:hover {
-    color: yellow; /* Hover karne par yellow ho jayega */
-    text-decoration: underline;
-  }
-
-  .separator {
-    color: #ccc;
-  }
-</style>
-
-<footer class="mini-footer">
-  <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-  <span class="separator">|</span>
-  <a href="contact.html" class="footer-link">Contact Us</a>
-  <span class="separator">|</span>
-  <a href="index.html" class="footer-link">© 2026 ParthNew</a>
-</footer>
-
+    <script src="load-common.js"></script>
 </body>
 </html>
