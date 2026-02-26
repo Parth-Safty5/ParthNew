@@ -1,5 +1,4 @@
 async function loadComponent(id, file) {
-    // Vercel aur GitHub dono ke liye path handling
     const isGitHub = window.location.pathname.includes('ParthNew');
     const basePath = isGitHub ? '/ParthNew/' : './';
     const path = isGitHub ? `/ParthNew/${file}` : `./${file}`;
@@ -34,7 +33,34 @@ function activateMobileMenu() {
     }
 }
 
-// 1. Copy Protection (Right-click & Inspect block)
+// 1. SEO, Favicon aur Fonts Injector
+function injectHeadElements() {
+    // Favicon
+    let link = document.createElement('link');
+    link.rel = 'icon';
+    link.type = 'image/png';
+    link.href = './logo.png';
+    document.head.appendChild(link);
+
+    // Google Fonts
+    let fontLink = document.createElement('link');
+    fontLink.rel = 'stylesheet';
+    fontLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap';
+    document.head.appendChild(fontLink);
+
+    // Schema.org SEO (URL updated to Vercel)
+    let schemaScript = document.createElement('script');
+    schemaScript.type = 'application/ld+json';
+    schemaScript.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ParthNew",
+        "url": window.location.origin // Ye automatic aapka current URL le lega
+    });
+    document.head.appendChild(schemaScript);
+}
+
+// 2. Copy Protection
 function enableProtection() {
     document.addEventListener('contextmenu', e => e.preventDefault());
     document.addEventListener('selectstart', e => e.preventDefault());
@@ -45,28 +71,32 @@ function enableProtection() {
     };
 }
 
-// 2. Google Analytics Dynamic Load
-function loadAnalytics() {
+// 3. Analytics & Speed Insights (Vercel & Google)
+function loadAllAnalytics() {
+    // Google Analytics
     var ga = document.createElement('script');
     ga.async = true;
     ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB';
     document.head.appendChild(ga);
-
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-S146W8G7MB');
-}
 
-// 3. Vercel Web Analytics (Speed & Visitors)
-function loadVercelAnalytics() {
+    // Vercel Web Analytics
     var va = document.createElement('script');
     va.src = '/_vercel/insights/script.js';
     va.defer = true;
     document.head.appendChild(va);
+
+    // Vercel Speed Insights (Specifically for performance tracking)
+    var vsi = document.createElement('script');
+    vsi.src = '/_vercel/speed-insights/script.js';
+    vsi.defer = true;
+    document.head.appendChild(vsi);
 }
 
-// 4. PWA Service Worker Registration
+// 4. PWA Service Worker
 function registerPWA() {
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
@@ -77,10 +107,10 @@ function registerPWA() {
     }
 }
 
-// --- Sabhi Functions ko Execute Karna ---
+// --- All Executions ---
+injectHeadElements();
 loadComponent('navbar-placeholder', 'navbar.html');
 loadComponent('footer-placeholder', 'footer.html');
 enableProtection();
-loadAnalytics();
-loadVercelAnalytics();
+loadAllAnalytics();
 registerPWA();
