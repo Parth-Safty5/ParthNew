@@ -1,9 +1,7 @@
 async function loadComponent(id, file) {
-    // GitHub Pages ke sub-folder (ParthNew) ko handle karne ke liye path logic
-    const repoName = 'ParthNew';
-    const path = window.location.pathname.includes(repoName) ? `/${repoName}/${file}` : `/${file}`;
-
-    console.log("Fetching: " + path); // Debugging ke liye
+    // Ye line check karti hai ki hum GitHub subfolder mein hain ya Netlify root mein
+    const isGitHub = window.location.pathname.includes('ParthNew');
+    const path = isGitHub ? `/ParthNew/${file}` : `./${file}`;
 
     try {
         const response = await fetch(path);
@@ -12,10 +10,10 @@ async function loadComponent(id, file) {
         document.getElementById(id).innerHTML = data;
         console.log(file + " loaded successfully!");
     } catch (error) {
-        console.error("Error loading " + file, error);
+        console.error("Error loading " + file + ":", error);
     }
 }
 
-// Dono components load karein
+// Dono ko load karein
 loadComponent('navbar-placeholder', 'navbar.html');
 loadComponent('footer-placeholder', 'footer.html');
