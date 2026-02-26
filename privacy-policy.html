@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Education Portal</title>
+    
+    <title>Privacy Policy - ParthNew Education Portal</title>
+    <meta name="description" content="Privacy Policy for ParthNew. Learn how we collect, use, and protect your data while you access SSC workshop answers and educational content.">
+    <link rel="canonical" href="https://parthnew.vercel.app/privacy-policy">
+
+    <script src="/load-common.js" defer></script>
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             min-height: 100vh;
-            padding: 20px;
         }
 
-        .about-card {
+        .policy-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .policy-card {
             background: white;
-            max-width: 700px;
+            max-width: 750px;
+            width: 100%;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
@@ -46,20 +58,15 @@
             line-height: 1.8;
         }
 
-        .content h3 {
-            color: #007bff;
-            border-left: 4px solid #00d4ff;
-            padding-left: 10px;
-            margin-top: 25px;
-        }
-
         .highlight-box {
             background: #eef7ff;
             border-radius: 10px;
-            padding: 15px;
+            padding: 25px;
             margin: 20px 0;
             border-right: 4px solid #007bff;
         }
+
+        .highlight-box b { color: #007bff; display: block; margin-top: 15px; }
 
         .footer-btn {
             text-align: center;
@@ -75,6 +82,7 @@
             border-radius: 30px;
             font-weight: bold;
             transition: 0.3s;
+            display: inline-block;
         }
 
         .btn:hover {
@@ -90,77 +98,43 @@
 </head>
 <body>
 
-    <div class="about-card">
-        <div class="header-banner">
-            <h1>Privacy Policy</h1>
-        </div>
+    <div id="navbar-placeholder"></div>
 
-        <div class="content">
-            <p>Last Updated: 29/12/2025<br>
-At Parth New, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by us and how we use it.</p>
-
-            <div class="highlight-box">
-                <ul>
-<b>1. Information We Collect</b><br>
-<li>We do not ask for personal information unless it is truly needed.
-<li>If you contact us directly, we may receive information like your name, email address, and the contents of your message.
-<li>We may collect non-personal information like browser type, device type, and the pages you visit to improve user experience.<br>
-<br><b>2. Cookies and Web Beacons</b><br>
-Like any other website, we use 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content.<br>
-<br><b>3. Google DoubleClick DART Cookie</b><br>
-Google is one of the third-party vendors on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to our site and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy.<br>
-<br><b>4. Educational Content Disclaimer</b><br>
-<li>The answers provided on this website are for educational and reference purposes only.
-<li>We provide typed solutions to help students understand the concepts.
-<li>We do not claim ownership of the questions sourced from the Maharashtra State Board or any specific publishers.
-<li>Students are encouraged to use these answers as a guide and complete their books with their own understanding.<br>
-<br><b>5. Third-Party Privacy Policies</b><br>
-Our Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information.<br>
-<br><b>6. Consent</b><br>
-By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.</br>
-            </ul>
+    <div class="policy-wrapper">
+        <div class="policy-card">
+            <div class="header-banner">
+                <h1>Privacy Policy</h1>
             </div>
 
-                   </div>
-        <div class="footer-btn">
-            <a href="index.html" class="btn">Back to Home</a>
+            <div class="content">
+                <p><strong>Last Updated:</strong> 26/02/2026</p>
+                <p>At <strong>ParthNew</strong>, your privacy is our priority. This document outlines how we collect and use information to improve your learning experience.</p>
+
+                <div class="highlight-box">
+                    <b>1. Information We Collect</b>
+                    <p>We only collect basic info like browser type or device type to ensure our website works perfectly on your phone. If you contact us via email, we use that only to reply to your queries.</p>
+
+                    <b>2. Cookies and Web Beacons</b>
+                    <p>We use cookies to remember your preferences. This helps the website load faster for you next time.</p>
+
+                    <b>3. Google DoubleClick DART Cookie</b>
+                    <p>As a third-party vendor, Google may use DART cookies to show ads based on your interests. You can opt-out by visiting the Google Ad settings.</p>
+
+                    <b>4. Educational Disclaimer</b>
+                    <p>Our solutions for Maharashtra State Board are typed by us to help you understand better. We respect the copyright of the original textbook publishers.</p>
+
+                    <b>5. Consent</b>
+                    <p>By using <strong>ParthNew</strong>, you agree to our privacy policy and terms.</p>
+                </div>
+            </div>
+
+            <div class="footer-btn">
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
         </div>
-<style>
-  .mini-footer {
-    background-color: blue; /* Gray background */
-    padding: 15px 0;
-    text-align: center;
-    font-family: sans-serif;
-    border-top: 1px solid #ddd;
-  }
-
-  .footer-link {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
-
-  .footer-link:hover {
-    color: yellow; /* Hover karne par yellow ho jayega */
-    text-decoration: underline;
-  }
-
-  .separator {
-    color: #ccc;
-  }
-</style>
-
-<footer class="mini-footer">
-  <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-  <span class="separator">|</span>
-  <a href="contact.html" class="footer-link">Contact Us</a>
-  <span class="separator">|</span>
-  <a href="index.html" class="footer-link">© 2026 ParthNew</a>
-</footer>
     </div>
 
+    <div id="footer-placeholder"></div>
 
 </body>
 </html>

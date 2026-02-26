@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disclaimer - Education Portal</title>
+    
+    <title>Disclaimer - ParthNew Educational Portal</title>
+    <meta name="description" content="Read the disclaimer for ParthNew. We provide educational solutions for Std 9th and 10th for informational purposes only.">
+    <link rel="canonical" href="https://parthnew.vercel.app/disclaimer">
+
+    <script src="/load-common.js" defer></script>
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .disclaimer-wrapper {
+            flex: 1;
+            display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .disclaimer-card {
             background: white;
-            max-width: 700px;
+            max-width: 750px;
+            width: 100%;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
@@ -46,17 +58,10 @@
             line-height: 1.8;
         }
 
-        .content h3 {
-            color: #007bff;
-            border-left: 4px solid #00d4ff;
-            padding-left: 10px;
-            margin-top: 25px;
-        }
-
         .highlight-box {
             background: #eef7ff;
             border-radius: 10px;
-            padding: 15px;
+            padding: 25px;
             margin: 20px 0;
             border-right: 4px solid #007bff;
         }
@@ -75,6 +80,7 @@
             border-radius: 30px;
             font-weight: bold;
             transition: 0.3s;
+            display: inline-block;
         }
 
         .btn:hover {
@@ -90,66 +96,35 @@
 </head>
 <body>
 
-    <div class="disclaimer-card">
-        <div class="header-banner">
-            <h1>Disclaimer</h1>
-        </div>
+    <div id="navbar-placeholder"></div>
 
-        <div class="content">
-            <p>Welcome to ParthNew.<br>
-​The information provided on this website is for educational and informational purposes only.</p>
+    <div class="disclaimer-wrapper">
+        <div class="disclaimer-card">
+            <div class="header-banner">
+                <h1>Disclaimer</h1>
+            </div>
 
-            <div class="highlight-box">
+            <div class="content">
+                <p>Welcome to <strong>ParthNew</strong>. The information provided on this website is for educational and informational purposes only.</p>
 
-<b>1. Educational Purpose</b><br>
-​The solutions and answers provided for various books (English, Marathi, etc.) are created to help students understand their curriculum better. We aim to support the student community in their learning process.<br><br>
-<b>​2. Content Ownership & Copyright</b><br>
-​<b>Questions:</b> All questions, logos, and trademarks belong to their respective textbook/Exercise  publishers (e.g., Balbharati, Navneet, etc.). We do not claim any ownership over the original questions.<br>
-​<b>Answers:</b> The answers and explanations provided are our original work or gathered from educational sources to provide guidance.<br>
-​​<b>Fair Use: ​</b>This content is shared under the 'Fair Use' doctrine for educational assistance.<br><br>
-​<b>3. Accuracy of Information</b><br>
-​While we strive to provide 100% accurate and verified answers, we do not guarantee that all information is free of errors. We recommend students to verify the answers with their school teachers or official textbooks.<br><br>
-​<b>4. No Affiliation</b><br>
-​ParthNew is an independent educational platform. We are not officially affiliated, associated, or endorsed by any school board or publishing house.
+                <div class="highlight-box">
+                    <p><b>1. Educational Purpose:</b> The solutions provided are to help students understand their curriculum better. We aim to support the student community in their learning process.</p>
+                    <br>
+                    <p><b>2. Content Ownership:</b> All textbook questions belong to their respective publishers (e.g., Balbharati). We do not claim ownership over original questions. Our answers are shared under 'Fair Use'.</p>
+                    <br>
+                    <p><b>3. Accuracy:</b> While we strive for 100% accuracy, we recommend students verify answers with teachers or official textbooks.</p>
+                    <br>
+                    <p><b>4. No Affiliation:</b> ParthNew is an independent platform and not officially endorsed by any school board.</p>
+                </div>
+            </div>
 
-                   </div>
-<div class="footer-btn">
-            <a href="index.html" class="btn">Back to Home</a>
+            <div class="footer-btn">
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
         </div>
     </div>
-<style>
-  .mini-footer {
-    background-color: blue; /* Gray background */
-    padding: 15px 0;
-    text-align: center;
-    font-family: sans-serif;
-    border-top: 1px solid #ddd;
-  }
 
-  .footer-link {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
+    <div id="footer-placeholder"></div>
 
-  .footer-link:hover {
-    color: yellow; /* Hover karne par yellow ho jayega */
-    text-decoration: underline;
-  }
-
-  .separator {
-    color: #ccc;
-  }
-</style>
-
-<footer class="mini-footer">
-  <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-  <span class="separator">|</span>
-  <a href="contact.html" class="footer-link">Contact Us</a>
-  <span class="separator">|</span>
-  <a href="index.html" class="footer-link">© 2026 ParthNew</a>
-</footer>
 </body>
 </html>

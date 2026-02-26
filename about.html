@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Education Portal</title>
     
-<style>
+    <title>About Us - ParthNew Education Portal</title>
+    <meta name="description" content="Meet Parth, the founder of ParthNew. Learn about our mission to provide free, high-quality Std 9th & 10th solutions and writing skills for Maharashtra Board students.">
+    <link rel="canonical" href="https://parthnew.vercel.app/about">
+
+    <script src="/load-common.js" defer></script>
+
+    <style>
+        /* Base Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column; /* Placeholder loading ke liye zaroori */
+        }
+
+        /* Container for About Content */
+        .about-wrapper {
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .about-card {
             background: white;
             max-width: 700px;
+            width: 100%;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
@@ -76,6 +89,7 @@
             border-radius: 30px;
             font-weight: bold;
             transition: 0.3s;
+            display: inline-block;
         }
 
         .btn:hover {
@@ -91,67 +105,41 @@
 </head>
 <body>
 
-    <div class="about-card">
-        <div class="header-banner">
-            <h1>About Us</h1>
-        </div>
+    <div id="navbar-placeholder"></div>
 
-        <div class="content">
-            <p>Welcome! I am <strong>Parth</strong>, a dedicated content creator and the founder of this portal. My mission is to simplify learning for students.</p>
-
-            <div class="highlight-box">
-                I also run a YouTube channel, <strong>Parth New</strong>, where I answer complex topics through engaging video.
+    <div class="about-wrapper">
+        <div class="about-card">
+            <div class="header-banner">
+                <h1>About Us</h1>
             </div>
 
-            <h3>Our Goal</h3>
-            <p>We provide accurate and easy-to-follow <strong>Workshop and Exercise Answers</strong> for Std 9th and 10th and also some Writing Skills. We believe that every student deserves access to quality educational resources for free.</p>
+            <div class="content">
+                <p>Welcome! I am <strong>Parth</strong>, a dedicated content creator and the founder of this portal. My mission is to simplify learning for students.</p>
 
-            <h3>What We Provide</h3>
-            <ul>
-                <li>Step-by-step Workshop and Exercise Solutions</li>
-                <li>Knowledge for Students</li>
-            </ul>
+                <div class="highlight-box">
+                    I also run a YouTube channel, <strong>Parth New</strong>, where I answer complex topics through engaging videos.
+                </div>
 
-            <p>Thank you for being part of our journey. Together, let's make education accessible and fun!</p>
+                <h3>Our Goal</h3>
+                <p>We provide accurate and easy-to-follow <strong>Workshop and Exercise Answers</strong> for Std 9th and 10th. We believe that every student deserves access to quality educational resources for free.</p>
+
+                <h3>What We Provide</h3>
+                <ul>
+                    <li>Step-by-step Workshop and Exercise Solutions</li>
+                    <li>Writing Skills Tips & Formats</li>
+                    <li>Simplified Educational Knowledge</li>
+                </ul>
+
+                <p>Thank you for being part of our journey. Together, let's make education accessible and fun!</p>
+            </div>
+
+            <div class="footer-btn">
+                <a href="index.html" class="btn">Explore Home</a>
+            </div>
         </div>
-
-        <div class="footer-btn">
-            <a href="index.html" class="btn">Back to Home</a>
-        </div>
-<style>
-  .mini-footer {
-    background-color: blue; /* Gray background */
-    padding: 15px 0;
-    text-align: center;
-    font-family: sans-serif;
-    border-top: 1px solid #ddd;
-  }
-
-  .footer-link {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
-
-  .footer-link:hover {
-    color: yellow; /* Hover karne par yellow ho jayega */
-    text-decoration: underline;
-  }
-
-  .separator {
-    color: #ccc;
-  }
-</style>
-
-<footer class="mini-footer">
-  <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-  <span class="separator">|</span>
-  <a href="contact.html" class="footer-link">Contact Us</a>
-  <span class="separator">|</span>
-  <a href="index.html" class="footer-link">© 2026 ParthNew</a>
-</footer>
     </div>
+
+    <div id="footer-placeholder"></div>
+
 </body>
 </html>

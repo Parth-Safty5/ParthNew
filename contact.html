@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Education Portal</title>
+    
+    <title>Contact Us - ParthNew Education Portal</title>
+    <meta name="description" content="Have questions or suggestions? Connect with ParthNew founder, Parth, via email or our YouTube channel. We are here to help SSC students.">
+    <link rel="canonical" href="https://parthnew.vercel.app/contact">
+
+    <script src="/load-common.js" defer></script>
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .contact-wrapper {
+            flex: 1;
+            display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
         .contact-card {
             background: white;
             max-width: 700px;
+            width: 100%;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
@@ -46,19 +58,34 @@
             line-height: 1.8;
         }
 
-        .content h3 {
-            color: #007bff;
-            border-left: 4px solid #00d4ff;
-            padding-left: 10px;
-            margin-top: 25px;
-        }
-
         .highlight-box {
             background: #eef7ff;
             border-radius: 10px;
-            padding: 15px;
+            padding: 20px;
             margin: 20px 0;
             border-right: 4px solid #007bff;
+        }
+
+        .highlight-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlight-box li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
         }
 
         .footer-btn {
@@ -75,6 +102,7 @@
             border-radius: 30px;
             font-weight: bold;
             transition: 0.3s;
+            display: inline-block;
         }
 
         .btn:hover {
@@ -90,63 +118,34 @@
 </head>
 <body>
 
-    <div class="contact-card">
-        <div class="header-banner">
-            <h1>Contact us</h1>
-        </div>
+    <div id="navbar-placeholder"></div>
 
-        <div class="content">
-            <p>Welcome! I am <strong>Parth</strong>, If you like our solutions then, you can connect with me at:</p>
-
-            <div class="highlight-box">
-                <ul>
-                 <li> Our YouTube channel, <strong>Parth New</strong></li>
-                 <li> Email Address, <strong>parthsafty5@gmail.com</strong></li>
-            </ul>
+    <div class="contact-wrapper">
+        <div class="contact-card">
+            <div class="header-banner">
+                <h1>Contact us</h1>
             </div>
 
-            <p>Thank you for being part of our journey. Together, let's make education accessible and fun!</p>
+            <div class="content">
+                <p>Welcome! I am <strong>Parth</strong>. If you find our solutions helpful or have any queries, feel free to connect with me:</p>
+
+                <div class="highlight-box">
+                    <ul>
+                        <li>📺 <strong>YouTube:</strong> <a href="https://www.youtube.com/@Parth_New" target="_blank" class="contact-link">Parth New</a></li>
+                        <li>📧 <strong>Email:</strong> <a href="mailto:parthsafty5@gmail.com" class="contact-link">parthsafty5@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <p>We are constantly working to make education accessible and fun for every student. Your feedback helps us grow!</p>
+            </div>
+
+            <div class="footer-btn">
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
         </div>
-
-        <div class="footer-btn">
-            <a href="index.html" class="btn">Back to Home</a>
-        </div>
-<style>
-  .mini-footer {
-    background-color: blue; /* Gray background */
-    padding: 15px 0;
-    text-align: center;
-    font-family: sans-serif;
-    border-top: 1px solid #ddd;
-  }
-
-  .footer-link {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
-
-  .footer-link:hover {
-    color: yellow; /* Hover karne par yellow ho jayega */
-    text-decoration: underline;
-  }
-
-  .separator {
-    color: #ccc;
-  }
-</style>
-
-<footer class="mini-footer">
-  <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-  <span class="separator">|</span>
-  <a href="contact.html" class="footer-link">Contact Us</a>
-  <span class="separator">|</span>
-  <a href="index.html" class="footer-link">© 2026 ParthNew</a>
-</footer>
-
     </div>
+
+    <div id="footer-placeholder"></div>
 
 </body>
 </html>
