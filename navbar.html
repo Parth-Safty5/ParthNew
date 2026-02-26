@@ -1,77 +1,26 @@
 <style>
-    /* Desktop Styles */
-    .main-nav {
-        background: #ffffff;
-        padding: 0 10%;
-        height: 75px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        font-family: 'Roboto', sans-serif;
-    }
+    /* ... (baaki purana CSS wahi rakhein) ... */
 
-    .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
-    .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
-    .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; margin: 0; }
-    .logo h3 span { color: #ffc107; }
-
-    /* Desktop Menu */
-    .nav-links { display: flex; list-style: none; padding: 0; margin: 0; }
-    .nav-links li a {
-        text-decoration: none;
-        color: #333;
-        margin-left: 25px;
-        font-weight: 500;
-        transition: 0.3s;
-    }
-    .nav-links li a:hover { color: #004aad; }
-
-    /* Hamburger Icon (Initially Hidden) */
-    .hamburger {
-        display: none;
-        cursor: pointer;
-        flex-direction: column;
-        gap: 5px;
-    }
-    .hamburger span {
-        display: block;
-        width: 28px;
-        height: 3px;
-        background: #333;
-        border-radius: 3px;
-        transition: 0.3s;
-    }
-
-    /* Mobile Responsive Logic */
     @media (max-width: 768px) {
-        .main-nav { padding: 0 5%; height: 70px; }
-        .hamburger { display: flex; } /* Icon dikhao */
+        .main-nav { padding: 0 5%; height: 70px; display: flex; justify-content: space-between; align-items: center; }
+        .hamburger { display: flex; z-index: 1001; }
 
         .nav-links {
             position: fixed;
             top: 70px;
-            right: -100%; /* Shuru mein screen ke bahar */
+            right: -100%; /* Shuru mein bahar */
             width: 70%;
-            height: calc(100vh - 70px);
+            height: 100vh;
             background: #fff;
             flex-direction: column;
             align-items: center;
             padding-top: 50px;
             gap: 25px;
-            transition: 0.4s;
-            box-shadow: -5px 5px 15px rgba(0,0,0,0.1);
+            transition: 0.4s all ease; /* Animation ke liye */
+            box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+            display: flex; 
         }
 
-        .nav-links.active {
-            right: 0; /* Click karne par andar aayega */
-        }
-
-        .nav-links li a { margin-left: 0; font-size: 18px; }
-        
         /* Hamburger Animation */
         .hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
         .hamburger.active span:nth-child(2) { opacity: 0; }
@@ -81,16 +30,12 @@
 
 <nav class="main-nav">
     <a href="index.html" class="logo">
-        <img src="logo.png" alt="ParthNew Logo" class="logo-img">
+        <img src="logo.png" alt="Logo" class="logo-img">
         <h3>Parth<span>New</span></h3>
     </a>
-
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="hamburger">
+        <span></span><span></span><span></span>
     </div>
-
     <ul class="nav-links" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -98,4 +43,3 @@
         <li><a href="privacy-policy.html">Privacy Policy</a></li>
     </ul>
 </nav>
-
