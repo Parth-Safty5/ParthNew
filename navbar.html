@@ -1,7 +1,7 @@
 <style>
-    /* Navigation Styles */
+    /* Desktop Styles */
     .main-nav {
-        background: #fff;
+        background: #ffffff;
         padding: 0 10%;
         height: 75px;
         display: flex;
@@ -14,12 +14,40 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
-    .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
-    .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; margin: 0; }
-    .logo h3 span { color: #ffc107; margin-left: 2px; }
+    .logo { 
+        display: flex; 
+        align-items: center; 
+        text-decoration: none; 
+        gap: 12px; 
+    }
+    
+    .logo-img { 
+        height: 50px; 
+        width: 50px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        border: 2px solid #ddd; 
+    }
+    
+    .logo h3 { 
+        font-size: 1.6rem; 
+        font-weight: 700; 
+        color: #000; 
+        margin: 0; 
+    }
+    
+    .logo h3 span { 
+        color: #ffc107; 
+        margin-left: 2px; 
+    }
 
-    .nav-links { display: flex; list-style: none; padding: 0; margin: 0; }
+    .nav-links { 
+        display: flex; 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+    }
+    
     .nav-links li a {
         text-decoration: none;
         color: #333;
@@ -27,14 +55,45 @@
         font-weight: 500;
         transition: 0.3s;
     }
-    .nav-links li a:hover { color: #004aad; }
+    
+    .nav-links li a:hover { 
+        color: #004aad; 
+    }
 
-    /* Mobile Responsive */
+    /* Mobile Responsive Section */
     @media (max-width: 768px) {
-        .main-nav { padding: 0 5%; height: auto; padding: 10px 5%; flex-direction: column; }
-        .nav-links { display: flex; margin-top: 10px; flex-wrap: wrap; justify-content: center; }
-        .nav-links li a { margin: 0 10px; font-size: 14px; }
-        .logo-img { height: 40px; width: 40px; }
+        .main-nav { 
+            padding: 15px 5%; 
+            flex-direction: column; 
+            height: auto; /* Mobile par height auto rakhein taaki content fit ho jaye */
+        }
+        
+        .nav-links { 
+            flex-direction: column; /* Links ek ke niche ek aayenge */
+            width: 100%;
+            text-align: center;
+            gap: 12px;
+            margin-top: 15px;
+            display: flex; /* Pakka karein ki mobile par links dikhein */
+        }
+        
+        .nav-links li {
+            width: 100%;
+        }
+
+        .nav-links li a { 
+            margin: 0; 
+            display: block;
+            padding: 10px;
+            background: #f8f9fa; /* Buttons jaisa clean look */
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        .logo-img {
+            height: 45px;
+            width: 45px;
+        }
     }
 </style>
 
@@ -55,4 +114,5 @@
     function toggleNav() { document.getElementById("navLinks").classList.toggle("active"); }
 
 </script>
+
 
