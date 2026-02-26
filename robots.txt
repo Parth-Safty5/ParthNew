@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://parthnew.netlify.app/sitemap.xml
+
+Sitemap: https://parth-new.vercel.app/sitemap.xml
