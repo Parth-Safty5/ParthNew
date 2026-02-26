@@ -1,16 +1,65 @@
 <style>
-    .site-footer { background: #003087; color: white; padding: 40px 10%; text-align: center; font-family: 'Roboto', sans-serif; }
-    .f-links { margin-bottom: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-    .f-links a { color: #fff; text-decoration: none; opacity: 0.8; font-size: 14px; }
-    .f-links a:hover { opacity: 1; text-decoration: underline; }
-    .f-copy { font-size: 13px; opacity: 0.6; margin-top: 15px; }
+    .mini-footer {
+        background: #003087; /* Aapka secondary blue color */
+        padding: 40px 0;
+        text-align: center;
+        margin-top: 50px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+
+    .footer-links-container {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-link {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        opacity: 0.8;
+        transition: 0.3s;
+        padding: 5px 10px;
+    }
+
+    .footer-link:hover {
+        color: #ffc107; /* Accent yellow */
+        opacity: 1;
+    }
+
+    .footer-separator {
+        color: rgba(255, 255, 255, 0.3);
+        display: inline;
+    }
+
+    .copyright-text {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0;
+    }
+
+    /* Mobile view ke liye adjustment */
+    @media (max-width: 768px) {
+        .footer-links-container {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footer-separator {
+            display: none; /* Mobile par separator ki zarurat nahi */
+        }
+    }
 </style>
 
-<footer class="site-footer">
-    <div class="f-links">
-        <a href="/disclaimer.html">Disclaimer</a>
-        <a href="/contact.html">Contact Us</a>
-        <a href="/privacy-policy.html">Privacy Policy</a>
+<footer class="mini-footer">
+    <div class="footer-links-container">
+        <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+        <span class="footer-separator">|</span>
+        <a href="contact.html" class="footer-link">Contact Us</a>
+        <span class="footer-separator">|</span>
+        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
     </div>
-    <p class="f-copy">&copy; 2026 ParthNew | Excellence in Learning</p>
+    <p class="copyright-text">© 2026 ParthNew | Excellence in Learning</p>
 </footer>
