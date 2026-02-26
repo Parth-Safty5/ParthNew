@@ -14,40 +14,13 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    .logo { 
-        display: flex; 
-        align-items: center; 
-        text-decoration: none; 
-        gap: 12px; 
-    }
-    
-    .logo-img { 
-        height: 50px; 
-        width: 50px; 
-        border-radius: 50%; 
-        object-fit: cover; 
-        border: 2px solid #ddd; 
-    }
-    
-    .logo h3 { 
-        font-size: 1.6rem; 
-        font-weight: 700; 
-        color: #000; 
-        margin: 0; 
-    }
-    
-    .logo h3 span { 
-        color: #ffc107; 
-        margin-left: 2px; 
-    }
+    .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+    .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
+    .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; margin: 0; }
+    .logo h3 span { color: #ffc107; }
 
-    .nav-links { 
-        display: flex; 
-        list-style: none; 
-        padding: 0; 
-        margin: 0; 
-    }
-    
+    /* Desktop Menu */
+    .nav-links { display: flex; list-style: none; padding: 0; margin: 0; }
     .nav-links li a {
         text-decoration: none;
         color: #333;
@@ -55,45 +28,54 @@
         font-weight: 500;
         transition: 0.3s;
     }
-    
-    .nav-links li a:hover { 
-        color: #004aad; 
+    .nav-links li a:hover { color: #004aad; }
+
+    /* Hamburger Icon (Initially Hidden) */
+    .hamburger {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .hamburger span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: #333;
+        border-radius: 3px;
+        transition: 0.3s;
     }
 
-    /* Mobile Responsive Section */
+    /* Mobile Responsive Logic */
     @media (max-width: 768px) {
-        .main-nav { 
-            padding: 15px 5%; 
-            flex-direction: column; 
-            height: auto; /* Mobile par height auto rakhein taaki content fit ho jaye */
-        }
-        
-        .nav-links { 
-            flex-direction: column; /* Links ek ke niche ek aayenge */
-            width: 100%;
-            text-align: center;
-            gap: 12px;
-            margin-top: 15px;
-            display: flex; /* Pakka karein ki mobile par links dikhein */
-        }
-        
-        .nav-links li {
-            width: 100%;
+        .main-nav { padding: 0 5%; height: 70px; }
+        .hamburger { display: flex; } /* Icon dikhao */
+
+        .nav-links {
+            position: fixed;
+            top: 70px;
+            right: -100%; /* Shuru mein screen ke bahar */
+            width: 70%;
+            height: calc(100vh - 70px);
+            background: #fff;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            gap: 25px;
+            transition: 0.4s;
+            box-shadow: -5px 5px 15px rgba(0,0,0,0.1);
         }
 
-        .nav-links li a { 
-            margin: 0; 
-            display: block;
-            padding: 10px;
-            background: #f8f9fa; /* Buttons jaisa clean look */
-            border-radius: 8px;
-            border: 1px solid #eee;
+        .nav-links.active {
+            right: 0; /* Click karne par andar aayega */
         }
 
-        .logo-img {
-            height: 45px;
-            width: 45px;
-        }
+        .nav-links li a { margin-left: 0; font-size: 18px; }
+        
+        /* Hamburger Animation */
+        .hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
     }
 </style>
 
@@ -102,7 +84,14 @@
         <img src="logo.png" alt="ParthNew Logo" class="logo-img">
         <h3>Parth<span>New</span></h3>
     </a>
-    <ul class="nav-links">
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="navMenu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
@@ -111,8 +100,10 @@
 </nav>
 
 <script>
-    function toggleNav() { document.getElementById("navLinks").classList.toggle("active"); }
-
+    function toggleMenu() {
+        const menu = document.getElementById('navMenu');
+        const icon = document.querySelector('.hamburger');
+        menu.classList.toggle('active');
+        icon.classList.toggle('active');
+    }
 </script>
-
-
