@@ -1,1373 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Std 9th 3.4 Think before you Speak English Workshop Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Class 9th English - 3.4 Think before you Speak | English Workshop | ParthNew</title>
+    <meta name="description" content="Discover Class 9th English Chapter 3.4 Think before you Speak with complete English Workshop solutions, summaries, grammar activities, question answers, and detailed explanations. Ideal study resource for students, teachers, and exam preparation by ParthNew.">
+    <meta name="keywords" content="Class 9th English Chapter 3.4 Think before you Speak, Class 9 English Think before you Speak summary, Class 9 English Think before you Speak workshop solutions, Class 9 English Think before you Speak question answers, Class 9 English Think before you Speak grammar activities, Class 9 English Think before you Speak textbook explanation, Class 9 English Think before you Speak notes for students, Class 9 English Think before you Speak Maharashtra Board solutions, Class 9 English Think before you Speak detailed analysis, Class 9 English Think before you Speak exam preparation material, Class 9 English Think before you Speak important questions, Class 9 English Think before you Speak full chapter explanation, Class 9 English Think before you Speak English Workshop activities, Class 9 English Think before you Speak solved exercises, Class 9 English Think before you Speak study guide, Class 9 English Think before you Speak lesson plan for teachers, Class 9 English Think before you Speak practice questions, Class 9 English Think before you Speak comprehension answers, Class 9 English Think before you Speak grammar practice, Class 9 English Think before you Speak vocabulary exercises, Class 9 English Think before you Speak online study material, Class 9 English Think before you Speak ParthNew solutions, Class 9 English Think before you Speak chapter notes, Class 9 English Think before you Speak detailed workshop answers">
+    <meta name="author" content="ParthNew">
+    
+    <script src="/load-common.js" defer></script>
+
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; color: #333; line-height: 1.6; padding: 20px; }
-        .workbook-page { max-width: 1100px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        
-        /* Heading Section */
-        .chapter-head { border-bottom: 3px solid #2d3436; padding-bottom: 10px; margin-bottom: 30px; }
-        .chapter-head h1 { font-size: 24px; color: #2d3436; }
-        .unit-tag { background: #dfe6e9; padding: 3px 10px; font-size: 12px; font-weight: bold; border-radius: 4px; }
-
-        /* Question Box */
-        .question-row { margin-bottom: 25px; }
-        .q-text { font-weight: 600; font-size: 17px; margin-bottom: 8px; display: block; color: #0984e3; }
-        
-        /* Answer Area */
-        .ans-box { 
-            background: #f9f9f9; 
-            border-left: 4px solid #b2bec3; 
-            padding: 15px; 
-            font-size: 16px; 
-            color: #2d3436;
-        }
-
-        /* Grammar Table */
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background-color: #f1f2f6; }
-
-        .highlight { color: #d63031; font-weight: bold; } /* For underlining/highlighting specific words */
-        
-        @media (max-width: 600px) { .workbook-page { padding: 20px; } }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f8; padding: 0; margin:0; line-height:1.6; color:#333; }
+        .container { max-width: 850px; margin: auto; padding: 25px 15px; position: relative; min-height: 80vh; }
+        .back-btn { position: absolute; top: 25px; right: 15px; background: #0056b3; color: white; text-decoration: none; padding: 10px 18px; border-radius: 6px; font-weight: bold; font-size: 0.9rem; z-index: 10; transition: 0.3s; }
+        .back-btn:hover { background: #003d82; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .main-title { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin: 65px 0 35px; border-bottom: 6px solid #0056b3; text-align: center; }
+        .main-title h1 { margin:0; font-size: 1.8rem; color: #111; }
+        .q-card { background: white; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 3px 15px rgba(0,0,0,0.06); overflow: hidden; border: 1px solid #eee; }
+        .q-header { padding: 22px; cursor: pointer; font-size: 1.15rem; color:#111; font-weight: 500; }
+        .ans-panel { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0, 1, 0, 1); background: #fcfcfc; }
+        .ans-body { padding: 20px; border-left: 6px solid #28a745; margin: 15px; background: white; border-radius: 4px; box-shadow: inset 0 0 10px rgba(0,0,0,0.02); }
+        .btn-toggle { width: 100%; padding: 14px; border: none; background: #f9f9f9; color: #0056b3; font-weight: bold; cursor: pointer; border-top: 1px solid #eee; transition: 0.3s; }
+        .btn-toggle:hover { background: #f0f7ff; }
+        .topic-note { background: #e7f3ff; padding: 18px; border-radius: 10px; margin: 35px 0 20px; font-weight: bold; color: #004085; text-align: center; border: 1px solid #b8daff; font-size: 1.2rem; }
+        .nav-bar { display: flex; justify-content: space-between; margin: 50px 0 30px; }
+        .nav-btn { background: #0056b3; color: white; text-decoration: none; padding: 14px 30px; border-radius: 10px; font-weight: bold; transition: 0.3s; }
+        .nav-btn:hover { background: #003d82; transform: translateY(-2px); }
+        .footer-disclaimer { background: white; padding: 25px; text-align: center; border-radius: 12px; margin-top: 50px; border: 1px solid #ddd; font-size: 0.95rem; color: #444; }
     </style>
 </head>
 <body>
 
-<div class="workbook-page">
-    <div class="chapter-head">
-        <span class="unit-tag">UNIT 3.4</span>
-        <h1>Think Before You Speak!</h1>
-        <p>Workshop Answers - English</p>
+    <div id="navbar-placeholder"></div>
+
+    <div class="container">
+        <a href="9thEnglish.html" class="back-btn">← Back</a>
+        <div class="main-title"><h1>3.4 Think before you Speak!</h1></div>
+        
+        
+        <div class="topic-note">Warming up:</div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>Chit-chat:</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>1.	Do you write a diary?</b></div>
+                    <div style="margin-bottom:10px;">· Yes, I write a diary.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>2.	Do you write letters or notes to your friends and relatives?</b></div>
+                    <div style="margin-bottom:10px;">. No, Because all my friends and relatives have cell phones, we talk over the call whenever we wish to; now, we also take advantage of video calls.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>3.	Do you ever fight with your friends?</b></div>
+                    <div style="margin-bottom:10px;">. Yes, I fight with my friends.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>4.	Do you have arguments with your family members?</b></div>
+                    <div style="margin-bottom:10px;">· yes, many times I have arguments with my family members.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>5.	What are the arguments about?</b></div>
+                    <div style="margin-bottom:10px;">· The arguments are about many things such as behavior, for buying something.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>Read the following words which may be used in place of speak-</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;">· talk</div>
+                    <div style="margin-bottom:10px;">. utter</div>
+                    <div style="margin-bottom:10px;">· tell</div>
+                    <div style="margin-bottom:10px;">· gossip</div>
+                    <div style="margin-bottom:10px;">· introduce</div>
+                    <div style="margin-bottom:10px;">. remark on</div>
+                    <div style="margin-bottom:10px;">. chide</div>
+                    <div style="margin-bottom:10px;">· show</div>
+                    <div style="margin-bottom:10px;">· suggest</div>
+                    <div style="margin-bottom:10px;">. reflect</div>
+                    <div style="margin-bottom:10px;">. lecture</div>
+                    <div style="margin-bottom:10px;">. uphold (an opinion)</div>
+                    <div style="margin-bottom:10px;">. recommend </div>
+                    <div style="margin-bottom:10px;">. request</div>
+                    <div style="margin-bottom:10px;">. mention</div>
+                    <div style="margin-bottom:10px;">· rebuke</div>
+                    <div style="margin-bottom:10px;">. criticise </div>
+                    <div style="margin-bottom:10px;">. berate</div>
+                    <div style="margin-bottom:10px;">· indicate</div>
+                    <div style="margin-bottom:10px;">. express</div>
+                    <div style="margin-bottom:10px;">. announce </div>
+                    <div style="margin-bottom:10px;">. declare</div>
+                    <div style="margin-bottom:10px;">. voice (an opinion, etc.) </div>
+                    <div style="margin-bottom:10px;">. converse </div>
+                    <div style="margin-bottom:10px;">. say</div>
+                    <div style="margin-bottom:10px;">· chat</div>
+                    <div style="margin-bottom:10px;">· explain</div>
+                    <div style="margin-bottom:10px;">· praise</div>
+                    <div style="margin-bottom:10px;">· plead</div>
+                    <div style="margin-bottom:10px;">· discuss</div>
+                    <div style="margin-bottom:10px;">· scold</div>
+                    <div style="margin-bottom:10px;">. reproach </div>
+                    <div style="margin-bottom:10px;">. admonish</div>
+                    <div style="margin-bottom:10px;">. denote</div>
+                    <div style="margin-bottom:10px;">. communicate</div>
+                    <div style="margin-bottom:10px;">· support</div>
+                    <div style="margin-bottom:10px;">· urge</div>
+                    <div style="margin-bottom:10px;">· refer to</div>
+                    <div style="margin-bottom:10px;">. comment on</div>
+                    <div style="margin-bottom:10px;">· pull up</div>
+                    <div style="margin-bottom:10px;">. mean</div>
+                    <div style="margin-bottom:10px;">· reveal</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>(a) Tick the words you know and underline the ones that you do not know. Find their meaning and pronunciation from a good dictionary.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>. Which of these words have a positive meaning?</b></div>
+                    <div style="margin-bottom:10px;">Some words from the above list which have a positive meaning, are: talk, tell, announce, converse, say, communicate, explain, support, praise, and recommend.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>. Which of these words suggest an unpleasant context?</b></div>
+                    <div style="margin-bottom:10px;">Some words from the above list, which suggest an unpleasant context, are gossip, rebuke, chide, criticise, and admonish...</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>(b) Try to translate these words into your mother tongue to show the different shades of meaning.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;">· talk - बोलणे</div>
+                    <div style="margin-bottom:10px;">· utter- उच्चारणे</div>
+                    <div style="margin-bottom:10px;">• tell - सांगणे</div>
+                    <div style="margin-bottom:10px;">· announce - घोषणा करणे</div>
+                    <div style="margin-bottom:10px;">• declare - जाहीर करणे</div>
+                    <div style="margin-bottom:10px;">• voice (an opinion, etc.)- आवाज उठवणे(मतप्रदर्शन करणे वगैरे)</div>
+                    <div style="margin-bottom:10px;">· converse - संभाषण करणे</div>
+                    <div style="margin-bottom:10px;">· say - म्हणणे</div>
+                    <div style="margin-bottom:10px;">• chat - गप्पा मारणे</div>
+                    <div style="margin-bottom:10px;">· gossip - कुचाळक्या करणे</div>
+                    <div style="margin-bottom:10px;">• lecture - व्याख्यान देणे</div>
+                    <div style="margin-bottom:10px;">· communicate - संवाद साधणे</div>
+                    <div style="margin-bottom:10px;">· explain- स्पष्टीकरण देणे</div>
+                    <div style="margin-bottom:10px;">• uphold (an opinion) - मान्य करणे (मत)</div>
+                    <div style="margin-bottom:10px;">· support - अनुमोदन करणे</div>
+                    <div style="margin-bottom:10px;">· praise - प्रशंसा करणे</div>
+                    <div style="margin-bottom:10px;">· recommend - शिफारस करणे</div>
+                    <div style="margin-bottom:10px;">· request - विनंती करणे</div>
+                    <div style="margin-bottom:10px;">· urge - उद्युक्त करणे</div>
+                    <div style="margin-bottom:10px;">· plead- आर्जव / विनंती करणे</div>
+                    <div style="margin-bottom:10px;">• introduce - परिचय करूनदेणे</div>
+                    <div style="margin-bottom:10px;">· mention - उल्लेख करणे</div>
+                    <div style="margin-bottom:10px;">· refer to - संदर्भ देणे</div>
+                    <div style="margin-bottom:10px;">· discuss - चर्चा करणे</div>
+                    <div style="margin-bottom:10px;">· remark on - नोंद करणे</div>
+                    <div style="margin-bottom:10px;">· rebuke - दोष देणे</div>
+                    <div style="margin-bottom:10px;">· comment on - टिप्पणी देणे</div>
+                    <div style="margin-bottom:10px;">· scold - दरडावणे</div>
+                    <div style="margin-bottom:10px;">· chide - धमकावणे</div>
+                    <div style="margin-bottom:10px;">· criticise - टीका करणे</div>
+                    <div style="margin-bottom:10px;">• berate - खडसावणे</div>
+                    <div style="margin-bottom:10px;">· pull up - उचलून धरणे</div>
+                    <div style="margin-bottom:10px;">· reproach- निंदा करणे/ दूषण देणे</div>
+                    <div style="margin-bottom:10px;">· admonish - समज देणे / ताकीद देणे</div>
+                    <div style="margin-bottom:10px;">· suggest - सुचवणे</div>
+                    <div style="margin-bottom:10px;">· indicate - दाखवून देणे</div>
+                    <div style="margin-bottom:10px;">· mean- अर्थ असणे</div>
+                    <div style="margin-bottom:10px;">• denote - निर्देश करणे/दर्शवणे</div>
+                    <div style="margin-bottom:10px;">· show - प्रकट करणे/ व्यक्त करणे</div>
+                    <div style="margin-bottom:10px;">· reflect - दर्शवणे</div>
+                    <div style="margin-bottom:10px;">· express - व्यक्त होणे</div>
+                    <div style="margin-bottom:10px;">· reveal - उघड करणे</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="topic-note">English Workshop</div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>1.	The same word can be used as a noun in some sentences and as a verb in others. <br>For example, <br>1. Many are the empty remarks. ………………. (Noun) <br>2. A wise man once remarked, …………………. (Verb)</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>Make two sentences of your own with each of the words given below, using the same word as a noun in one and as a verb in another:</b></div>
+                    <div style="margin-bottom:10px;"><b>(a) Change:</b></div>
+                    <div style="margin-bottom:10px;">Answer:</div>
+                    <div style="margin-bottom:10px;">1. He experienced a big change in his life. (Noun)</div>
+                    <div style="margin-bottom:10px;">2. She changed her mind and joined them. (Verb)</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>(b) Show:</b></div>
+                    <div style="margin-bottom:10px;">Answer:</div>
+                    <div style="margin-bottom:10px;">1. The young boy hosted the television show. (Noun)</div>
+                    <div style="margin-bottom:10px;">2. They showed us the way to the post office. (Verb)</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>(c) throw:</b></div>
+                    <div style="margin-bottom:10px;">1. The naughty boy throws stones at a dog. (verb)</div>
+                    <div style="margin-bottom:10px;">2. The wicketkeeper could not catch the throw properly, (noun)</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>(d) return:</b></div>
+                    <div style="margin-bottom:10px;">1. He will return from Pune soon. (verb)</div>
+                    <div style="margin-bottom:10px;">2. I shall meet him on his return from London.(noun)</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>(e) benefit:</b></div>
+                    <div style="margin-bottom:10px;">1. He invests money in the mutual fund so that he will be benefitted in future, (verb)</div>
+                    <div style="margin-bottom:10px;">2. He is enjoying the benefits of his hard work and honesty, (noun)</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>2.	Complete the following:</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>(a) Our ears are like funnels because</b> there is no door with which you can close them.</div>
+                    <div style="margin-bottom:10px;"><b>(b) The two rows of teeth are like a fence because</b> every word you speak must pass through this wall of teeth.</div>
+                    <div style="margin-bottom:10px;"><b>(c) The two lips are like a fence because</b> before a word can be spoken, it has to pass, it has to pierce through these two walls.</div>
+                    <div style="margin-bottom:10px;"><b>(d) Harsh words are like scattered bits of paper carried away by the wind because</b> Once you have spoken a word you cannot get it back.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>3.	Write a brief summary of the story of the young man and his spiritual teacher, making the young man the narrator:<br> You may begin as given below. ‘I went quickly to my spiritual teacher for advice because I had ……………… (Now continue)</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;">The young man and his spiritual teacher I went quickly to my spiritual teacher for advice because I had hurt my friend with my harsh and unkind words. I wanted to make amends. My teacher gave me a sheet of paper and a pen and asked me to write all the harsh words I had spoken. When I did so he asked me to tear it into small bits and then throw them out of the window. When I did that he ‘i asked me to collect as many hits of paper as I could. That was impossible but I gave a try but could not collect a single torn bit. The teacher told me, that is what happens with the spoken word. He advised me to think before I speak in anger.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>4.	Translate the following sentences into your mother tongue.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>(a) The first question we must ask ourselves before we speak is - is it true?</b></div>
+                    <div style="margin-bottom:10px;">बोलण्यापूर्वी सर्वप्रथम स्वतःला पहिला प्रश्न विचारा - हे सत्य आहे का?</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>(b) The second question to ask is - is it pleasant?</b></div>
+                    <div style="margin-bottom:10px;">दुसरा प्रश्न विचारा- हे दुसऱ्याला आनंद देणारे आहे का?</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>(c) The third question according to Socrates is - is it useful?</b></div>
+                    <div style="margin-bottom:10px;">सॉक्रेटिसच्या म्हणण्यानुसार तिसरा प्रश्न विचारा- हे उपयुक्त आहे का?</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>5.	Read the following sentence.<br> ‘A very wise man once remarked that of the unspoken word you are a master, of the spoken word, you are a slave.’ <br> The sentence has two pairs of opposites – spoken and unspoken, and master and slave. The contrasting ideas make the sentence more effective. Putting together opposite or contrasting ideas in one sentence is a literary device. It is called antithesis.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>Read the following examples of antithesis.</b></div>
+                    <div style="margin-bottom:10px;">•	Give every man thy ear, but few thy voice.</div>
+                    <div style="margin-bottom:10px;">•	Man proposes, God disposes.</div>
+                    <div style="margin-bottom:10px;">•	Speech is silver, but silence is gold.</div>
+                    <div style="margin-bottom:10px;">•	Patience is bitter, but it has a sweet fruit.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>6.	Find some examples of antithesis from your mother tongue and translate them into English.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;">•	Give food, clothes, etc. to your child, but never give your earnings.</div>
+                    <div style="margin-bottom:10px;">•	Hard work is exhausting, but its benefits are pleasing.</div>
+                    <div style="margin-bottom:10px;">•	Listen to people, but do what your conscience says.</div>
+                    <div style="margin-bottom:10px;">•	Money can buy everything, but not happiness.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>7.	We have seen that clauses are parts of a sentence, and they are classified as main and subordinate or dependent clauses. Dependent clauses can be further classified as follows according to the work they do in a sentence. <br><br>How do we decide whether a clause is a noun clause, an adjective clause or an adverb clause? There is a simple rule – we can replace an adverb clause with an adverb, an adjective clause with an adjective and a noun clause with a noun.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>Look at the following examples:</b></div>
+                    <div style="margin-bottom:10px;">But I don’t know the answer. (Noun)</div>
+                    <div style="margin-bottom:10px;">But I don’t know what they want. (Noun clause)</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;">He told us a funny story. (Adjective)</div>
+                    <div style="margin-bottom:10px;">He told us a story that was funny. (Adjective clause)</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;">They went away. (Adverb)</div>
+                    <div style="margin-bottom:10px;">They went when you were talking to your friend. (Adverb clause)</div>
+                    <div style="margin-bottom:10px;"><b>Now complete the following on your own :</b></div>
+                    <div style="margin-bottom:10px;">· But I don't know <u>What they are doing here.</u></div>
+                    <div style="margin-bottom:10px;">. He told us <u>the news that was very exciting.</u></div>
+                    <div style="margin-bottom:10px;">. They went <u>When they all were taking their lunch.</u></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>8.	Think before you use! Name some ‘ready to eat’ and ‘ready to cook’ food items available in the market. Discuss the following in groups.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>(a) Discuss whether it is necessary to use such items and why they are sold.</b></div>
+                    <div style="margin-bottom:10px;">Yes, such goods are becoming increasingly vital in today's fast-paced world. They are sold because they are convenient,</div>
+                    <div style="margin-bottom:10px;">time-saving, and simple to use.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>(b) Discuss the possible adverse effects of such food items.</b></div>
+                    <div style="margin-bottom:10px;">These foods can have a variety of side effects. Stabilisers, preservatives, food colours, and other chemicals are used in</div>
+                    <div style="margin-bottom:10px;">these items to increase shelf life and preserve a consistent flavour. Some reports suggest that hazardous substances are</div>
+                    <div style="margin-bottom:10px;">utilised to enhance the taste of these foods. These substances have negative health consequences.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="topic-note">Activity: Live English: Packs, packets, pouches, wrappers</div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>(a)	Given above is the picture of an imaginary food item’s packet. Let us see how to ‘read’ the matter on the packet as a vigilant consumer. </b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>•	Look at the wrapper and complete the sentences.</b></div>
+                    <div style="margin-bottom:10px;">Answer:</div>
+                    <div style="margin-bottom:10px;">1.	The name of the food item is <u>noodles.</u></div>
+                    <div style="margin-bottom:10px;">2.	It is made by <u>Monnie Foods Corporation Ltd., Pune.</u></div>
+                    <div style="margin-bottom:10px;">3.	It is a <u>Veg</u> food item. (Veg/Non-veg)</div>
+                    <div style="margin-bottom:10px;">4.	The <u>green</u> sign indicates that i is a vegetarian food item.</div>
+                    <div style="margin-bottom:10px;">5.	The ingredients are <u>wheat flour, vegetable oil, salt, carbonates.</u></div>
+                    <div style="margin-bottom:10px;">6.	The date of packing is <u>27/6/2017</u> and the expiry date is <u>not given.</u></div>
+                    <div style="margin-bottom:10px;">7.	It should be consumed before <u>8 months</u> from the date of manufacturing.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b> •	Try and obtain more information about the various symbols printed on the packet:</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>a. Vegetarian Mark:</b></div>
+                    <div style="margin-bottom:10px;">In India, vegetarian packaged food goods must include a green dot in a square with a green border, while non-vegetarian products must have a brown dot. It should be situated such that it is immediately noticeable. The government has established several requirements for its use, including size, colour, and other factors.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>b. Resin Identification Code (Recycling code):</b></div>
+                    <div style="margin-bottom:10px;">The triangular mark with arrows (no. 7 in the centre and 'other' below) indicates the type of plastic used for food packaging and whether it is recyclable. Standardised symbols distinguish between different types of plastics. The triangle remains constant, but the number in the centre and the abbreviation inscribed underneath change.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>c. Keep Your City Clean:</b></div>
+                    <div style="margin-bottom:10px;">A man discarding something in a dustbin is the typical mark used to encourage consumers to keep the city clean. Customers are asked to dispose of packaged food in a dustbin to promote city cleanliness.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>•	Discuss the following</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>1. Why the ‘recipe’ is given on the packet:</b></div>
+                    <div style="margin-bottom:10px;">Answer: to prepare recipe fast in simple and enjoyable way/manner, proper additives, water, etc. to manage timing-preparing the food item in short time without confusion.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>2. Why the packet tells us to visit the website of the company :</b></div>
+                    <div style="margin-bottom:10px;">Answer: for complaining about the bad food product – to enquire about another food products of the company – to get more information about the food item in the packet.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>3. What ideas are used to make the packet attractive :</b></div>
+                    <div style="margin-bottom:10px;">Answer:well designed – illustrations for making recipe – separate tables for ingradients, Nutrition facts and recipe – beautiful attractive writing – clear instructions.</div>
+                    <div style="margin-bottom:10px;"><br></div>
+                    <div style="margin-bottom:10px;"><b>4. How you will verify whether something is good for you to eat:</b></div>
+                    <div style="margin-bottom:10px;">Answer:after reading information on the packet especially about ingredients and nutrition facts taste after having the food item – from reliability and genuineness of the manufacturer – popularity.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>(b)	Collect the outer coverings of fast food items. Discuss the following points in groups and then write your observations in your notebook.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;">•	Manufactured by</div>
+                    <div style="margin-bottom:10px;">•	Net weight</div>
+                    <div style="margin-bottom:10px;">•	Ingredients</div>
+                    <div style="margin-bottom:10px;">•	Veg or Non-veg</div>
+                    <div style="margin-bottom:10px;">•	Recipe</div>
+                    <div style="margin-bottom:10px;">•	Nutrition facts</div>
+                    <div style="margin-bottom:10px;">•	MRP</div>
+                    <div style="margin-bottom:10px;">•	Mfg. date</div>
+                    <div style="margin-bottom:10px;">•	Website</div>
+                    <div style="margin-bottom:10px;">•	Other instructions, if any</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>(c)	Work in groups and prepare an attractive wrapper or packet for any product of your choice. Prepare an advertisement for your product.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <img src="Images/3.4diagram.webp" alt="" style="max-width:100%; border-radius:8px; display:block; margin:15px auto; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>(d)	You want to convince the customer to buy your product. Prepare a conversation between you and the customer about it.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> Welcome to our shop. How can I help you?</div>
+                    <div style="margin-bottom:10px;"><b>•	Customer:</b> I want some quality fast food. My daughter is craving for it since morning!</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> No problem Sir. We have variety of food items in our shop. But I shall insist you to buy this ‘Mineral Noodles’.</div>
+                    <div style="margin-bottom:10px;"><b>•	Customer:</b> I haven’t heard about this.</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> Don’t worry Sir. I won’t give you any ordinary product. It is new and has become a craze in the market.</div>
+                    <div style="margin-bottom:10px;"><b>•	Customer:</b> What is special about it?</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> Yes, I tell you. It’s a purely vegetarian t food, rich with important ingredients, rarely found in other products.</div>
+                    <div style="margin-bottom:10px;"><b>•	Customer:</b> What about the taste?</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself :</b> Quite yummy. Children are greedy for it.</div>
+                    <div style="margin-bottom:10px;"><b>•	Customer:</b> Are there any chemical additives?</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> Not at all, every ingredient is natural, healthy and nutritious. No complaint this date! Its recipe is simple, easy and can be prepared in five minutes. This will be your best choice. You won’t repent, and see the price – less than any renowned products. You must buy it. </div>
+                    <div style="margin-bottom:10px;"><b>• Customer:</b> I believe your words. Pack me three packets of ‘Mineral Noodles’.</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> Here they are!</div>
+                    <div style="margin-bottom:10px;"><b>•	Customer:</b> Thank you.</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> Welcome, Sir.</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><b>(e)	Your younger sister wants to eat something tasty. You are telling her the recipe of one such food item. Prepare a dialogue about it.</b></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><b>An Instant Recipe</b></div>
+                    <div style="margin-bottom:10px;"><i>(My younger sister comes to my study room asking for something to eat, since Mom isn’t at home.)</i></div>
+                    <div style="margin-bottom:10px;"><b>•	Sister:</b> Dada! I am really hungry. Can you help me make something tasty? Mother isn’t at home.</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself: </b>I am studying right now, sis! But I surely can tell you a recipe that will delight your taste buds as well as fill your stomach.</div>
+                    <div style="margin-bottom:10px;"><b>•	Sister:</b> Thank you, Dada. So what I need to do. What will be the ingredients?</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself: </b>Nothing fancy! You need a salty, crispy biscuit packet and slices of cheese and tomato ketchup.</div>
+                    <div style="margin-bottom:10px;"><b>•	Sister:</b> Here are them all. Anything else.</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> Nothing! Now take two biscuits and cut the slice of cheese according to the size of the biscuits.</div>
+                    <div style="margin-bottom:10px;"><b>•	Sister:</b> Like this, right?</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> That’s good! Now place the cheese slice between two biscuits and dip in ketchup. Your tasty, crispy, tummy filling delight is ready.</div>
+                    <div style="margin-bottom:10px;"><b>•	Sister:</b> It is so simple! And that’s really delicious, Dada. I’ll make more of these and will arrange in this plate for me and you to enjoy. Thank you!</div>
+                    <div style="margin-bottom:10px;"><b>•	Myself:</b> It’s my pleasure!</div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        
+        
+        <div class="nav-bar">
+            <a href="E14.html" class="nav-btn">← Previous</a>
+            <a href="E16.html" class="nav-btn">Next →</a>
+        </div>
+        
+        <div class="footer-disclaimer">
+            <b>Disclaimer: </b>The questions are property of Maharashtra State Board. Solutions are provided for educational help by <b>ParthNew</b>.
+        </div>
     </div>
 
-    <div class="question-row">
-        <div class="ans-box">
-<style>
- /* Style Definitions */
- table.MsoNormalTable
-	{mso-style-name:"Table Normal";
-	mso-tstyle-rowband-size:0;
-	mso-tstyle-colband-size:0;
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-parent:"";
-	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
-	mso-para-margin-top:0cm;
-	mso-para-margin-right:0cm;
-	mso-para-margin-bottom:8.0pt;
-	mso-para-margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:Mangal;
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	mso-bidi-language:AR-SA;}
-</style>
-<![endif]--><!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="1026"/>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <o:shapelayout v:ext="edit">
-  <o:idmap v:ext="edit" data="1"/>
- </o:shapelayout></xml><![endif]-->
-</head>
-
-<body lang=EN-IN style='tab-interval:36.0pt;word-wrap:break-word'>
-
-<div class=WordSection1>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#7030A0'>Q.1
-Read the following do the activity:</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:#7030A0'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A1.
-Simple Factual Activity</span></b><span style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Complete the
-following information based on the passage:</span></b><span style='font-size:
-12.0pt;line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) Our ears are
-like funnels because</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;there is no
-door with which you can close them.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(2) The two rows
-of teeth are like a fence because</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;every
-word you speak must pass through this wall of teeth.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(3) The two lips
-are like a fence because</span></b><span style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;before
-a word can be spoken, it has to pierce through these two walls.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(4) Once you have
-spoken a word, you</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;cannot get
-it back.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span
-style='color:#FFC000'>New<o:p></o:p></span></span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A2.
-Complex Factual Activity</span></b><span style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Q. What does the
-narrator tell you about the two fences that you have to pass before speaking a
-word?</span></b><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;The narrator explains that if you wish
-to speak even a single word, that word must first pass through two
-&quot;fences.&quot; The first fence is our lips; before any word is spoken, it
-must pass through this barrier. The second fence is the rows of our teeth. This
-setup reminds us to be careful and think twice before letting any words escape.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A3.
-Activities based on Vocabulary</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) Write from
-the passage the words related to our body parts:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<ul style='margin-top:0cm' type=disc>
- <li class=MsoNormal style='mso-list:l1 level1 lfo5;tab-stops:list 36.0pt'><b><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>Ans:</span></b><span style='font-size:
-     12.0pt;line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
-     minor-latin'>&nbsp;Mouth, ears, teeth, lips<o:p></o:p></span></li>
-</ul>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(2) Write four
-words that have 'un-' as a prefix. Example - unspoken:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<ol style='margin-top:0cm' start=1 type=1>
- <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list 36.0pt'><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>unhappy<o:p></o:p></span></li>
- <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list 36.0pt'><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>uncertain<o:p></o:p></span></li>
- <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list 36.0pt'><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>uneatable<o:p></o:p></span></li>
- <li class=MsoNormal style='mso-list:l3 level1 lfo6;tab-stops:list 36.0pt'><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>unable<o:p></o:p></span></li>
-</ol>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A4.
-Activities based on Contextual Grammar</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) Make two
-sentences of your own with each of the words given below, using the same word
-as a noun in one and as a verb in another:</span></b><span style='font-size:
-12.0pt;line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<ul style='margin-top:0cm' type=disc>
- <li class=MsoNormal style='mso-list:l7 level1 lfo7;tab-stops:list 36.0pt'><b><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>Change:</span></b><span style='font-size:
-     12.0pt;line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
-     minor-latin'><o:p></o:p></span></li>
- <ul style='margin-top:0cm' type=circle>
-  <li class=MsoNormal style='mso-list:l7 level2 lfo7;tab-stops:list 72.0pt'><b><span
-      style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-      mso-bidi-theme-font:minor-latin'>(<span class=SpellE>i</span>) Noun:</span></b><span
-      style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-      mso-bidi-theme-font:minor-latin'>&nbsp;He experienced a big&nbsp;<b>change</b>&nbsp;in
-      his life.<o:p></o:p></span></li>
-  <li class=MsoNormal style='mso-list:l7 level2 lfo7;tab-stops:list 72.0pt'><b><span
-      style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-      mso-bidi-theme-font:minor-latin'>(ii) Verb:</span></b><span
-      style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-      mso-bidi-theme-font:minor-latin'>&nbsp;She&nbsp;<b>changed</b>&nbsp;her
-      mind and joined them.<o:p></o:p></span></li>
- </ul>
- <li class=MsoNormal style='mso-list:l7 level1 lfo7;tab-stops:list 36.0pt'><b><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>Show:</span></b><span style='font-size:
-     12.0pt;line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
-     minor-latin'><o:p></o:p></span></li>
- <ul style='margin-top:0cm' type=circle>
-  <li class=MsoNormal style='mso-list:l7 level2 lfo7;tab-stops:list 72.0pt'><b><span
-      style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-      mso-bidi-theme-font:minor-latin'>(<span class=SpellE>i</span>) Noun:</span></b><span
-      style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-      mso-bidi-theme-font:minor-latin'>&nbsp;The young boy hosted the
-      television&nbsp;<b>show</b>.<o:p></o:p></span></li>
-  <li class=MsoNormal style='mso-list:l7 level2 lfo7;tab-stops:list 72.0pt'><b><span
-      style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-      mso-bidi-theme-font:minor-latin'>(ii) Verb:</span></b><span
-      style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-      mso-bidi-theme-font:minor-latin'>&nbsp;They&nbsp;<b>showed</b>&nbsp;us
-      the way to the post office.<o:p></o:p></span></li>
- </ul>
-</ul>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A5.
-Personal Response</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) Was Disraeli
-trying to give a scientific reason? Was he only trying to give a message in a
-light hearted but effective way?</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Disraeli was not trying to give a
-scientific reason about why man has two ears and one mouth. Instead, he was
-offering a meaningful message for mankind. He suggested that if humans had two
-mouths and only one ear, we would talk twice as much and listen half as much,
-which would fundamentally change our nature and appearance.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(2) Write the
-biological reasons why man's ears and mouth have developed the way they are
-now.</span></b><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Ears are sensory organs designed to
-interpret sound. Having two ears allows for better &quot;binaural
-hearing,&quot; which helps in capturing sounds from all directions and locating
-their source. The mouth is primarily developed for feeding and speaking. In the
-biological evolution of animals, a single mouth is more efficient for eating,
-while dual ears are essential for gathering all surrounding sound signals for
-safety and communication.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#7030A0'>Q.
-2. Read the following passage and do the activities:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:#7030A0'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A1.
-Simple Factual Activities</span></b><span style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) Complete the
-following:</span></b><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Harsh
-words are like scattered bits of paper carried away by the wind because</b>&nbsp;<u>it
-is very difficult to take them back once they are released.</u><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>The
-young man said that he had spoken very harsh and unkind words to his friend and<u>,
-he was</u></b><u>&nbsp;deeply hurt.</u><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span></b><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(2) Who said to
-whom?</span></b><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&quot;How
-can I make amends?&quot;</b><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;The young man said to his spiritual
-teacher.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&quot;Write
-all the harsh things you said to him.&quot;</b><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;The teacher said to the young man.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A2.
-Complex Factual Activity</span></b><span style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Q. How did the
-spiritual teacher teach a lesson to the young man about his harsh and unkind
-words to his friend?</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>Ans: the teacher gave the young man a
-sheet of paper and a pen and asked him to write down all the harsh unkind
-words. He had spoken to his friend, when they had written, the teacher asked
-him to up the sheet of paper into many small bits and throw. The teacher told
-the young man that the spoken words are like the bits of paper.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A3.
-Activities based on Vocabulary</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) Match the
-following words in Column 'A' with their antonyms (opposites) in Column 'B':</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=1066
- style='width:799.5pt;background:#F9F9F9;border-collapse:collapse;mso-yfti-tbllook:
- 1184;mso-padding-alt:0cm 0cm 0cm 0cm'>
- <thead>
-  <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
-   <td style='border:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-   <p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-   mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:black;
-   mso-color-alt:windowtext'>Column 'A' (Word)</span></b><span
-   style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-   mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-   </td>
-   <td style='border:solid windowtext 1.0pt;border-left:none;mso-border-left-alt:
-   solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-   <p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-   mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:black;
-   mso-color-alt:windowtext'>Column 'B' (Antonym)</span></b><span
-   style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-   mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-   </td>
-  </tr>
- </thead>
- <tr style='mso-yfti-irow:1'>
-  <td style='border:solid windowtext 1.0pt;border-top:none;mso-border-top-alt:
-  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin;color:black;mso-color-alt:windowtext'>(1)
-  harsh</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-  </td>
-  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
-  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext 1.0pt;
-  mso-border-left-alt:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin;color:black;mso-color-alt:windowtext'>(c)
-  soft</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2'>
-  <td style='border:solid windowtext 1.0pt;border-top:none;mso-border-top-alt:
-  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin;color:black;mso-color-alt:windowtext'>(2)
-  earlier</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-  </td>
-  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
-  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext 1.0pt;
-  mso-border-left-alt:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin;color:black;mso-color-alt:windowtext'>(d)
-  later</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td style='border:solid windowtext 1.0pt;border-top:none;mso-border-top-alt:
-  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin;color:black;mso-color-alt:windowtext'>(3)
-  difficult</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-  </td>
-  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
-  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext 1.0pt;
-  mso-border-left-alt:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin;color:black;mso-color-alt:windowtext'>(a)
-  easy</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
-  <td style='border:solid windowtext 1.0pt;border-top:none;mso-border-top-alt:
-  solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin;color:black;mso-color-alt:windowtext'>(4)
-  wide</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-  </td>
-  <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
-  border-right:solid windowtext 1.0pt;mso-border-top-alt:solid windowtext 1.0pt;
-  mso-border-left-alt:solid windowtext 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin;color:black;mso-color-alt:windowtext'>(b)
-  narrow</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-  Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-  </td>
- </tr>
-</table>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span></b><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(2) Write any
-four adverbs each with '-<span class=SpellE>ly</span>' that express (a) anger
-and (b) loving nature in our talk:</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(a) Anger:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Harshly, Angrily, Rudely, <span
-class=GramE>Nastily</span>.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(b) Loving
-nature:</span></b><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;Sweetly, Nicely, Affectionately,
-Kindly.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A4.
-Activity based on Contextual Grammar</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Q. Make two
-sentences of your own with the word given below, using the same word as a noun
-in one and as a verb in another:</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Throw:</b><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(<span
-class=SpellE>i</span>) Noun:</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;The
-player made a perfect&nbsp;<b>throw</b>&nbsp;to the first base.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(ii) Verb:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Please&nbsp;<b>throw</b>&nbsp;the waste
-in the dustbin.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>return:</b><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(<span
-class=SpellE>i</span>) Noun:</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;I
-shall meet him on his&nbsp;<b>return</b>&nbsp;from London.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(ii) Verb:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;She will be&nbsp;<b>return</b>&nbsp;from
-Pune soon.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>benefit:</b><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(<span
-class=SpellE>i</span>) Noun:</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;He
-is enjoying the&nbsp;<b>benefits</b>&nbsp;of his hard work and honesty.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(ii) Verb:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;He invests money in this mutual fund so
-that he will be<b>&nbsp;benefitted</b>&nbsp;in future.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>A5.
-Personal Response:</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) What do you
-do when someone speaks to you angrily? Do you also speak angrily?</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;When someone speaks to me angrily, I try
-to keep my calm because I know that angry words lead to quarrels and fights. I
-first try to pacify the person; if that doesn't work, I prefer to keep quiet
-without speaking a single word to them.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#7030A0'>Q.
-3. Read the passage on textbook page no. 83 and answer the following:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:#7030A0'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) Who was
-Socrates?</span></b><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Socrates was one of the wisest men of
-the ancient world.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(2) Who were
-influenced by his teachings?</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Many youths were influenced by his
-teachings.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span></b><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(3) What did he
-advise his disciples?</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;He advised his disciples to keep their
-mouths shut and speak only when it is absolutely necessary.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(4) What were the
-three questions?</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;The three questions were: Is it true? Is
-it pleasant? Is it useful?<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(5) What did
-Socrates advise the youths through these three questions?</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Socrates told the youth that they should
-ask themselves these three questions, and if they get affirmative answers to
-all of them, only then should they open their mouths to speak. About the first
-question - is it true he advised that they should <span class=SpellE>ot</span>
-utter a single word if they are not sure about the truth of what they are
-saying. About second question is <span class=GramE>it</span> pleasant leave
-these unpleasant words <span class=GramE>remains</span> unspoken. About third
-question is it useful? If they should go ahead and speak.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(6) Have you ever
-passed on an empty remark or vain statement that might hurt someone else? What
-can you do to avoid doing it again?</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;I was very proud of my fair colour. Once
-I jokingly passed some empty remark on one of my friends, about his dark
-colour. I realised that I should have passed such a vain remark, I have now
-decided to avoid passing such remarks I can change my attitude and speak
-sweetly and kindly to everyone.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;<o:p></o:p></span></p>
-
-<p class=MsoNormal align=center style='text-align:center'><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:#7030A0'>Activities based on Language
-Study</span></b><span style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:#7030A0'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>(A)
-Do as directed:</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) Complete the
-words by using correct letters:</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<ol style='margin-top:0cm' start=1 type=1>
- <li class=MsoNormal style='mso-list:l2 level1 lfo8;tab-stops:list 36.0pt'><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>u&nbsp;<b><u>t</u></b>&nbsp;<span
-     class=SpellE>t</span> e r<o:p></o:p></span></li>
- <li class=MsoNormal style='mso-list:l2 level1 lfo8;tab-stops:list 36.0pt'><span
-     class=SpellE><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-     Calibri;mso-bidi-theme-font:minor-latin'>thi</span></span><u><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>&nbsp;<b>n</b></span></u><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>&nbsp;k<o:p></o:p></span></li>
- <li class=MsoNormal style='mso-list:l2 level1 lfo8;tab-stops:list 36.0pt'><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>mou<u>&nbsp;<b>t</b></u>&nbsp;h<o:p></o:p></span></li>
- <li class=MsoNormal style='mso-list:l2 level1 lfo8;tab-stops:list 36.0pt'><span
-     style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-     mso-bidi-theme-font:minor-latin'>s<u>&nbsp;<b>l</b></u>&nbsp;a v e<o:p></o:p></span></li>
-</ol>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(2) Put the
-following words in alphabetical order:</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;anger, fence, nature, statesman<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;scatter, spoken, stammer, statesman<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(3) Punctuate the
-following sentences:</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;This is what happens with the spoken
-words, the teacher said.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Now tear up this sheet of paper into as
-many small bits as you can, the wise teacher said.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(4) Make related
-words using mythological .</span></b><span style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans.</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Myth, log, logic, coil.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(5) Write related
-words as shown in the example: Think</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans.&nbsp;</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>Recollect, forgot, imagine, remember,
-evaluate.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(6) Complete the
-following word chain of Adjectives:</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans.&nbsp;</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>Difficult&nbsp;talkative&nbsp;energetic&nbsp;constant&nbsp;tanned.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>(B)
-Do as directed:</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) (a) Make a
-meaningful sentence by using the following phrase to be afraid of .</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>Ans. Nowadays children are not afraid
-of ghosts and stories of ghosts.<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(b) Add a clause
-to the following sentence to expand it meaningfully:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>Ans. Which is situated very close to
-the <span class=SpellE>konkan</span> coast.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(2) (a) use
-prefix and suffix to make a <span class=GramE>new words</span>.</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>1) correct = incorrect<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>2) complete = incomplete<o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(b) Make a
-meaningful sentence:</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>1) correct = Ye, this is correct
-answer .<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>2) complete = There was a complete
-silence in the Class.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center'><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:#7030A0'>Writing Skill</span></b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:#7030A0'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000'>Q.
-Write a brief summary of the story of the young man and his spiritual teacher,
-making the young man the narrator.</span></b><span style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans.&nbsp;</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>the young man and his spiritual teacher<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>I went quickly to my<b>&nbsp;</b>spiritual
-teacher for advice because I had hurt my friend for harsh and unkind words. I
-wanted to make amends my teacher gave me a sheet of paper and a pen and asked
-me to write all the harsh words I had spoken. That was impossible but I gave a
-try but could not collect a single torn bit. The teacher told me, that is what
-happens with <span class=SpellE>te</span> spoken words.<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center'><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:#7030A0'>Translation</span></b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:#7030A0'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>(1) Translate the
-sentence (a), (b), (c) given on the textbook page no. 84 into the medium of
-your instruction.</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>Ans.&nbsp;</span></b><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>(</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2309;)</span><span style='font-size:12.0pt;
-line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2348;&#2379;&#2354;&#2339;&#2381;&#2351;&#2366;&#2346;&#2370;&#2352;&#2381;&#2357;&#2368;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2310;&#2346;&#2339;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2360;&#2381;&#2357;&#2340;&#2307;&#2354;&#2366;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2357;&#2367;&#2330;&#2366;&#2352;&#2354;&#2366;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2346;&#2366;&#2361;&#2367;&#2332;&#2375;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2309;&#2360;&#2366;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2346;&#2361;&#2367;&#2354;&#2366;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2346;&#2381;&#2352;&#2358;&#2381;&#2344;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2350;&#2381;&#2361;&#2339;&#2332;&#2375;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2340;&#2375;</span><span style='font-size:
-12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2360;&#2340;&#2381;&#2351;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2310;&#2361;&#2375;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2325;&#2366;</span><span style='font-size:
-12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>?<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;
-mso-bidi-theme-font:minor-bidi'>(</span><span lang=HI style='font-size:12.0pt;
-line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi;mso-bidi-language:
-HI'>&#2348;)</span><span style='font-size:12.0pt;line-height:107%;font-family:
-"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;
-mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span lang=HI style='font-size:
-12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi;mso-bidi-language:
-HI'>&#2357;&#2367;&#2330;&#2366;&#2352;&#2339;&#2381;&#2351;&#2366;&#2330;&#2366;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2342;&#2369;&#2360;&#2352;&#2366;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2346;&#2381;&#2352;&#2358;&#2381;&#2344;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2350;&#2381;&#2361;&#2339;&#2332;&#2375;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2340;&#2375;</span><span style='font-size:
-12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2360;&#2369;&#2326;&#2342;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2310;&#2361;&#2375;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2325;&#2366;</span><span style='font-size:
-12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>?<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;font-family:
-"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;
-mso-bidi-theme-font:minor-bidi'>(</span><span lang=HI style='font-size:12.0pt;
-line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi;mso-bidi-language:
-HI'>&#2325;)</span><span style='font-size:12.0pt;line-height:107%;font-family:
-"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;
-mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span lang=HI style='font-size:
-12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi;mso-bidi-language:
-HI'>&#2360;&#2377;&#2325;&#2381;&#2352;&#2375;&#2335;&#2367;&#2360;&#2330;&#2381;&#2351;&#2366;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2350;&#2340;&#2375;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2340;&#2367;&#2360;&#2352;&#2366;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2346;&#2381;&#2352;&#2358;&#2381;&#2344;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2350;&#2381;&#2361;&#2339;&#2332;&#2375;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2340;&#2375;</span><span style='font-size:
-12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2313;&#2346;&#2351;&#2369;&#2325;&#2381;&#2340;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2310;&#2361;&#2375;</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>&nbsp;</span><span
-lang=HI style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:HI'>&#2325;&#2366;</span><span style='font-size:
-12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'>?<o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;</span><b><span
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>(2) Find examples of antithesis from medium of your instruction and
-translate it:</span></b><span style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%;
-font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:
-minor-bidi;mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US'>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
-lang=MR style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:MR'>&#2340;&#2369;&#2350;&#2330;&#2381;&#2351;&#2366;
-&#2350;&#2369;&#2354;&#2366;&#2354;&#2366; &#2309;&#2344;&#2381;&#2344;</span><span
-lang=EN-US style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-ansi-language:EN-US'>,&nbsp;</span><span lang=MR
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi;
-mso-bidi-language:MR'>&#2325;&#2346;&#2337;&#2375;
-&#2311;&#2340;&#2381;&#2351;&#2366;&#2342;&#2368; &#2342;&#2381;&#2351;&#2366;</span><span
-lang=EN-US style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-ansi-language:EN-US'>,&nbsp;</span><span lang=MR
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi;
-mso-bidi-language:MR'>&#2346;&#2339; &#2340;&#2369;&#2350;&#2330;&#2375;
-&#2313;&#2340;&#2381;&#2346;&#2344;&#2381;&#2344;
-&#2325;&#2343;&#2368;&#2361;&#2368; &#2342;&#2375;&#2314;
-&#2344;&#2325;&#2366;.</span><span style='font-size:12.0pt;line-height:107%;
-font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:
-minor-bidi;mso-bidi-theme-font:minor-bidi'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>Give food, clothes, etc. to your child, but never give your earnings.</span><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%;
-font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:
-minor-bidi;mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US'>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
-lang=MR style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:MR'>&#2325;&#2336;&#2379;&#2352;
-&#2346;&#2352;&#2367;&#2358;&#2381;&#2352;&#2350;
-&#2341;&#2325;&#2357;&#2339;&#2366;&#2352;&#2375;
-&#2309;&#2360;&#2340;&#2366;&#2340;</span><span lang=EN-US style='font-size:
-12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi;mso-ansi-language:
-EN-US'>,&nbsp;</span><span lang=MR style='font-size:12.0pt;line-height:107%;
-font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:
-minor-bidi;mso-bidi-theme-font:minor-bidi;mso-bidi-language:MR'>&#2346;&#2339;
-&#2340;&#2381;&#2351;&#2366;&#2330;&#2375; &#2347;&#2366;&#2351;&#2342;&#2375;
-&#2310;&#2344;&#2306;&#2342;&#2342;&#2366;&#2351;&#2368;
-&#2309;&#2360;&#2340;&#2366;&#2340;.</span><span style='font-size:12.0pt;
-line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>Hard work is exhausting, but its benefits are pleasing.</span><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%;
-font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:
-minor-bidi;mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US'>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
-lang=MR style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:MR'>&#2354;&#2379;&#2325;&#2366;&#2306;&#2330;&#2375;
-&#2320;&#2325;&#2366;</span><span lang=EN-US style='font-size:12.0pt;
-line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi;mso-ansi-language:
-EN-US'>,&nbsp;</span><span lang=MR style='font-size:12.0pt;line-height:107%;
-font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:
-minor-bidi;mso-bidi-theme-font:minor-bidi;mso-bidi-language:MR'>&#2346;&#2339;
-&#2340;&#2369;&#2350;&#2330;&#2375; &#2350;&#2344; &#2332;&#2375;
-&#2360;&#2366;&#2306;&#2327;&#2375;&#2354; &#2340;&#2375;&#2330;
-&#2325;&#2352;&#2366;.</span><span style='font-size:12.0pt;line-height:107%;
-font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:
-minor-bidi;mso-bidi-theme-font:minor-bidi'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>Listen to people, but j <span class=GramE>do</span> what your conscience
-says.</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%;
-font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:
-minor-bidi;mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-US'>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
-lang=MR style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;
-mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:
-minor-bidi;mso-bidi-language:MR'>&#2346;&#2376;&#2358;&#2366;&#2306;&#2344;&#2368;
-&#2360;&#2352;&#2381;&#2357; &#2325;&#2366;&#2361;&#2368;
-&#2357;&#2367;&#2325;&#2340; &#2328;&#2375;&#2340;&#2366;
-&#2351;&#2375;&#2340;&#2375;</span><span lang=EN-US style='font-size:12.0pt;
-line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;
-mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi;mso-ansi-language:
-EN-US'>,&nbsp;</span><span lang=MR style='font-size:12.0pt;line-height:107%;
-font-family:"Mangal",serif;mso-ascii-theme-font:minor-bidi;mso-hansi-theme-font:
-minor-bidi;mso-bidi-theme-font:minor-bidi;mso-bidi-language:MR'>&#2346;&#2339;
-&#2310;&#2344;&#2306;&#2342; &#2344;&#2366;&#2361;&#2368;.</span><span
-style='font-size:12.0pt;line-height:107%;font-family:"Mangal",serif;mso-ascii-theme-font:
-minor-bidi;mso-hansi-theme-font:minor-bidi;mso-bidi-theme-font:minor-bidi'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>Money can buy everything, but not happiness.</span><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>&nbsp;</span><b><span style='font-size:14.0pt;line-height:107%;
-mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'>&nbsp;Parth<span
-style='color:#FFC000'>New</span><o:p></o:p></span></b></p>
-
-<p class=MsoNormal align=center style='text-align:center'><b><span lang=EN-US
-style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:#7030A0;mso-ansi-language:EN-US'>Language
-study</span></b><span style='font-size:14.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin;color:#7030A0'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#EE0000;
-mso-ansi-language:EN-US'>Q. complete the following:</span></b><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin;color:#EE0000'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>(1) But I don t know</span></b><span lang=EN-US style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-mso-ansi-language:EN-US'>&nbsp;what they are doing here.</span><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>(2) He told us</span></b><span lang=EN-US style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-mso-ansi-language:EN-US'>&nbsp;the news that was very exciting.</span><span
-style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:Calibri;
-mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><b><span lang=EN-US style='font-size:12.0pt;line-height:
-107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>(3) They went</span></b><span lang=EN-US style='font-size:12.0pt;
-line-height:107%;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
-mso-ansi-language:EN-US'>&nbsp;when they all were they all were taking their
-lunch.</span><span style='font-size:12.0pt;line-height:107%;mso-bidi-font-family:
-Calibri;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt;line-height:107%'><o:p>&nbsp;</o:p></span></p>
-
-</div>
-</div>
-
-<style>
-  .mini-footer {
-    background-color: blue; /* Gray background */
-    padding: 15px 0;
-    text-align: center;
-    font-family: sans-serif;
-    border-top: 1px solid #ddd;
-  }
-
-  .footer-link {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
-
-  .footer-link:hover {
-    color: yellow; /* Hover karne par yellow ho jayega */
-    text-decoration: underline;
-  }
-
-  .separator {
-    color: #ccc;
-  }
-</style>
-
-<footer class="mini-footer">
-  <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-  <span class="separator">|</span>
-  <a href="contact.html" class="footer-link">Contact Us</a>
-  <span class="separator">|</span>
-  <a href="index.html" class="footer-link">© 2026 ParthNew</a>
-</footer>
-
+    <div id="footer-placeholder"></div>
+
+    <script>
+        function toggleAns(h) {
+            const p = h.nextElementSibling;
+            const b = h.parentElement.querySelector('.btn-toggle');
+            if(p.style.maxHeight) {
+                p.style.maxHeight = null;
+                b.innerHTML = "View Solution ▾";
+            } else {
+                p.style.maxHeight = p.scrollHeight + "px";
+                b.innerHTML = "Hide Solution ▴";
+            }
+        }
+    </script>
 </body>
 </html>
