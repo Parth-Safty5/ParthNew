@@ -19,11 +19,33 @@
         .main-title h1 { margin:0; font-size: 1.8rem; color: #111; }
         .q-card { background: white; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 3px 15px rgba(0,0,0,0.06); overflow: hidden; border: 1px solid #eee; }
         .q-header { padding: 22px; cursor: pointer; font-size: 1.15rem; color:#111; font-weight: 500; }
+        .q-header h3 { margin: 0; font-size: 1.15rem; font-weight: 500; }
         .ans-panel { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0, 1, 0, 1); background: #fcfcfc; }
         .ans-body { padding: 20px; border-left: 6px solid #28a745; margin: 15px; background: white; border-radius: 4px; box-shadow: inset 0 0 10px rgba(0,0,0,0.02); }
+        .ans-body h4 { margin: 0 0 10px 0; font-weight: normal; font-size: 1rem; }
+        
+        /* TOC Styles */
+        .toc-container { background: #fff; padding: 20px; border-radius: 12px; border: 2px solid #e0e0e0; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .toc-container h3 { margin-top: 0; color: #0056b3; }
+        .toc-container ul { margin-bottom: 0; padding-left: 20px; }
+        .toc-container li { margin-bottom: 8px; }
+        .toc-container a { color: #333; text-decoration: none; transition: 0.2s; }
+        .toc-container a:hover { color: #0056b3; text-decoration: underline; }
+        
+        /* Sub-question styles */
+        .sub-q-block { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ccc; }
+        .sub-q-title { margin: 0 0 8px 0; color: #0056b3; font-size: 1rem; }
+        .sub-q-ans { font-size: 0.95rem; color: #444; padding-left: 10px; }
+
+        /* Sub-sub-question styles */
+        .sub-sub-q-block { margin-top: 10px; padding-top: 10px; border-left: 3px solid #eee; padding-left: 15px; }
+        .sub-sub-q-title { margin: 0 0 5px 0; color: #17a2b8; font-size: 0.95rem; }
+        .sub-sub-q-ans { font-size: 0.9rem; color: #555; }
+
         .btn-toggle { width: 100%; padding: 14px; border: none; background: #f9f9f9; color: #0056b3; font-weight: bold; cursor: pointer; border-top: 1px solid #eee; transition: 0.3s; }
         .btn-toggle:hover { background: #f0f7ff; }
         .topic-note { background: #e7f3ff; padding: 18px; border-radius: 10px; margin: 35px 0 20px; font-weight: bold; color: #004085; text-align: center; border: 1px solid #b8daff; font-size: 1.2rem; }
+        .topic-note h2 { margin: 0; font-size: 1.2rem; }
         .nav-bar { display: flex; justify-content: space-between; margin: 50px 0 30px; }
         .nav-btn { background: #0056b3; color: white; text-decoration: none; padding: 14px 30px; border-radius: 10px; font-weight: bold; transition: 0.3s; }
         .nav-btn:hover { background: #003d82; transform: translateY(-2px); }
@@ -39,218 +61,369 @@
         <div class="main-title"><h1>1.1 Walk a Little Slower - English Workshop and Warming Up Solutions</h1></div>
         
         
-        <div class="topic-note">Warming Up!</div>
+        <div class="toc-container">
+            <h3>Table of Contents</h3>
+            <ul><li><a href="#section-1">Warming Up!</a></li><li><a href="#section-2">My Thoughts:</a></li><li><a href="#section-3">English Workshop</a></li><li><a href="#section-4">Summary of "1.1 Walk a little slower ..."</a></li><li><a href="#section-5">Difficult Words & Meanings of "1.1 Walk a little slower ..."</a></li><li><a href="#section-6">Frequently Asked Questions (FAQs)</a></li></ul>
+        </div>
+        
+        
+        <div class="topic-note"><h2 id="section-1">Warming Up!</h2></div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>Chit-chat:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>Chit-chat:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;"><b>(a) Are you a talkative person?</b></div>
-                    <div style="margin-bottom:10px;">"Honestly, it depends on who I’m with! Around my close friends, I can talk for hours, but I tend to be a bit more of a listener when I’m meeting new people."</div>
-                    <div style="margin-bottom:10px;"><b>(b) Do you like to share your thoughts?</b></div>
-                    <div style="margin-bottom:10px;">"I do, especially when I feel like my ideas might help someone else or when I’m trying to figure something out. Sharing thoughts usually makes me feel more connected to people."</div>
-                    <div style="margin-bottom:10px;"><b>(c) What would you like to do after 10th?</b></div>
-                    <div style="margin-bottom:10px;">"I’m really interested in exploring the science stream because I love understanding how things work, but I'm also considering taking up a creative course in graphic design."</div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(a) Are you a talkative person?</h5>
+                            <div class="sub-q-ans">"Honestly, it depends on who I’m with! Around my close friends, I can talk for hours, but I tend to be a bit more of a listener when I’m meeting new people."</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(b) Do you like to share your thoughts?</h5>
+                            <div class="sub-q-ans">"I do, especially when I feel like my ideas might help someone else or when I’m trying to figure something out. Sharing thoughts usually makes me feel more connected to people."</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(c) What would you like to do after 10th?</h5>
+                            <div class="sub-q-ans">"I’m really interested in exploring the science stream because I love understanding how things work, but I'm also considering taking up a creative course in graphic design."</div>
+                            
+                        </div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
-        <div class="topic-note">My Thoughts:</div>
+        <div class="topic-note"><h2 id="section-2">My Thoughts:</h2></div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>(a) I would like to talk to...</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>(a) I would like to talk to...</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">my mother about swimming lessons. (Example)</div>
-                    <div style="margin-bottom:10px;">my father about my future career goals and college plans.</div>
-                    <div style="margin-bottom:10px;">my teacher about some difficult concepts in Mathematics.</div>
-                    <div style="margin-bottom:10px;">my best friend about the new movie that was released last weekend.</div>
-                    <div style="margin-bottom:10px;">my grandparents about what life was like when they were teenagers.</div>
-                    <div style="margin-bottom:10px;">my neighbours about keeping our society garden clean and green.</div>
-                </div>
-            </div>
-            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
-        </div>
-
-        <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>(b) I would like to learn to...</b></div>
-            <div class="ans-panel">
-                <div class="ans-body">
-                    <div style="margin-bottom:10px;">play the guitar from my best friend.</div>
-                    <div style="margin-bottom:10px;">bake traditional cookies from my grandmother.</div>
-                    <div style="margin-bottom:10px;">solve complex riddles from my teacher.</div>
-                    <div style="margin-bottom:10px;">grow organic vegetables from my neighbour.</div>
-                    <div style="margin-bottom:10px;">play chess from my cousin. (Example)</div>
-                </div>
-            </div>
-            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
-        </div>
-
-        <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>(c) I hesitate to talk to my...</b></div>
-            <div class="ans-panel">
-                <div class="ans-body">
-                    <div style="margin-bottom:10px;">parents about my studies when I haven't done well on a test.</div>
-                    <div style="margin-bottom:10px;">brother/sister about the way he/she talks to my friends.</div>
-                    <div style="margin-bottom:10px;">strict relatives about what I would like to do in the future.</div>
-                    <div style="margin-bottom:10px;">father about how I want to spend my holidays on a solo trip.</div>
-                    <div style="margin-bottom:10px;">teacher about my favourite movies during class hours.</div>
-                    <div style="margin-bottom:10px;">elder siblings about the expensive things I want to buy.</div>
-                </div>
-            </div>
-            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
-        </div>
-
-        <div class="topic-note">English Workshop</div>
-
-        <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>1. Read the poem aloud.</b></div>
-            <div class="ans-panel">
-                <div class="ans-body">
-                    <div style="margin-bottom:10px;"><i>(Tip: Focus on the rhythm and the emotional tone of the child’s plea.)</i></div>
+                    <div style="margin-bottom:10px;"><h4>my mother about swimming lessons. (Example)</h4></div>
+                    <div style="margin-bottom:10px;"><h4>my father about my future career goals and college plans.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>my teacher about some difficult concepts in Mathematics.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>my best friend about the new movie that was released last weekend.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>my grandparents about what life was like when they were teenagers.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>my neighbours about keeping our society garden clean and green.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>2. Fill in the blanks with the correct words from the brackets:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>(b) I would like to learn to...</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">(a) The <b>child</b> is speaking to its <b>father</b>.</div>
-                    <div style="margin-bottom:10px;">(b) The <b>father</b> is the one leading, while the <b>child</b> follows.</div>
-                    <div style="margin-bottom:10px;">(c) In the future, the <b>child</b> will eventually become a <b>father</b>.</div>
-                    <div style="margin-bottom:10px;">(d) The <b>child</b> is careful because they do not want to fall while following their <b>father</b>.</div>
+                    <div style="margin-bottom:10px;"><h4>play the guitar from my best friend.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>bake traditional cookies from my grandmother.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>solve complex riddles from my teacher.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>grow organic vegetables from my neighbour.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>play chess from my cousin. (Example)</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>2. Identify the rhyming word pairs from the poem:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>(c) I hesitate to talk to my...</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">Small — Fall</div>
-                    <div style="margin-bottom:10px;">See — Me</div>
-                    <div style="margin-bottom:10px;">Be — Me</div>
-                    <div style="margin-bottom:10px;">True — You</div>
+                    <div style="margin-bottom:10px;"><h4>parents about my studies when I haven't done well on a test.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>brother/sister about the way he/she talks to my friends.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>strict relatives about what I would like to do in the future.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>father about how I want to spend my holidays on a solo trip.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>teacher about my favourite movies during class hours.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>elder siblings about the expensive things I want to buy.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="topic-note"><h2 id="section-3">English Workshop</h2></div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>1. Read the poem aloud.</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>(Tip: Focus on the rhythm and the emotional tone of the child’s plea.)</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>3. Word Associations: </b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>2. Fill in the blanks with the correct words from the brackets:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">The following pairs show a logical relationship (e.g., Father leads, Child follows). Here are five additional pairs showing similar connections:</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;">Teacher ⇄ Student</div>
-                    <div style="margin-bottom:10px;">Doctor ⇄ Patient</div>
-                    <div style="margin-bottom:10px;">Give ⇄ Take</div>
-                    <div style="margin-bottom:10px;">Owner ⇄ Servant</div>
-                    <div style="margin-bottom:10px;">Come ⇄ Go</div>
+                    <div style="margin-bottom:10px;"><h4>(a) The <b>child</b> is speaking to its <b>father.</b></h4></div>
+                    <div style="margin-bottom:10px;"><h4>(b) The <b>father</b> is the one leading, while the <b>child</b> follows.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>(c) In the future, the <b>child </b>will eventually become a <b>father</b>.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>(d) The <b>child</b> is careful because they do not want to fall while following their <b>father</b>.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>4. Understanding Implications: In this poem, "walking" is a metaphor for navigating life. Here is what the specific lines imply:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>2. Identify the rhyming word pairs from the poem:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;"><b>(a) "Sometimes your steps are very fast…"</b></div>
-                    <div style="margin-bottom:10px;">Implication: Occasionally, a parent's actions or decisions happen too quickly for a child to understand or learn from them.</div>
-                    <div style="margin-bottom:10px;"><b>(b) "Sometimes your steps are hard to see…"</b></div>
-                    <div style="margin-bottom:10px;">Implication: Some life lessons are complex or subtle, making it difficult for the child to observe and imitate them correctly.</div>
-                    <div style="margin-bottom:10px;"><b>(c) "I would want to lead just right…"</b></div>
-                    <div style="margin-bottom:10px;">Implication: The child hopes to grow up and provide the same clear, correct guidance to their own future children.</div>
-                    <div style="margin-bottom:10px;"><b>(d) "And know that I was true…"</b></div>
-                    <div style="margin-bottom:10px;">Implication: The speaker wants to look back with the confidence that they lived with honesty and followed the right path, just as their father did.</div>
+                    <div style="margin-bottom:10px;"><h4>Small — Fall</h4></div>
+                    <div style="margin-bottom:10px;"><h4>See — Me</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Be — Me</h4></div>
+                    <div style="margin-bottom:10px;"><h4>True — You</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>5. Sentences showing continuous action:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>3. Word Associations: </h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">• My elder sister was helping me with my studies throughout the evening.</div>
-                    <div style="margin-bottom:10px;">• He is constantly making us laugh with his great sense of humor.</div>
-                    <div style="margin-bottom:10px;">• Our team players are steadily gaining confidence as the tournament progresses.</div>
+                    <div style="margin-bottom:10px;"><h4>The following pairs show a logical relationship (e.g., Father leads, Child follows). Here are five additional pairs showing similar connections:</h4></div>
+                    <div style="margin-bottom:10px;"><h4><br></h4></div>
+                    <div style="margin-bottom:10px;"><h4>Teacher ⇄ Student</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Doctor ⇄ Patient</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Give ⇄ Take</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Owner ⇄ Servant</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Come ⇄ Go</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>6. Sentences showing future action or state:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>4. Understanding Implications: In this poem, "walking" is a metaphor for navigating life. Here is what the specific lines imply:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">-Who will want to participate in the upcoming elocution competition?</div>
-                    <div style="margin-bottom:10px;">-I will be a student in the 10th standard next year.</div>
-                    <div style="margin-bottom:10px;">-They are planning to arrive by tomorrow morning.</div>
-                    <div style="margin-bottom:10px;">-I will be 16 years old by the end of 2026.</div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(a) "Sometimes your steps are very fast…"</h5>
+                            <div class="sub-q-ans">Implication: Occasionally, a parent's actions or decisions happen too quickly for a child to understand or learn from them.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(b) "Sometimes your steps are hard to see…"</h5>
+                            <div class="sub-q-ans">Implication: Some life lessons are complex or subtle, making it difficult for the child to observe and imitate them correctly.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(c) "I would want to lead just right…"</h5>
+                            <div class="sub-q-ans">Implication: The child hopes to grow up and provide the same clear, correct guidance to their own future children.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(d) "And know that I was true…"</h5>
+                            <div class="sub-q-ans">Implication: The speaker wants to look back with the confidence that they lived with honesty and followed the right path, just as their father did.</div>
+                            
+                        </div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>7. Discussion Summary:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>5. Sentences showing continuous action:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;"><b>(a) Passing on ideas and traditions:</b></div>
-                    <div style="margin-bottom:10px;">*Cultural knowledge is preserved by our ancestors and handed down through generations.</div>
-                    <div style="margin-bottom:10px;">*These traditions survive through mythological literature, Vedas, folklores, and fables.</div>
-                    <div style="margin-bottom:10px;">*Values are reinforced through the celebration of religious festivals and ceremonies.</div>
-                    <div style="margin-bottom:10px;">*Communities often preserve these heritages out of a desire to maintain their unique identity.</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>(b) Following in the footsteps of forefathers:</b></div>
-                    <div style="margin-bottom:10px;">*It is often beneficial to follow the path of our ancestors because of the proven moral values they provide.</div>
-                    <div style="margin-bottom:10px;">*However, change is necessary when old traditions are based on superstitions that lack scientific reasoning.</div>
-                    <div style="margin-bottom:10px;">*We must be open to modern ideas to ensure our moral standards evolve with the times.</div>
+                    <div style="margin-bottom:10px;"><h4>• My elder sister was helping me with my studies throughout the evening.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>• He is constantly making us laugh with his great sense of humor.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>• Our team players are steadily gaining confidence as the tournament progresses.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>8. Do you have a role model? What qualities do you appreciate in your role model?</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>6. Sentences showing future action or state:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">My role model is Dr. A.P.J. Abdul Kalam. Known as the "Missile Man of India," I deeply admire his intelligence and his unwavering dedication to his country. Despite his high status as President, he remained a symbol of simplicity, humility, and hard work, always striving to inspire the youth. </div>
+                    <div style="margin-bottom:10px;"><h4>-Who will want to participate in the upcoming elocution competition?</h4></div>
+                    <div style="margin-bottom:10px;"><h4>-I will be a student in the 10th standard next year.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>-They are planning to arrive by tomorrow morning.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>-I will be 16 years old by the end of 2026.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>9. Learning from Family Decisions:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>7. Discussion Summary:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">I recall a time I wanted to ignore my family’s advice during a school trip to Lonavala. They warned me to stay away from deep water. Ignoring them, I tried to enter a river, slipped, and nearly drowned because I couldn't swim. I was saved by a teacher, but the experience taught me a vital lesson: my parents’ warnings came from a place of love and experience. I now realize they were right to be cautious. </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(a) Passing on ideas and traditions:</h5>
+                            <div class="sub-q-ans">*Cultural knowledge is preserved by our ancestors and handed down through generations.
+*These traditions survive through mythological literature, Vedas, folklores, and fables.
+*Values are reinforced through the celebration of religious festivals and ceremonies.
+*Communities often preserve these heritages out of a desire to maintain their unique identity.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(b) Following in the footsteps of forefathers:</h5>
+                            <div class="sub-q-ans">*It is often beneficial to follow the path of our ancestors because of the proven moral values they provide.
+*However, change is necessary when old traditions are based on superstitions that lack scientific reasoning.
+*We must be open to modern ideas to ensure our moral standards evolve with the times.</div>
+                            
+                        </div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>10. Phrases using "a little":</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>8. Do you have a role model? What qualities do you appreciate in your role model?</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">A little while</div>
-                    <div style="margin-bottom:10px;">A little more time</div>
-                    <div style="margin-bottom:10px;">A little forward</div>
-                    <div style="margin-bottom:10px;">A little earlier</div>
-                    <div style="margin-bottom:10px;">A little smaller</div>
-                    <div style="margin-bottom:10px;">A little bit of luck</div>
-                    <div style="margin-bottom:10px;">A little old lady</div>
-                    <div style="margin-bottom:10px;">A little confusion</div>
-                    <div style="margin-bottom:10px;">A little smarter</div>
-                    <div style="margin-bottom:10px;">A little improved</div>
+                    <div style="margin-bottom:10px;"><h4>My role model is Dr. A.P.J. Abdul Kalam. Known as the "Missile Man of India," I deeply admire his intelligence and his unwavering dedication to his country. Despite his high status as President, he remained a symbol of simplicity, humility, and hard work, always striving to inspire the youth. </h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>9. Learning from Family Decisions:</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>I recall a time I wanted to ignore my family’s advice during a school trip to Lonavala. They warned me to stay away from deep water. Ignoring them, I tried to enter a river, slipped, and nearly drowned because I couldn't swim. I was saved by a teacher, but the experience taught me a vital lesson: my parents’ warnings came from a place of love and experience. I now realize they were right to be cautious. </h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>10. Phrases using "a little":</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>A little while</h4></div>
+                    <div style="margin-bottom:10px;"><h4>A little more time</h4></div>
+                    <div style="margin-bottom:10px;"><h4>A little forward</h4></div>
+                    <div style="margin-bottom:10px;"><h4>A little earlier</h4></div>
+                    <div style="margin-bottom:10px;"><h4>A little smaller</h4></div>
+                    <div style="margin-bottom:10px;"><h4>A little bit of luck</h4></div>
+                    <div style="margin-bottom:10px;"><h4>A little old lady</h4></div>
+                    <div style="margin-bottom:10px;"><h4>A little confusion</h4></div>
+                    <div style="margin-bottom:10px;"><h4>A little smarter</h4></div>
+                    <div style="margin-bottom:10px;"><h4>A little improved</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="topic-note"><h2 id="section-4">Summary of "1.1 Walk a little slower ..."</h2></div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>Summary of "1.1 Walk a little slower ..."</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>This poem is a message from a young child to their father. The child asks the father to walk a little slower because the child is trying to follow in his footsteps and doesn't want to fall.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>The child explains that sometimes the father moves too fast, making it hard to keep up or see where he is going. The child looks up to the father and wants to grow up to be just like him.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Finally, the child says that in the future, they want to be a good leader for their own children, just like their father is now.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="topic-note"><h2 id="section-5">Difficult Words & Meanings of "1.1 Walk a little slower ..."</h2></div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>Difficult Words & Meanings</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="overflow-x:auto;"><table border="1" style="width:100%; border-collapse:collapse; margin:10px 0; background:white;">
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>Word</b></h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>Meaning</b></h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>Hindi Meaning</b></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Footsteps	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>The sound or mark made by a person walking.	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>पाँव के निशान / कदमों की आहट</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Fall	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>To drop down towards the ground.	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>गिरना</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Hard to see	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Difficult to understand or notice.	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>देखने या समझने में मुश्किल</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Leading	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Showing the way by going in front.	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>रास्ता दिखाना / आगे चलना</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Grown up	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Become an adult.	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>बड़ा हो जाना</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Lead	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>To guide or show someone the way.	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>रास्ता दिखाना / रहनुमाई करना</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>True	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Honest, faithful, and reliable.	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>सच्चा / ईमानदार</h4></td>
+                        </tr>
+                    </table></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="topic-note"><h2 id="section-6">Frequently Asked Questions (FAQs)</h2></div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>1. How do I become a positive role model for my child?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>To be a positive <b>role model</b>, focus on <b>parenting with empathy</b> and consistency. Children learn by imitating their parents' actions, not just their words. <b>Teaching values</b> through your own behavior helps build strong emotional foundations.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>2. What is the meaning behind "Walk a little slower, Daddy"?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>This poem explores the deep <b>parent-child bond</b> and the responsibility of guidance. It highlights how children admire their parents and rely on them for <b>emotional security</b> and direction as they navigate the world.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>3. Why do children imitate their parents' actions?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>Imitation is a key part of <b>child development</b>. Children look up to parents as heroes and guides, using them as a blueprint for learning how to behave, speak, and manage emotions in everyday life.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>4. How can I improve communication with my young child?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4><b>Effective parenting</b> involves active listening and patience. By taking the time to understand their perspective—like slowing down to see the world from their level—you build trust and a stronger emotional connection.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>5. What are the best Father's Day poem ideas for emotional gifts?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>Poems focusing on <b>fatherhood appreciation</b>, guidance, and the mentor relationship are highly searched. "Walk a little slower" is popular because it expresses deep love and admiration in a simple, heartfelt way.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
