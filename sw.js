@@ -1,12 +1,5 @@
 self.options = {
     "domain": "5gvci.com",
-    "zoneId": 10668130
-}
-self.lary = ""
-importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
-
-self.options = {
-    "domain": "5gvci.com",
     "zoneId": 10668069
 }
 self.lary = ""
@@ -64,4 +57,5 @@ self.addEventListener('fetch', event => {
         return caches.match(event.request);
       })
   );
+
 });
