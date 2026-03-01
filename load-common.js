@@ -108,44 +108,25 @@ function registerPWA() {
 }
 
 // ==========================================
-// 5. PROPELLERADS BANNER INTEGRATION
+// 5. PROPELLERADS MULTITAG INTEGRATION
 // ==========================================
 function loadPropellerAds() {
-    // 👇 YAHAN PASTE KAREIN WO CODE JO PROPELLERADS SE COPY KIYA THA 👇
-    var propellerCode = `<script src="https://quge5.com/88/tag.min.js" data-zone="215384" async data-cfasync="false"></script>`;
-    // 👆 YAHAN PASTE KAREIN WO CODE JO PROPELLERADS SE COPY KIYA THA 👆
-
-    // Function to inject ads into specific containers
-    function injectAd(containerId) {
-        var container = document.getElementById(containerId);
-        if (container) {
-            container.innerHTML = propellerCode;
-        }
-    }
-
-    // --- AUTOMATIC INJECTION LOGIC ---
-    // 1. Top Ad Placement (Navbar ke niche)
-    var topAdDiv = document.createElement('div');
-    topAdDiv.id = 'top-ad-placement';
-    // Navbar placeholder ke baad insert karein
-    var navbarPlaceholder = document.getElementById('navbar-placeholder');
-    if (navbarPlaceholder) {
-        navbarPlaceholder.parentNode.insertBefore(topAdDiv, navbarPlaceholder.nextSibling);
-    }
-
-    // 2. Bottom Ad Placement (Footer ke upar)
-    var bottomAdDiv = document.createElement('div');
-    bottomAdDiv.id = 'bottom-ad-placement';
-    // Footer placeholder se pehle insert karein
-    var footerPlaceholder = document.getElementById('footer-placeholder');
-    if (footerPlaceholder) {
-        footerPlaceholder.parentNode.insertBefore(bottomAdDiv, footerPlaceholder);
-    }
-    // ---------------------------------
-
-    // Finally, inject the code into these new divs
-    injectAd('top-ad-placement');
-    injectAd('bottom-ad-placement');
+    // MultiTag Script Element banayein
+    var multitagScript = document.createElement('script');
+    
+    // 👇 APNA MULTITAG SRC YAHAN DALEIN 👇
+    multitagScript.src = 'https://quge5.com/88/tag.min.js';
+    
+    // 👇 APNA DATA-ZONE ID YAHAN DALEIN 👇
+    multitagScript.setAttribute('data-zone', '215384');
+    
+    multitagScript.async = true;
+    multitagScript.setAttribute('data-cfasync', 'false');
+    
+    // Script ko <head> mein append karein
+    document.head.appendChild(multitagScript);
+    
+    console.log('MultiTag Loaded');
 }
 // ==========================================
 
