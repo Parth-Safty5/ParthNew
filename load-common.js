@@ -111,21 +111,12 @@ function registerPWA() {
 // 5. PROPELLERADS MULTITAG INTEGRATION
 // ==========================================
 function loadPropellerAds() {
-    // MultiTag Script Element banayein
     var multitagScript = document.createElement('script');
-    
-    // 👇 APNA MULTITAG SRC YAHAN DALEIN 👇
     multitagScript.src = 'https://quge5.com/88/tag.min.js';
-    
-    // 👇 APNA DATA-ZONE ID YAHAN DALEIN 👇
     multitagScript.setAttribute('data-zone', '215384');
-    
     multitagScript.async = true;
     multitagScript.setAttribute('data-cfasync', 'false');
-    
-    // Script ko <head> mein append karein
     document.head.appendChild(multitagScript);
-    
     console.log('MultiTag Loaded');
 }
 // ==========================================
