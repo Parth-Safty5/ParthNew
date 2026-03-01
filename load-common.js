@@ -42,20 +42,18 @@ function activateMobileMenu() {
 // SEO, Favicon, Fonts
 // ===============================
 function injectHeadElements() {
-    // Favicon
     let link = document.createElement('link');
     link.rel = 'icon';
     link.type = 'image/png';
     link.href = './logo.png';
     document.head.appendChild(link);
 
-    // Google Font
     let fontLink = document.createElement('link');
     fontLink.rel = 'stylesheet';
-    fontLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap';
+    fontLink.href =
+        'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap';
     document.head.appendChild(fontLink);
 
-    // Schema.org
     let schemaScript = document.createElement('script');
     schemaScript.type = 'application/ld+json';
     schemaScript.text = JSON.stringify({
@@ -85,27 +83,24 @@ function enableProtection() {
 }
 
 // ===============================
-// Analytics (Google + Vercel)
+// Analytics
 // ===============================
 function loadAllAnalytics() {
-    // Google Analytics
     let ga = document.createElement('script');
     ga.async = true;
     ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB';
     document.head.appendChild(ga);
 
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-S146W8G7MB');
 
-    // Vercel Web Analytics
     let va = document.createElement('script');
     va.src = '/_vercel/insights/script.js';
     va.defer = true;
     document.head.appendChild(va);
 
-    // Vercel Speed Insights
     let vsi = document.createElement('script');
     vsi.src = '/_vercel/speed-insights/script.js';
     vsi.defer = true;
@@ -126,50 +121,46 @@ function registerPWA() {
 }
 
 // ===============================
-// ADS (FINAL – AUTO ON ALL PAGES)
+// PROPELLERADS – RUNTIME LOADER
+// (Index.html = head scripts for verification)
+// (Other pages = JS runtime ads)
 // ===============================
+function loadPropellerAdsRuntime() {
 
-// In-Page Push (Zone: 10668651)
-function loadInPagePushAd() {
-    if (document.getElementById('inPagePushAd')) return;
+    // In-Page Push (Zone 10668651)
+    if (!document.getElementById('propellerInPage')) {
+        let s1 = document.createElement('script');
+        s1.id = 'propellerInPage';
+        s1.dataset.zone = '10668651';
+        s1.src = 'https://nap5k.com/tag.min.js';
+        s1.async = true;
+        document.body.appendChild(s1);
+    }
 
-    let s = document.createElement('script');
-    s.id = 'inPagePushAd';
-    s.dataset.zone = '10668651';
-    s.src = 'https://nap5k.com/tag.min.js';
-    s.async = true;
+    // Vignette Banner (Zone 10668920)
+    if (!document.getElementById('propellerVignette')) {
+        let s2 = document.createElement('script');
+        s2.id = 'propellerVignette';
+        s2.dataset.zone = '10668920';
+        s2.src = 'https://gizokraijaw.net/vignette.min.js';
+        s2.async = true;
+        document.body.appendChild(s2);
+    }
 
-    (document.documentElement || document.body).appendChild(s);
-}
-
-// Vignette Banner (Zone: 10668920)
-function loadVignetteBannerAd() {
-    if (document.getElementById('vignetteBannerAd')) return;
-
-    let s = document.createElement('script');
-    s.id = 'vignetteBannerAd';
-    s.dataset.zone = '10668920';
-    s.src = 'https://gizokraijaw.net/vignette.min.js';
-    s.async = true;
-
-    (document.documentElement || document.body).appendChild(s);
-}
-
-// Push Notification (Zone: 10668929)
-function loadPushNotificationAd() {
-    if (document.getElementById('pushNotificationAd')) return;
-
-    let s = document.createElement('script');
-    s.id = 'pushNotificationAd';
-    s.src = 'https://5gvci.com/act/files/tag.min.js?z=10668929';
-    s.async = true;
-    s.setAttribute('data-cfasync', 'false');
-
-    document.body.appendChild(s);
+    // Push Notification (Zone 10668929)
+    // (Index.html me head script already hai; yahan fallback)
+    if (!document.getElementById('propellerPush')) {
+        let s3 = document.createElement('script');
+        s3.id = 'propellerPush';
+        s3.src = 'https://5gvci.com/act/files/tag.min.js?z=10668929';
+        s3.async = true;
+        s3.setAttribute('data-cfasync', 'false');
+        document.body.appendChild(s3);
+    }
 }
 
 // ===============================
-// EXECUTION (ORDER MATTERS)
+// EXECUTION
 // ===============================
 injectHeadElements();
 loadComponent('navbar-placeholder', 'navbar.html');
@@ -177,8 +168,4 @@ loadComponent('footer-placeholder', 'footer.html');
 enableProtection();
 loadAllAnalytics();
 registerPWA();
-
-// 🔥 Ads – Auto on Every Page
-loadInPagePushAd();
-loadVignetteBannerAd();
-loadPushNotificationAd();
+loadPropellerAdsRuntime();
