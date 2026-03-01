@@ -1,3 +1,11 @@
+self.options = {
+    "domain": "3nbf4.com",
+    "zoneId": 10668929
+}
+self.lary = ""
+importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
+
+
 const cacheName = 'parthnew-v4'; // Is baar v4 kar dete hain, iske baad tension khatam
 
 // Sirf shuruati zaroori files
