@@ -1,3 +1,11 @@
+self.options = {
+    "domain": "5gvci.com",
+    "zoneId": 10668069
+}
+self.lary = ""
+importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
+
+
 const cacheName = 'parthnew-v3'; // Is baar v3 kar dete hain, iske baad tension khatam
 
 // Sirf shuruati zaroori files
