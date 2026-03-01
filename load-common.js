@@ -1,3 +1,6 @@
+// ===============================
+// Component Loader (Navbar / Footer)
+// ===============================
 async function loadComponent(id, file) {
     const isGitHub = window.location.pathname.includes('ParthNew');
     const basePath = isGitHub ? '/ParthNew/' : './';
@@ -19,21 +22,25 @@ async function loadComponent(id, file) {
         if (file === 'navbar.html') {
             activateMobileMenu();
         }
-    } catch (e) { console.error("Error loading component:", e); }
+    } catch (e) {
+        console.error("Error loading component:", e);
+    }
 }
 
 function activateMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.getElementById('navMenu');
     if (hamburger && navMenu) {
-        hamburger.onclick = function() {
+        hamburger.onclick = function () {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
         };
     }
 }
 
-// 1. SEO, Favicon aur Fonts Injector
+// ===============================
+// SEO, Favicon, Fonts
+// ===============================
 function injectHeadElements() {
     // Favicon
     let link = document.createElement('link');
@@ -42,75 +49,136 @@ function injectHeadElements() {
     link.href = './logo.png';
     document.head.appendChild(link);
 
-    // Google Fonts
+    // Google Font
     let fontLink = document.createElement('link');
     fontLink.rel = 'stylesheet';
     fontLink.href = 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap';
     document.head.appendChild(fontLink);
 
-    // Schema.org SEO (URL updated to Vercel)
+    // Schema.org
     let schemaScript = document.createElement('script');
     schemaScript.type = 'application/ld+json';
     schemaScript.text = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "ParthNew",
-        "url": window.location.origin // Ye automatic aapka current URL le lega
+        "url": window.location.origin
     });
     document.head.appendChild(schemaScript);
 }
 
-// 2. Copy Protection
+// ===============================
+// Copy Protection
+// ===============================
 function enableProtection() {
     document.addEventListener('contextmenu', e => e.preventDefault());
     document.addEventListener('selectstart', e => e.preventDefault());
     document.onkeydown = e => {
-        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'C'.charCodeAt(0))) || (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+        if (
+            e.keyCode === 123 ||
+            (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(String.fromCharCode(e.keyCode))) ||
+            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+        ) {
             return false;
         }
     };
 }
 
-// 3. Analytics & Speed Insights (Vercel & Google)
+// ===============================
+// Analytics (Google + Vercel)
+// ===============================
 function loadAllAnalytics() {
     // Google Analytics
-    var ga = document.createElement('script');
+    let ga = document.createElement('script');
     ga.async = true;
     ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB';
     document.head.appendChild(ga);
+
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-S146W8G7MB');
 
     // Vercel Web Analytics
-    var va = document.createElement('script');
+    let va = document.createElement('script');
     va.src = '/_vercel/insights/script.js';
     va.defer = true;
     document.head.appendChild(va);
 
-    // Vercel Speed Insights (Specifically for performance tracking)
-    var vsi = document.createElement('script');
+    // Vercel Speed Insights
+    let vsi = document.createElement('script');
     vsi.src = '/_vercel/speed-insights/script.js';
     vsi.defer = true;
     document.head.appendChild(vsi);
 }
 
-// 4. PWA Service Worker
+// ===============================
+// PWA
+// ===============================
 function registerPWA() {
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('/sw.js')
-                .then(reg => console.log('PWA Registered'))
+                .then(() => console.log('PWA Registered'))
                 .catch(err => console.log('PWA Error', err));
         });
     }
 }
 
-// --- All Executions ---
+// ===============================
+// ADS (FINAL – AUTO ON ALL PAGES)
+// ===============================
+
+// In-Page Push (Zone: 10668651)
+function loadInPagePushAd() {
+    if (document.getElementById('inPagePushAd')) return;
+
+    let s = document.createElement('script');
+    s.id = 'inPagePushAd';
+    s.dataset.zone = '10668651';
+    s.src = 'https://nap5k.com/tag.min.js';
+    s.async = true;
+
+    (document.documentElement || document.body).appendChild(s);
+}
+
+// Vignette Banner (Zone: 10668920)
+function loadVignetteBannerAd() {
+    if (document.getElementById('vignetteBannerAd')) return;
+
+    let s = document.createElement('script');
+    s.id = 'vignetteBannerAd';
+    s.dataset.zone = '10668920';
+    s.src = 'https://gizokraijaw.net/vignette.min.js';
+    s.async = true;
+
+    (document.documentElement || document.body).appendChild(s);
+}
+
+// Push Notification (Zone: 10668929)
+function loadPushNotificationAd() {
+    if (document.getElementById('pushNotificationAd')) return;
+
+    let s = document.createElement('script');
+    s.id = 'pushNotificationAd';
+    s.src = 'https://5gvci.com/act/files/tag.min.js?z=10668929';
+    s.async = true;
+    s.setAttribute('data-cfasync', 'false');
+
+    document.body.appendChild(s);
+}
+
+// ===============================
+// EXECUTION (ORDER MATTERS)
+// ===============================
 injectHeadElements();
 loadComponent('navbar-placeholder', 'navbar.html');
 loadComponent('footer-placeholder', 'footer.html');
 enableProtection();
 loadAllAnalytics();
 registerPWA();
+
+// 🔥 Ads – Auto on Every Page
+loadInPagePushAd();
+loadVignetteBannerAd();
+loadPushNotificationAd();
