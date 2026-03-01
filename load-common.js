@@ -108,20 +108,26 @@ function registerPWA() {
 }
 
 // ==========================================
-// 5. PROPELLERADS MULTITAG INTEGRATION
+// 5. PROPELLERADS MULTITAG INTEGRATION (FIXED)
 // ==========================================
 function loadPropellerAds() {
+    // 1. Script element banayein
     var multitagScript = document.createElement('script');
     multitagScript.src = 'https://quge5.com/88/tag.min.js';
     multitagScript.setAttribute('data-zone', '215384');
-    multitagScript.async = true;
-    multitagScript.setAttribute('data-cfasync', 'false');
+    
+    // 2. Performance ke liye zaroori attributes
+    multitagScript.async = true; // Non-blocking
+    multitagScript.setAttribute('data-cfasync', 'false'); // CDN optimization
+    
+    // 3. Head mein append karein
     document.head.appendChild(multitagScript);
-    console.log('MultiTag Loaded');
+    
+    console.log('MultiTag Loaded Successfully');
 }
 // ==========================================
 
-
+// ... (Baaki functions jaise injectHeadElements, enableProtection etc.) ...
 
 // --- All Executions ---
 injectHeadElements();
@@ -131,5 +137,5 @@ enableProtection();
 loadAllAnalytics();
 registerPWA();
 
-// PropellerAds ko tab chalao jab components load ho jayein
+// 4. Sabse last mein call karein
 window.addEventListener("load", loadPropellerAds);
