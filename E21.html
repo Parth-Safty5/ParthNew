@@ -19,11 +19,33 @@
         .main-title h1 { margin:0; font-size: 1.8rem; color: #111; }
         .q-card { background: white; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 3px 15px rgba(0,0,0,0.06); overflow: hidden; border: 1px solid #eee; }
         .q-header { padding: 22px; cursor: pointer; font-size: 1.15rem; color:#111; font-weight: 500; }
+        .q-header h3 { margin: 0; font-size: 1.15rem; font-weight: 500; }
         .ans-panel { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0, 1, 0, 1); background: #fcfcfc; }
         .ans-body { padding: 20px; border-left: 6px solid #28a745; margin: 15px; background: white; border-radius: 4px; box-shadow: inset 0 0 10px rgba(0,0,0,0.02); }
+        .ans-body h4 { margin: 0 0 10px 0; font-weight: normal; font-size: 1rem; }
+        
+        /* TOC Styles */
+        .toc-container { background: #fff; padding: 20px; border-radius: 12px; border: 2px solid #e0e0e0; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .toc-container h3 { margin-top: 0; color: #0056b3; }
+        .toc-container ul { margin-bottom: 0; padding-left: 20px; }
+        .toc-container li { margin-bottom: 8px; }
+        .toc-container a { color: #333; text-decoration: none; transition: 0.2s; }
+        .toc-container a:hover { color: #0056b3; text-decoration: underline; }
+        
+        /* Sub-question styles */
+        .sub-q-block { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ccc; }
+        .sub-q-title { margin: 0 0 8px 0; color: #0056b3; font-size: 1rem; }
+        .sub-q-ans { font-size: 0.95rem; color: #444; padding-left: 10px; }
+
+        /* Sub-sub-question styles */
+        .sub-sub-q-block { margin-top: 10px; padding-top: 10px; border-left: 3px solid #eee; padding-left: 15px; }
+        .sub-sub-q-title { margin: 0 0 5px 0; color: #17a2b8; font-size: 0.95rem; }
+        .sub-sub-q-ans { font-size: 0.9rem; color: #555; }
+
         .btn-toggle { width: 100%; padding: 14px; border: none; background: #f9f9f9; color: #0056b3; font-weight: bold; cursor: pointer; border-top: 1px solid #eee; transition: 0.3s; }
         .btn-toggle:hover { background: #f0f7ff; }
         .topic-note { background: #e7f3ff; padding: 18px; border-radius: 10px; margin: 35px 0 20px; font-weight: bold; color: #004085; text-align: center; border: 1px solid #b8daff; font-size: 1.2rem; }
+        .topic-note h2 { margin: 0; font-size: 1.2rem; }
         .nav-bar { display: flex; justify-content: space-between; margin: 50px 0 30px; }
         .nav-btn { background: #0056b3; color: white; text-decoration: none; padding: 14px 30px; border-radius: 10px; font-weight: bold; transition: 0.3s; }
         .nav-btn:hover { background: #003d82; transform: translateY(-2px); }
@@ -39,57 +61,74 @@
         <div class="main-title"><h1>4.5 The Last Lesson - English Workshop and Warming Up Solutions</h1></div>
         
         
-        <div class="topic-note">Warming Up</div>
+        <div class="toc-container">
+            <h3>Table of Contents</h3>
+            <ul><li><a href="#section-1">Warming Up</a></li><li><a href="#section-2">Growing Sentences </a></li><li><a href="#section-3">English Workshop</a></li><li><a href="#section-4">Summary of "4.5 The Last Lesson"</a></li><li><a href="#section-5">Difficult words and Manings of "4.5 The Last Lesson"</a></li><li><a href="#section-6">Frequently Asked Questions (FAQs)</a></li></ul>
+        </div>
+        
+        
+        <div class="topic-note"><h2 id="section-1">Warming Up</h2></div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>Chit-Chat:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>Chit-Chat:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;"><b>• How was this year for you?</b></div>
-                    <div style="margin-bottom:10px;">It was a mix of challenges and growth. I learned a lot of new things, not just from books but also about managing my time better.</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>• Are you happy with what you could study this year?</b></div>
-                    <div style="margin-bottom:10px;">Yes, I am generally happy. I feel I’ve made good progress in Science and English, though I think I could have focused more on Mathematics.</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>• What did you miss, or could not do?</b></div>
-                    <div style="margin-bottom:10px;">I missed participating in the inter-school sports meet because of a minor injury. I also couldn't complete the extra reading list I had planned for the summer.</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>• What do you plan to do about it – about the things you could not do/study well?</b></div>
-                    <div style="margin-bottom:10px;">I plan to set aside 30 minutes every weekend to catch up on my reading list and join a local sports club to stay active.</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>• What was the best moment for you this year?</b></div>
-                    <div style="margin-bottom:10px;">The best moment was when our team won the class debate competition. It felt great to see our hard work pay off!</div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">How was this year for you?</h5>
+                            <div class="sub-q-ans">It was a mix of challenges and growth. I learned a lot of new things, not just from books but also about managing my time better.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">Are you happy with what you could study this year?</h5>
+                            <div class="sub-q-ans">Yes, I am generally happy. I feel I’ve made good progress in Science and English, though I think I could have focused more on Mathematics.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">What did you miss, or could not do?</h5>
+                            <div class="sub-q-ans">I missed participating in the inter-school sports meet because of a minor injury. I also couldn't complete the extra reading list I had planned for the summer.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">What do you plan to do about it – about the things you could not do/study well?</h5>
+                            <div class="sub-q-ans">I plan to set aside 30 minutes every weekend to catch up on my reading list and join a local sports club to stay active.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">What was the best moment for you this year?</h5>
+                            <div class="sub-q-ans">The best moment was when our team won the class debate competition. It felt great to see our hard work pay off!</div>
+                            
+                        </div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
-        <div class="topic-note">Growing Sentences </div>
+        <div class="topic-note"><h2 id="section-2">Growing Sentences </h2></div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>This activity helps you see how sentences become more complex as you add more words. Here is how you can follow the pattern:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>This activity helps you see how sentences become more complex as you add more words. Here is how you can follow the pattern:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
                     <div style="overflow-x:auto;"><table border="1" style="width:100%; border-collapse:collapse; margin:10px 0; background:white;">
                         <tr>
-                            <td style="padding:12px; border:1px solid #ddd;"><b>Group Size</b></td>
-                            <td style="padding:12px; border:1px solid #ddd;"><b>Sentences</b></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>Group Size</b></h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>Sentences</b></h4></td>
                         </tr>
                         <tr>
-                            <td style="padding:12px; border:1px solid #ddd;">2 Words</td>
-                            <td style="padding:12px; border:1px solid #ddd;">1. Birds fly. / 2. I study. </td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>2 Words 	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>1. Birds fly. / 2. I study. </h4></td>
                         </tr>
                         <tr>
-                            <td style="padding:12px; border:1px solid #ddd;">3 Words</td>
-                            <td style="padding:12px; border:1px solid #ddd;">1. The sun shines. / 2. We like music. / 3. Cats drink milk.</td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>3 Words 	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>1. The sun shines. / 2. We like music. / 3. Cats drink milk. </h4></td>
                         </tr>
                         <tr>
-                            <td style="padding:12px; border:1px solid #ddd;">4 Words</td>
-                            <td style="padding:12px; border:1px solid #ddd;">1. I love my school. / 2. Rain falls from clouds. / 3. He reads many books. / 4. Flowers bloom in spring. </td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>4 Words 	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>1. I love my school. / 2. Rain falls from clouds. / 3. He reads many books. / 4. Flowers bloom in spring. </h4></td>
                         </tr>
                         <tr>
-                            <td style="padding:12px; border:1px solid #ddd;">5 Words</td>
-                            <td style="padding:12px; border:1px solid #ddd;">1. My mother cooks delicious food. / 2. The blue sky is beautiful.</td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>5 Words 	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>1. My mother cooks delicious food. / 2. The blue sky is beautiful.</h4></td>
                         </tr>
                     </table></div>
                 </div>
@@ -97,53 +136,53 @@
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
-        <div class="topic-note">English Workshop</div>
+        <div class="topic-note"><h2 id="section-3">English Workshop</h2></div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>1. Find the meaning of the following words from a good dictionary.</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>1. Find the meaning of the following words from a good dictionary.</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;"><b>• sawmill:</b> A factory or place where logs are sawn into planks or boards by machine.</div>
-                    <div style="margin-bottom:10px;"><b>• Prussian: </b>Relating to Prussia, its people, or their language (historically a prominent German state).</div>
-                    <div style="margin-bottom:10px;"><b>• apprentice:</b> A person who is learning a trade from a skilled employer, having agreed to work for a fixed period at low wages.</div>
-                    <div style="margin-bottom:10px;"><b>• nuisance: </b>A person, thing, or circumstance causing inconvenience or annoyance.</div>
-                    <div style="margin-bottom:10px;"><b>• cranky:</b> Ill-tempered, irritable, or difficult to deal with.</div>
-                    <div style="margin-bottom:10px;"><b>• hold fast to something: </b>To remain tightly attached to something or to refuse to give up an idea or principle.</div>
-                    <div style="margin-bottom:10px;"><b>• at one stroke:</b> With a single immediate action or effort.</div>
-                    <div style="margin-bottom:10px;"><b>• might: </b>Great power, strength, or force.</div>
+                    <div style="margin-bottom:10px;"><h4><b>• sawmill:</b> A factory or place where logs are sawn into planks or boards by machine.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• Prussian: </b>Relating to Prussia, its people, or their language (historically a prominent German state).</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• apprentice:</b> A person who is learning a trade from a skilled employer, having agreed to work for a fixed period at low wages.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• nuisance:</b> A person, thing, or circumstance causing inconvenience or annoyance.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• cranky:</b> Ill-tempered, irritable, or difficult to deal with.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• hold fast to something:</b> To remain tightly attached to something or to refuse to give up an idea or principle.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• at one stroke:</b> With a single immediate action or effort.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• might:</b> Great power, strength, or force.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>2. List the people and their occupations mentioned in the story.</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>2. List the people and their occupations mentioned in the story.</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;"><b>Based on "The Last Lesson":</b></div>
-                    <div style="margin-bottom:10px;"><b>• M. Hamel:</b> Teacher (French teacher).</div>
-                    <div style="margin-bottom:10px;"><b>• Franz:</b> Student.</div>
-                    <div style="margin-bottom:10px;"><b>• Wachter:</b> Blacksmith.</div>
-                    <div style="margin-bottom:10px;"><b>• Hauser:</b> Former Mayor.</div>
-                    <div style="margin-bottom:10px;"><b>• The former postmaster:</b> Postmaster.</div>
-                    <div style="margin-bottom:10px;"><b>• Prussian soldiers:</b> Soldiers (drillers).</div>
+                    <div style="margin-bottom:10px;"><h4><b>Based on "The Last Lesson":</b></h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• M. Hamel:</b> Teacher (French teacher).</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• Franz: </b>Student.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• Wachter:</b> Blacksmith.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• Hauser:</b> Former Mayor.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• The former postmaster:</b> Postmaster.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>• Prussian soldiers:</b> Soldiers (drillers).</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>3. Find five words ending with ‘-ing’ and five words ending with ‘-ed’ from the lesson.</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>3. Find five words ending with ‘-ing’ and five words ending with ‘-ed’ from the lesson.</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
                     <div style="overflow-x:auto;"><table border="1" style="width:100%; border-collapse:collapse; margin:10px 0; background:white;">
                         <tr>
-                            <td style="padding:12px; border:1px solid #ddd;"><b>Words ending with ‘-ing’ </b></td>
-                            <td style="padding:12px; border:1px solid #ddd;"><b>Words ending with ‘-ed’</b></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>Words ending with ‘-ing’ </b></h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>Words ending with ‘-ed’</b></h4></td>
                         </tr>
                         <tr>
-                            <td style="padding:12px; border:1px solid #ddd;">o Running <br>o Chirping <br>o Drilling <br>o Thinking <br>o Writing</td>
-                            <td style="padding:12px; border:1px solid #ddd;">o Scared <br>o Started <br>o Hurried <br>o Stopped <br>o Opened</td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>o Running <br>o Chirping <br>o Drilling <br>o Thinking <br>o Writing</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>o Scared <br>o Started <br>o Hurried <br>o Stopped <br>o Opened</h4></td>
                         </tr>
                     </table></div>
                 </div>
@@ -152,136 +191,341 @@
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>4. Find five examples of commonly used past participles from the story. For example, said, learnt.</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>4. Find five examples of commonly used past participles from the story. For example, said, learnt.</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">• Been</div>
-                    <div style="margin-bottom:10px;">• Done</div>
-                    <div style="margin-bottom:10px;">• Seen</div>
-                    <div style="margin-bottom:10px;">• Written</div>
-                    <div style="margin-bottom:10px;">• Taken</div>
+                    <div style="margin-bottom:10px;"><h4>• Been</h4></div>
+                    <div style="margin-bottom:10px;"><h4>• Done</h4></div>
+                    <div style="margin-bottom:10px;"><h4>• Seen</h4></div>
+                    <div style="margin-bottom:10px;"><h4>• Written</h4></div>
+                    <div style="margin-bottom:10px;"><h4>• Taken</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>5. What is the meaning of the following words and phrases in the passage? Choose the correct alternative.</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>5. What is the meaning of the following words and phrases in the passage? Choose the correct alternative.</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;"><b>(a) ......... was in great dread of</b></div>
-                    <div style="margin-bottom:10px;">(i) was in a great hall</div>
-                    <div style="margin-bottom:10px;">(ii) was in great demand</div>
-                    <div style="margin-bottom:10px;"><b>(iii) was afraid of</b></div>
-                    <div style="margin-bottom:10px;">(iv) was angry with</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>(b) ......... did not know the first word about them</b></div>
-                    <div style="margin-bottom:10px;"><b>(i) did not know anything about them</b></div>
-                    <div style="margin-bottom:10px;">(ii) did not care about them</div>
-                    <div style="margin-bottom:10px;">(iii) knew all the words except the first word</div>
-                    <div style="margin-bottom:10px;">(iv) had not learnt them by heart</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>(c) terrible iron ruler</b></div>
-                    <div style="margin-bottom:10px;">(i) a great king</div>
-                    <div style="margin-bottom:10px;">(ii) a ruler made of poor quality iron</div>
-                    <div style="margin-bottom:10px;">(iii) a magic ruler</div>
-                    <div style="margin-bottom:10px;"><b>(iv) ruler with which the master hit the student hard</b></div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>(d) ......... got a little over my fright</b></div>
-                    <div style="margin-bottom:10px;">(i) got very frightened</div>
-                    <div style="margin-bottom:10px;">(ii) got something because I was frightened</div>
-                    <div style="margin-bottom:10px;">(iii) became little</div>
-                    <div style="margin-bottom:10px;"><b>(iv) got less frightened</b></div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>(e) What a thunderclap these words were to me !</b></div>
-                    <div style="margin-bottom:10px;"><b>(i) The words came as a shock.</b></div>
-                    <div style="margin-bottom:10px;">(ii) He shouted the words at me.</div>
-                    <div style="margin-bottom:10px;">(iii) There was thunder and lightning.</div>
-                    <div style="margin-bottom:10px;">(iv) The words were accompanied by claps.</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>(f) ......... she put off learning tomorrow</b></div>
-                    <div style="margin-bottom:10px;">(i) she prepare for learning</div>
-                    <div style="margin-bottom:10px;">(ii) she did not learn at that time</div>
-                    <div style="margin-bottom:10px;"><b>(iii) she cancelled tomorrow’s learning</b></div>
-                    <div style="margin-bottom:10px;">(iv) she studied the word ‘tomorrow’.</div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(a) ......... was in great dread of<br>(i) was in a great hall <br>(ii) was in great demand <br>(iii) was afraid of <br>(iv) was angry with</h5>
+                            <div class="sub-q-ans">(iii) was afraid of</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(b) ......... did not know the first word about them <br>(i) did not know anything about them <br>(ii) did not care about them <br>(iii) knew all the words except the first word <br>(iv) had not learnt them by heart</h5>
+                            <div class="sub-q-ans">(i) did not know anything about them</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(c) terrible iron ruler<br>(i) a great king <br>(ii) a ruler made of poor quality iron <br>(iii) a magic ruler <br>(iv) ruler with which the master hit the student hard</h5>
+                            <div class="sub-q-ans">(iv) ruler with which the master hit the student hard</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(d) ......... got a little over my fright <br>(i) got very frightened <br>(ii) got something because I was frightened <br>(iii) became little <br>(iv) got less frightened</h5>
+                            <div class="sub-q-ans">(iv) got less frightened</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(e) What a thunderclap these words were to me ! <br>(i) The words came as a shock. <br>(ii) He shouted the words at me. <br>(iii) There was thunder and lightning. <br>(iv) The words were accompanied by claps.</h5>
+                            <div class="sub-q-ans">(i) The words came as a shock.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">(f) ......... she put off learning tomorrow <br>(i) she prepare for learning <br>(ii) she did not learn at that time <br>(iii) she cancelled tomorrow’s learning <br>(iv) she studied the word ‘tomorrow’.</h5>
+                            <div class="sub-q-ans">(iii) she cancelled tomorrow’s learning</div>
+                            
+                        </div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>6. Fill in the following blanks using proper words from ‘who’, ‘when’, ‘what’, ‘how’ or ‘why’.</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>6. Fill in the following blanks using proper words from ‘who’, ‘when’, ‘what’, ‘how’ or ‘why’.</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">(a) She started jumping for joy <u>when</u> she heard the news.</div>
-                    <div style="margin-bottom:10px;">(b) You must tell <u>why</u> I mustn’t do it.</div>
-                    <div style="margin-bottom:10px;">(c) The person <u>who</u> is making the speech is my friend.</div>
-                    <div style="margin-bottom:10px;">(d) They wondered <u>what</u> had happened to him.</div>
-                    <div style="margin-bottom:10px;">(e) You must show me <u>how</u> to mix the solutions.</div>
-                    <div style="margin-bottom:10px;">(f) I’ll tell you <u>when</u> it is time to leave.</div>
+                    <div style="margin-bottom:10px;"><h4>(a) She started jumping for joy <b>when</b> she heard the news.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>(b) You must tell<b> why </b>I mustn’t do it.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>(c) The person <b>who </b>is making the speech is my friend.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>(d) They wondered<b> what </b>had happened to him.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>(e) You must show me <b>how</b> to mix the solutions.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>(f) I’ll tell you <b>when</b> it is time to leave.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>Write a letter of thanks to your English teacher. Thank him/her for everything that he/she did for you.</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>Write a letter of thanks to your English teacher. Thank him/her for everything that he/she did for you.</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">Date: 31st January 2026</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;">Dear Teacher,</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;">I am writing this letter to express my heartfelt gratitude for everything you have taught me this year. Thank you for making English lessons so interesting and for encouraging me to improve my communication skills. Your patience and guidance have helped me gain confidence in myself. I will always remember your kindness and the valuable lessons you shared.</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;">Yours sincerely,</div>
-                    <div style="margin-bottom:10px;">[Your Name]</div>
+                    <div style="margin-bottom:10px;"><h4>Date: 31st January 2026</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Dear Teacher,</h4></div>
+                    <div style="margin-bottom:10px;"><h4>I am writing this letter to express my heartfelt gratitude for everything you have taught me this year. Thank you for making English lessons so interesting and for encouraging me to improve my communication skills. Your patience and guidance have helped me gain confidence in myself. I will always remember your kindness and the valuable lessons you shared.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Yours sincerely,</h4></div>
+                    <div style="margin-bottom:10px;"><h4>[Your Name]</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>7. Write a short note on your mother tongue and the attempts you make to study it well.</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>7. Write a short note on your mother tongue and the attempts you make to study it well.</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">My mother tongue is Marathi (or insert your specific language). It is the language I use to express my deepest feelings and connect with my culture. To study it well, I make it a point to read local newspapers and classic literature every week. I also practice writing essays and poems to improve my vocabulary and ensure I am using the correct grammar, as speaking a language is often different from writing it formally.</div>
+                    <div style="margin-bottom:10px;"><h4>My mother tongue is Marathi (or insert your specific language). It is the language I use to express my deepest feelings and connect with my culture. To study it well, I make it a point to read local newspapers and classic literature every week. I also practice writing essays and poems to improve my vocabulary and ensure I am using the correct grammar, as speaking a language is often different from writing it formally.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>8. Write points and counter points on the following topics:</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>8. Write points and counter points on the following topics:</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;"><b>• Topic 1: You should study all subjects in your mother tongue.</b></div>
-                    <div style="margin-bottom:10px;">o Points (For): Learning in one's mother tongue makes it easier to understand complex concepts quickly. it also helps in preserving local culture and heritage.</div>
-                    <div style="margin-bottom:10px;">o Counter points (Against): Many higher education resources and global job opportunities require proficiency in international languages like English. Studying only in a mother tongue might limit a student's global reach.</div>
-                    <div style="margin-bottom:10px;"><br></div>
-                    <div style="margin-bottom:10px;"><b>• Topic 2: You must memorise the rules of grammar.</b></div>
-                    <div style="margin-bottom:10px;">o Points (For): Knowing the rules provides a strong foundation for writing and speaking accurately. It helps avoid misunderstandings and ensures professional communication.</div>
-                    <div style="margin-bottom:10px;">o Counter points (Against): Language is best learned through usage and immersion rather than rote memorization. Focusing too much on rules can make a person hesitant or "stiff" when trying to speak naturally.</div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">• Topic 1: You should study all subjects in your mother tongue.</h5>
+                            <div class="sub-q-ans"><b>o Points (For):</b> Learning in one's mother tongue makes it easier to understand complex concepts quickly. it also helps in preserving local culture and heritage.
+<br>
+<b>o Counter points (Against):</b> Many higher education resources and global job opportunities require proficiency in international languages like English. Studying only in a mother tongue might limit a student's global reach.</div>
+                            
+                        </div>
+                        <div class="sub-q-block">
+                            <h5 class="sub-q-title">• Topic 2: You must memorise the rules of grammar.</h5>
+                            <div class="sub-q-ans"><b>o Points (For):</b> Knowing the rules provides a strong foundation for writing and speaking accurately. It helps avoid misunderstandings and ensures professional communication.
+<br>
+<b>o Counter points (Against):</b> Language is best learned through usage and immersion rather than rote memorization. Focusing too much on rules can make a person hesitant or "stiff" when trying to speak naturally.</div>
+                            
+                        </div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>9. Why was Franz sad?</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>9. Why was Franz sad?</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">Franz was sad because he realized that this was his last French lesson and he would no longer be able to learn his mother tongue. He felt a deep sense of regret for having neglected his studies, wasting time chasing birds' eggs or sliding on the Saar instead of learning his grammar. The sudden realization that his books, which had seemed like such a nuisance before, were now like "old friends" made him feel heavy-hearted.</div>
+                    <div style="margin-bottom:10px;"><h4>Franz was sad because he realized that this was his last French lesson and he would no longer be able to learn his mother tongue. He felt a deep sense of regret for having neglected his studies, wasting time chasing birds' eggs or sliding on the Saar instead of learning his grammar. The sudden realization that his books, which had seemed like such a nuisance before, were now like "old friends" made him feel heavy-hearted.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
         </div>
 
         <div class="q-card">
-            <div class="q-header" onclick="toggleAns(this)"><b>10. What should people never lose even when they lose freedom?</b></div>
+            <div class="q-header" onclick="toggleAns(this)"><h3>10. What should people never lose even when they lose freedom?</h3></div>
             <div class="ans-panel">
                 <div class="ans-body">
-                    <div style="margin-bottom:10px;">According to the story, people should never lose their language. M. Hamel explains that when a people are enslaved, as long as they hold fast to their language, it is as if they have the "key to their prison". Language is a symbol of identity, unity, and cultural pride that remains with a person even when physical freedom is taken away.</div>
+                    <div style="margin-bottom:10px;"><h4>According to the story, people should never lose their language. M. Hamel explains that when a people are enslaved, as long as they hold fast to their language, it is as if they have the "key to their prison". Language is a symbol of identity, unity, and cultural pride that remains with a person even when physical freedom is taken away.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="topic-note"><h2 id="section-4">Summary of "4.5 The Last Lesson"</h2></div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>Summary of "4.5 The Last Lesson"</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4><b>1. A Strange Morning</b></h4></div>
+                    <div style="margin-bottom:10px;"><h4>The story is told by a young French boy named Franz. One morning, he is late for school and afraid of being scolded by his teacher, M. Hamel, especially since Franz hasn't studied his grammar lesson on participles. As he walks to school, he notices a crowd at the town hall bulletin board, where all the bad news about the war usually appears.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>2. An Unusual Atmosphere</b></h4></div>
+                    <div style="margin-bottom:10px;"><h4>When Franz reaches school, he is surprised by the unusual silence. Usually, the school is noisy with the sound of opening desks and lessons being repeated. Instead, it feels as quiet as a Sunday morning. Even more surprising, M. Hamel is dressed in his best clothes—a green coat and silk cap—which he only wears on special days. At the back of the classroom, village elders like the former mayor and postmaster are sitting quietly, looking sad.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>3. The Shocking News</b></h4></div>
+                    <div style="margin-bottom:10px;"><h4>M. Hamel stands up and kindly breaks the news: an order has come from Berlin that only German will be taught in the schools of Alsace and Lorraine. This is their very last French lesson.</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Franz is shocked. He suddenly regrets all the time he wasted instead of learning his language. His books, which used to feel like a heavy burden, now feel like old friends he doesn't want to leave. He also feels sorry for M. Hamel, who is being forced to leave after forty years of faithful service.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>4. The Importance of Language</b></h4></div>
+                    <div style="margin-bottom:10px;"><h4>During the lesson, M. Hamel explains that French is the most beautiful, clearest, and most logical language in the world. He tells the class that they must guard it among themselves because:</h4></div>
+                    <div style="margin-bottom:10px;"><h4>"When a people are enslaved, as long as they hold fast to their language, it is as if they had the key to their prison."</h4></div>
+                    <div style="margin-bottom:10px;"><h4>Franz finds himself paying more attention than ever before. Everything the teacher says seems easy to understand because both the teacher and the students are finally realizing the true value of their education.</h4></div>
+                    <div style="margin-bottom:10px;"><h4><b>5. A Final Farewell</b></h4></div>
+                    <div style="margin-bottom:10px;"><h4>As the church clock strikes twelve, the sound of Prussian trumpets is heard outside. M. Hamel tries to speak, but he is too overcome with emotion to finish his sentence. Instead, he turns to the blackboard, takes a piece of chalk, and writes as large as he can:</h4></div>
+                    <div style="margin-bottom:10px;"><h4>"VIVE LA FRANCE!" (Long Live France!)</h4></div>
+                    <div style="margin-bottom:10px;"><h4>He then leans his head against the wall and signals with his hand that school is dismissed.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="topic-note"><h2 id="section-5">Difficult words and Manings of "4.5 The Last Lesson"</h2></div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>Difficult words and Manings</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="overflow-x:auto;"><table border="1" style="width:100%; border-collapse:collapse; margin:10px 0; background:white;">
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>Word</b></h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>English Meaning</b></h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4><b>Hindi Meaning</b></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Dread	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Great fear or apprehension	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>डर / खौफ </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Scolding	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>An angry rebuke or reprimand	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>डांट-फटकार </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Participles	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>A specific topic in grammar	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>व्याकरण का एक हिस्सा (कृदंत) </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Drilling	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Military training or exercise	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>सैन्य अभ्यास</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Bulletin board	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>A board for displaying notices	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>सूचना-पट्ट </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Apprentice	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>A person learning a trade from a skilled employer	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>प्रशिक्षु / चेला</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Bustle	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Excited activity and movement	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>हलचल / शोर-शराबा </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Unison	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Simultaneous performance of action or speech	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>एक साथ / एक स्वर में </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Rapping	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Striking a hard surface with a series of rapid blows	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>खटखटाना </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Solemn	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Formal and dignified; serious	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>गंभीर </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Embroidered	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Decorated with patterns of thread	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>कढ़ाई किया हुआ </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Mounted	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>To get up on something (like a chair or horse)	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>चढ़ना या बैठना</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Thunderclap	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Something startling or unexpected	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>बिजली की कड़क (अचानक लगा सदमा) </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Wretched	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>In a very unhappy or unfortunate state	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>अभागा / दयनीय </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Nuisance	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>A person, thing, or circumstance causing inconvenience	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>मुसीबत / आफत </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Cranky	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Bad-tempered; irritable	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>चिड़चिड़ा </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Faithful	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Remaining loyal and steadfast	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>वफादार / निष्ठावान</h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Reproach	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>To express disapproval or disappointment	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>तिरस्कार / दोष देना </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Enslaved	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>To cause someone to lose their freedom	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>गुलाम बनाना </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Hold fast	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>To remain tightly attached; to not let go	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>मजबूती से थामे रखना </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>At one stroke	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>All at once; in a single action	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>एक ही बार में </h4></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Choking	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>Having difficulty breathing; unable to speak due to emotion	</h4></td>
+                            <td style="padding:12px; border:1px solid #ddd;"><h4>गला भर आना (भावुक होना)</h4></td>
+                        </tr>
+                    </table></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="topic-note"><h2 id="section-6">Frequently Asked Questions (FAQs)</h2></div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>1. Why did the Prussian occupation forces decide to ban French in schools immediately?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>The ban was a strategic move to undermine the cultural identity of the Alsatians. By removing the French language, the Prussians aimed to sever the historical and emotional connection between the people of Alsace and France, making them easier to assimilate into the German Empire over time.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>2. How does the character of M. Hamel represent the "silent resistance" of the local people?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>M. Hamel represents resistance not through violence, but through <b>cultural preservation</b>. By teaching with extra devotion on his final day and emphasizing the beauty of the French language, he encourages his students to keep their identity alive despite the foreign occupation. His writing of "Vive La France!" is his final, defiant stand.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>. What does the presence of the village elders on the back benches symbolize?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>Their presence symbolizes a collective sense of <b>guilt, regret, and patriotism</b>. They represent the older generation who failed to prioritize education for themselves and their children. They are there to pay their respects to the teacher, the language, and the country they are losing, demonstrating that the loss of language affects the entire community, not just the students.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>4. In what way does Franz's attitude towards his books change, and what does this reflect?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>Initially, Franz views his books as nuisances—heavy, boring burdens. After hearing about the ban, he sees them as "old friends" he cannot abandon. This transformation reflects a universal truth: <b>we only realize the true value of something once we are about to lose it</b>. It highlights the carelessness of youth towards cultural heritage.</h4></div>
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>
+
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>5. What is the symbolic meaning of the Prussian soldiers drilling behind the sawmill?</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">
+                    <div style="margin-bottom:10px;"><h4>The soldiers drilling symbolize the <b>encroaching power of war and the loss of freedom</b>. Their presence is a constant reminder that the quiet, studious atmosphere of the classroom is being forcefully shattered by the harsh realities of military occupation.</h4></div>
                 </div>
             </div>
             <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
