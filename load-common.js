@@ -55,22 +55,9 @@ function injectHeadElements() {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "ParthNew",
-        "url": window.location.origin
+        "url": window.location.origin // Ye automatic aapka current URL le lega
     });
     document.head.appendChild(schemaScript);
-
-    // ==========================================
-    // 5. PROPELLERADS MULTITAG INTEGRATION
-    // ==========================================
-    // JS ke bajaye seedha HTML append kar rahe hain verification ke liye
-    var adScript = document.createElement('script');
-    adScript.src = 'https://quge5.com/88/tag.min.js';
-    adScript.setAttribute('data-zone', '215384');
-    adScript.async = true;
-    adScript.setAttribute('data-cfasync', 'false');
-    document.head.appendChild(adScript);
-    console.log('PropellerAds Initiated');
-    // ==========================================
 }
 
 // 2. Copy Protection
@@ -121,7 +108,6 @@ function registerPWA() {
 }
 
 // --- All Executions ---
-// Ad integration ko SEO element ke sath hi inject kar rahe hain
 injectHeadElements();
 loadComponent('navbar-placeholder', 'navbar.html');
 loadComponent('footer-placeholder', 'footer.html');
