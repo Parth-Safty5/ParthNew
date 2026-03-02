@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S146W8G7MB');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Disclaimer - ParthNew Educational Portal</title>
     <meta name="description" content="Read the disclaimer for ParthNew. We provide educational solutions for Std 9th and 10th for informational purposes only.">
-    <link rel="canonical" href="https://parthnew.vercel.app/disclaimer">
-
 
     <link rel="icon" type="image/png" href="./logo.png">
 
@@ -20,11 +28,18 @@
     <meta name="theme-color" content="#004aad">
     <link rel="apple-touch-icon" href="/logo.png">
 
-
     <!-- Common JS Loader (DO NOT REMOVE) -->
     <script src="/load-common.js" defer></script>
 
     <style>
+        :root {
+            --primary-blue: #004aad;
+            --secondary-blue: #003087;
+            --accent-yellow: #ffc107;
+            --bg-light: #f8f9fa;
+            --text: #333;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -34,6 +49,32 @@
             min-height: 100vh;
         }
 
+        /* ---------------- Standard Navbar ---------------- */
+        .main-nav {
+            background: #fff;
+            padding: 0 10%;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            font-family: 'Roboto', sans-serif;
+        }
+        .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+        .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; }
+        .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; margin: 0; }
+        .logo h3 span { color: var(--accent-yellow); }
+
+        .nav-links { display: flex; list-style: none; margin: 0; padding: 0; }
+        .nav-links li a { text-decoration: none; color: #333; margin-left: 25px; font-weight: 500; }
+
+        .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+        .hamburger span { width: 25px; height: 3px; background: #333; transition: 0.3s; }
+
+        /* ---------------- Disclaimer Card ---------------- */
         .disclaimer-wrapper {
             flex: 1;
             display: flex;
@@ -106,12 +147,76 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        /* ---------------- Standard Footer ---------------- */
+        .mini-footer {
+            background: var(--secondary-blue);
+            padding: 40px 0;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+        .footer-links-container {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .footer-link { color: white; text-decoration: none; font-size: 14px; opacity: 0.8; transition: 0.3s; padding: 5px 10px; }
+        .footer-link:hover { color: var(--accent-yellow); opacity: 1; }
+        .footer-separator { color: rgba(255, 255, 255, 0.3); display: inline; }
+        .copyright-text { font-size: 13px; color: rgba(255, 255, 255, 0.6); margin: 0; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: white;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            .nav-links.active { display: flex !important; }
+            .nav-links li { margin: 15px 0; text-align: center; }
+            .nav-links li a { margin: 0; font-size: 1.2rem; }
+
+            .hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+            .footer-links-container { flex-direction: column; gap: 10px; }
+            .footer-separator { display: none; }
+        }
     </style>
 </head>
 <body>
 
-    <div id="navbar-placeholder"></div>
+    <!-- Standard Navbar -->
+    <nav class="main-nav">
+        <a href="index.html" class="logo">
+            <img src="logo.webp" alt="Logo" class="logo-img">
+            <h3>Parth<span>New</span></h3>
+        </a>
 
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- Disclaimer Card -->
     <div class="disclaimer-wrapper">
         <div class="disclaimer-card">
             <div class="header-banner">
@@ -138,7 +243,28 @@
         </div>
     </div>
 
-    <div id="footer-placeholder"></div>
+    <!-- Standard Footer -->
+    <footer class="mini-footer">
+        <div class="footer-links-container">
+            <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+            <span class="footer-separator">|</span>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+            <span class="footer-separator">|</span>
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </div>
+        <p class="copyright-text">© 2026 ParthNew | Excellence in Learning</p>
+    </footer>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>

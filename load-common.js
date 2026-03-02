@@ -1,53 +1,4 @@
 // ===============================
-// Base Path Resolver
-// ===============================
-function getBasePath() {
-    return window.location.pathname.includes('ParthNew') ? '/ParthNew/' : '/';
-}
-
-// ===============================
-// Component Loader (Navbar / Footer)
-// ===============================
-async function loadComponent(id, file) {
-    const basePath = getBasePath();
-    const path = basePath + file;
-
-    try {
-        const response = await fetch(path);
-        if (!response.ok) return;
-
-        const container = document.getElementById(id);
-        if (!container) return;
-
-        container.innerHTML = await response.text();
-
-        container.querySelectorAll('a').forEach(link => {
-            const href = link.getAttribute('href');
-            if (href && !href.startsWith('http') && !href.startsWith('#')) {
-                link.href = basePath + href.replace(/^\//, '');
-            }
-        });
-
-        if (file === 'navbar.html') activateMobileMenu();
-
-    } catch (e) {
-        console.error('Component load error:', e);
-    }
-}
-
-function activateMobileMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.getElementById('navMenu');
-
-    if (hamburger && navMenu) {
-        hamburger.onclick = () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        };
-    }
-}
-
-// ===============================
 // Google Fonts Loader (ONCE)
 // ===============================
 function loadGoogleFonts() {
@@ -166,13 +117,9 @@ function loadPropellerAds() {
 }
 
 // ===============================
-// EXECUTION (ORDER MATTERS)
+// EXECUTION
 // ===============================
 loadGoogleFonts();
-
-loadComponent('navbar-placeholder', 'navbar.html');
-loadComponent('footer-placeholder', 'footer.html');
-
 enableProtection();
 loadAnalytics();
 registerPWA();

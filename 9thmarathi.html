@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="hi">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S146W8G7MB');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>इयत्ता ९ वी मराठी स्वाध्याय | Std 9th Marathi Swadhyay Answers | ParthNew</title>
-    <meta name="description" content="इयत्ता ९ वी मराठी (कुमारभारती) स्वाध्याय उत्तरे. Get complete Maharashtra State Board Class 9 Marathi Workshop and Swadhyay solutions online for free.">
-    <meta name="keywords" content="Std 9th Marathi Swadhyay, इयत्ता ९ वी मराठी स्वाध्याय, 9th Marathi Workshop Answers, Maharashtra Board Marathi Solutions, ParthNew Marathi">
+    <title>Select Chapter | Maharashtra State Board</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="./logo.png">
     
@@ -19,273 +27,231 @@
     <meta name="theme-color" content="#004aad">
     <link rel="apple-touch-icon" href="/logo.png">
 
-
     <!-- Common JS Loader (DO NOT REMOVE) -->
     <script src="/load-common.js" defer></script>
 
-    <style>
-        :root {
-            --primary: #0056b3;
-            --secondary: #e9ecef;
-            --text: #333;
-            --accent: #ffc107;
-        }
+<style>
+:root {
+    --primary: #0056b3;
+    --secondary: #e9ecef;
+    --text: #333;
+    --accent: #ffc107;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background-color: #f8f9fa; color: var(--text); padding-bottom: 50px; }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+/* Navbar */
+.main-nav {
+    background: #fff;
+    padding: 0 10%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+}
+.logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+.logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; }
+.logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; margin: 0; }
+.logo h3 span { color: #ffc107; }
 
-        body { background-color: #f8f9fa; color: var(--text); padding-bottom: 50px; }
+.nav-links { display: flex; list-style: none; margin: 0; padding: 0; }
+.nav-links li a { text-decoration: none; color: #333; margin-left: 25px; font-weight: 500; }
 
-        /* Hero Title */
-        .section-title {
-            text-align: center;
-            padding: 40px 20px;
-            background: white;
-            margin-bottom: 30px;
-        }
+.hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+.hamburger span { width: 25px; height: 3px; background: #333; transition: 0.3s; }
 
-        .section-title h1 { font-size: 1.8rem; margin-bottom: 10px; }
-        .section-title p { color: #666; font-size: 0.95rem; }
+/* Hero Title */
+.section-title {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    margin-bottom: 30px;
+}
+.section-title h1 { font-size: 1.8rem; margin-bottom: 10px; }
+.section-title p { color: #666; font-size: 0.95rem; }
 
-        /* Main Container */
-        .content-wrapper {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
+/* Main Container */
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* Chapter List Design */
+.chapter-list {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+}
+.chapter-link {
+    display: flex;
+    align-items: center;
+    padding: 18px 25px;
+    text-decoration: none;
+    color: var(--text);
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+.chapter-link:last-child { border-bottom: none; }
+.chapter-link:hover {
+    background-color: #f0f7ff;
+    padding-left: 35px;
+    color: var(--primary);
+}
+.chapter-index {
+    background: var(--secondary);
+    color: #555;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.chapter-link:hover .chapter-index {
+    background: var(--primary);
+    color: white;
+}
+.arrow { margin-left: auto; color: #ccc; font-weight: bold; }
 
-        /* Chapter List Design */
-        .chapter-list {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border: 1px solid #e0e0e0;
-        }
+/* Category Badge */
+.subject-badge {
+    display: inline-block;
+    background: var(--accent);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 
-        .chapter-link {
-            display: flex;
-            align-items: center;
-            padding: 18px 25px;
-            text-decoration: none;
-            color: var(--text);
-            border-bottom: 1px solid #f0f0f0;
-            transition: all 0.2s ease;
-            font-weight: 500;
-        }
+/* Footer */
+.mini-footer {
+    background: #003087;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.footer-links-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+.footer-link:hover {
+    color: #ffc107;
+    opacity: 1;
+}
+.footer-separator {
+    color: rgba(255, 255, 255, 0.3);
+    display: inline;
+}
+.copyright-text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
 
-        .chapter-link:last-child { border-bottom: none; }
-
-        .chapter-link:hover {
-            background-color: #f0f7ff;
-            padding-left: 35px;
-            color: var(--primary);
-        }
-
-        .chapter-index {
-            background: var(--secondary);
-            color: #555;
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            margin-right: 15px;
-            font-size: 0.85rem;
-            font-weight: 700;
-        }
-
-        .chapter-link:hover .chapter-index {
-            background: var(--primary);
-            color: white;
-        }
-
-        .arrow { margin-left: auto; color: #ccc; font-weight: bold; }
-
-        /* Category Badge */
-        .subject-badge {
-            display: inline-block;
-            background: var(--accent);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-    </style>
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger { display: flex; }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .nav-links.active { display: flex !important; }
+    .nav-links li { margin: 15px 0; text-align: center; }
+    .nav-links li a { margin: 0; font-size: 1.2rem; }
+    .hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    .footer-links-container { flex-direction: column; gap: 10px; }
+    .footer-separator { display: none; }
+}
+</style>
 </head>
 <body>
 
-    <div id="navbar-placeholder"></div>
+<!-- Navbar -->
+<nav class="main-nav">
+    <a href="index.html" class="logo">
+        <img src="logo.webp" alt="Logo" class="logo-img">
+        <h3>Parth<span>New</span></h3>
+    </a>
 
-    <div class="section-title">
-        <span class="subject-badge">MARATHI</span>
-        <h1>Select Chapter</h1>
-        <p>स्वाध्याय बघण्यासाठी Chapter वर क्लिक करा.</p>
+    <div class="hamburger">
+        <span></span><span></span><span></span>
     </div>
 
-    <div class="content-wrapper">
-        <div class="chapter-list">
-            
-            <a href="M1.html" class="chapter-link">
-                <span class="chapter-index">१</span>
-                <span class="chapter-name">वंद्य 'वन्दे मातरम्'</span>
-                <span class="arrow">❯</span>
-            </a>
+    <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+</nav>
 
-            <a href="M2.html" class="chapter-link">
-                <span class="chapter-index">२</span>
-                <span class="chapter-name">संतवाणी</span>
-                <span class="arrow">❯</span>
-            </a>
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.getElementById('navMenu');
+if (hamburger && navMenu) {
+    hamburger.onclick = () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    };
+}
+</script>
 
-            <a href="M3.html" class="chapter-link">
-                <span class="chapter-index">३</span>
-                <span class="chapter-name">कीर्ती कठीयाचा दृष्टान्त</span>
-                <span class="arrow">❯</span>
-            </a>
+<!-- Page Content -->
+<div class="section-title">
+    <span class="subject-badge">MARATHI</span>
+    <h1>Coming Soon</h1>
+</div>
 
-            <a href="M4.html" class="chapter-link">
-                <span class="chapter-index">४</span>
-                <span class="chapter-name">नात्यांची घट्ट वीण</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M5.html" class="chapter-link">
-                <span class="chapter-index">५</span>
-                <span class="chapter-name">एक होती समई</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M6.html" class="chapter-link">
-                <span class="chapter-index">*</span>
-                <span class="chapter-name">हास्यचित्रांतली मुलं</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M7.html" class="chapter-link">
-                <span class="chapter-index">६</span>
-                <span class="chapter-name">या झोपडीत माझ्या</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M8.html" class="chapter-link">
-                <span class="chapter-index">७</span>
-                <span class="chapter-name">दुपार</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M9.html" class="chapter-link">
-                <span class="chapter-index">८</span>
-                <span class="chapter-name">अभियंत्यांचे दैवत - डॉ. विश्वेश्वरय्या</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M10.html" class="chapter-link">
-                <span class="chapter-index">९</span>
-                <span class="chapter-name">मी वाचवतोय</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M11.html" class="chapter-link">
-                <span class="chapter-index">१०</span>
-                <span class="chapter-name">यंत्रांनी केला बंड</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M12.html" class="chapter-link">
-                <span class="chapter-index">*</span>
-                <span class="chapter-name">इंग्लंडचा हिवाळा</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M13.html" class="chapter-link">
-                <span class="chapter-index">*</span>
-                <span class="chapter-name">अपाठित गद्य (प्रथम सत्र)</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M14.html" class="chapter-link">
-                <span class="chapter-index">११</span>
-                <span class="chapter-name">मातीची सावली</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M15.html" class="chapter-link">
-                <span class="chapter-index">१२</span>
-                <span class="chapter-name">महाराष्ट्रवारुणी टाक ओवाळून काया</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M16.html" class="chapter-link">
-                <span class="chapter-index">१३</span>
-                <span class="chapter-name">थोडं 'आ' भारनियमन करूया</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M17.html" class="chapter-link">
-                <span class="chapter-index">१४</span>
-                <span class="chapter-name">आदर्शवादी मुळगावकर</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M18.html" class="chapter-link">
-                <span class="chapter-index">१५</span>
-                <span class="chapter-name">निरोप</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M19.html" class="chapter-link">
-                <span class="chapter-index">*</span>
-                <span class="chapter-name">'बिग ५'च्या सहवासात</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M20.html" class="chapter-link">
-                <span class="chapter-index">१६</span>
-                <span class="chapter-name">वनवासी</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M21.html" class="chapter-link">
-                <span class="chapter-index">१७</span>
-                <span class="chapter-name">ऑलिंपिक वर्तुळांचा गोफ</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M22.html" class="chapter-link">
-                <span class="chapter-index">१८</span>
-                <span class="chapter-name">हसरे दु:ख</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M23.html" class="chapter-link">
-                <span class="chapter-index">१९</span>
-                <span class="chapter-name">प्रीतम</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M24.html" class="chapter-link">
-                <span class="chapter-index">२०</span>
-                <span class="chapter-name">आपुले जगने... आपुली ओळख!</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M25.html" class="chapter-link">
-                <span class="chapter-index">*</span>
-                <span class="chapter-name">विश्वकोश</span>
-                <span class="arrow">❯</span>
-            </a>
-
-            <a href="M26.html" class="chapter-link">
-                <span class="chapter-index">*</span>
-                <span class="chapter-name">अपाठित गद्य (द्वितीय सत्र)</span>
-                <span class="arrow">❯</span>
-            </a>
-
-        </div>
+<div class="content-wrapper">
+    <div class="chapter-list">
+        <!-- Chapters will be listed here -->
     </div>
+</div>
 
-    <div id="footer-placeholder"></div>
+<!-- Footer -->
+<footer class="mini-footer">
+    <div class="footer-links-container">
+        <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+        <span class="footer-separator">|</span>
+        <a href="contact.html" class="footer-link">Contact Us</a>
+        <span class="footer-separator">|</span>
+        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    </div>
+    <p class="copyright-text">© 2026 ParthNew | Excellence in Learning</p>
+</footer>
+
 </body>
 </html>

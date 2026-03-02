@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParthNew - Master Builder Pro (TOC Edition)</title>
+    <style>
+        :root { 
+            --primary: #0056b3; 
+            --success: #28a745; 
+            --info: #17a2b8; 
+            --seo: #fff3cd; 
+            --danger: #ff4d4d;
+            --sub-q-bg: #f8f9fa;
+            --sub-sub-q-bg: #ffffff;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 30px; background: #eef2f7; color: #333; margin: 0; }
+        .tool-box { max-width: 950px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        
+        /* Section Cards */
+        .section-card { padding: 20px; border-radius: 10px; margin-bottom: 25px; border: 1px solid #ddd; position: relative; }
+        .seo-section { background: var(--seo); border-color: #ffeeba; }
+        .nav-section { background: #e8f5e9; border-color: #c8e6c9; }
+        
+        /* Input Groups */
+        .input-group { border: 2px solid #f0f0f0; padding: 25px 20px 20px; margin-bottom: 20px; border-radius: 10px; position: relative; background: #fff; transition: 0.3s; }
+        .input-group:hover { border-color: var(--info); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        
+        /* Sub-question styling */
+        .sub-q-group { background: var(--sub-q-bg); border: 2px dashed #bbb; margin-left: 20px; }
+        .sub-sub-q-group { background: var(--sub-sub-q-bg); border: 1px solid #ddd; margin-left: 30px; margin-top: 10px;}
+        
+        label { font-weight: bold; display: block; margin-top: 10px; font-size: 0.85rem; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; }
+        input, textarea { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 14px; }
+        input:focus, textarea:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 5px rgba(0,86,179,0.2); }
+        
+        /* Toolbar for Formatting */
+        .toolbar { display: flex; gap: 8px; margin-top: 10px; background: #f8f9fa; padding: 10px; border-radius: 6px; border: 1px solid #eee; }
+        .t-btn { padding: 6px 14px; border: 1px solid #ccc; background: white; cursor: pointer; font-weight: bold; border-radius: 4px; font-size: 13px; transition: 0.2s; }
+        .t-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
+
+        /* Buttons */
+        .btn-group { display: flex; gap: 12px; margin: 25px 0; flex-wrap: wrap; justify-content: center; }
+        .btn { border: none; padding: 12px 20px; cursor: pointer; border-radius: 8px; font-weight: bold; color: white; transition: 0.3s; display: flex; align-items: center; gap: 5px; }
+        .btn:active { transform: scale(0.95); }
+        .btn-gen { background: var(--primary); width: 100%; font-size: 1.2rem; padding: 15px; margin-top: 20px; text-transform: uppercase; }
+        
+        /* Output Area */
+        #output { width: 100%; height: 500px; margin-top: 25px; display: none; background: #1e1e1e; color: #9cdcfe; padding: 20px; border-radius: 10px; font-family: 'Consolas', 'Monaco', monospace; font-size: 13px; line-height: 1.6; overflow: auto; white-space: pre; border: 5px solid #333; }
+        
+        /* Helpers */
+        .remove-btn { position: absolute; top: 10px; right: 10px; background: var(--danger); color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; font-weight: bold; font-size: 18px; line-height: 1; transition: 0.2s; }
+        .remove-btn:hover { transform: rotate(90deg); background: #cc0000; }
+        .preview-img { max-height: 120px; margin-top: 15px; border-radius: 8px; display: none; border: 2px solid #eee; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .grid-input { display: grid; gap: 8px; margin-top: 15px; padding: 10px; background: #fdfdfd; border-radius: 8px; border: 1px dashed #ccc; }
+        .grid-input input { padding: 8px; border: 1px solid #ddd; text-align: center; }
+        .checkbox-label { font-size: 0.9rem; color: #555; display: flex; align-items: center; gap: 8px; margin-top: 15px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="tool-box">
+    <h2 style="text-align: center; color: var(--primary); margin-bottom: 30px;">🚀 Master Builder Pro (TOC Edition)</h2>
+    
+    <div class="section-card seo-section">
+        <h4 style="margin:0 0 15px 0;">🔍 Step 1: SEO & Meta Data</h4>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div><label>Meta Title</label><input type="text" id="metaTitle" placeholder="e.g. Science Chapter 1 Solutions"></div>
+            <div><label>Meta Author</label><input type="text" id="metaAuth" value="ParthNew"></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr; margin-top:10px;">
+            <label>Meta Keywords</label><input type="text" id="metaKeys">
+            <label>Meta Description</label><textarea id="metaDesc" rows="2"></textarea>
+        </div>
+        <label class="checkbox-label"><input type="checkbox" id="addTOC" checked> Include Table of Contents (Auto-gen)</label>
+    </div>
+
+    <div class="section-card nav-section">
+        <h4 style="margin:0 0 15px 0;">🧭 Step 2: Page Navigation</h4>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+            <div><label>Previous Page URL</label><input type="text" id="prevLink"></div>
+            <div><label>Next Page URL</label><input type="text" id="nextLink"></div>
+        </div>
+        <label>Index / Back Button Link</label><input type="text" id="backLink" value="index.html">
+    </div>
+
+    <div class="section-card">
+        <h4 style="margin:0 0 15px 0;">📝 Step 3: Main Content</h4>
+        <label>Chapter Name (H1)</label><input type="text" id="chapterTitle" placeholder="e.g. Chapter 1 - Title">
+    </div>
+
+    <div id="contentList"></div>
+    
+    <div class="btn-group">
+        <button class="btn" style="background:var(--success)" onclick="addQA('text')">➕ Add Q&A Text</button>
+        <button class="btn" style="background:var(--info)" onclick="addQA('table')">📊 Add Table</button>
+        <button class="btn" style="background:#e91e63" onclick="addQA('image')">🖼️ Add Image</button>
+        <button class="btn" style="background:#6c757d" onclick="addTopic()">🔖 Add Sub-Heading (H2)</button>
+    </div>
+    
+    <button class="btn btn-gen" onclick="generateCode()">Build My TOC Page 🚀</button>
+    
+    <textarea id="output" readonly wrap="off" placeholder="Your code will appear here..."></textarea>
+</div>
+
+</body>
+</html>
+<script>
+    // 1. Add Question/Answer/Table/Image Items
+    function addQA(type) {
+        const id = 'item-' + Date.now();
+        const div = document.createElement('div');
+        div.className = 'input-group item';
+        div.dataset.type = type;
+        div.id = id;
+        
+        let html = '';
+        if(type === 'text') { 
+            html = `<div class="answer-box-area" id="ans-area-${id}">
+                <div class="toolbar">
+                    <button class="t-btn" onclick="formatText('${id}', 'b')">B</button>
+                    <button class="t-btn" onclick="formatText('${id}', 'i')">I</button>
+                    <button class="t-btn" onclick="addBullet('${id}')">• Bullet</button>
+                </div>
+                <label>Detailed Answer (HTML allowed)</label><textarea class="a-input" id="txt-${id}" rows="4" placeholder="Write answer here..."></textarea>
+            </div>`; 
+        }
+        else if(type === 'table') {
+            html = `<div style="margin-top:10px;">
+            Rows: <input type="number" class="t-rows" value="2" onchange="updateGrid('${id}')" style="width:60px"> 
+            Cols: <input type="number" class="t-cols" value="2" onchange="updateGrid('${id}')" style="width:60px">
+            <div id="grid-${id}" class="grid-input"></div></div>`;
+        }
+        else if(type === 'image') {
+            html = `<label>Image URL/Path</label><input type="text" class="img-src" oninput="showPrev(this, '${id}')" placeholder="images/diagram.png">
+            <img src="" id="prev-${id}" class="preview-img">
+            <label>Caption / Alt Text</label><input type="text" class="img-alt">`;
+        }
+
+        div.innerHTML = `<button class="remove-btn" onclick="this.parentElement.remove()">×</button>
+        <label>Main Question / Heading (H3)</label><input type="text" class="q-input" placeholder="e.g. Q1. What is...?"> 
+        
+        ${type === 'text' ? `<label class="checkbox-label"><input type="checkbox" onchange="toggleAnswerBox('${id}', this.checked)"> Hide Main Answer Box (Direct Sub-questions)</label>` : ''}
+        
+        ${html}
+        <div class="sub-q-container" id="subq-${id}"></div>
+        <button class="btn" style="background:var(--info); margin-top:15px; font-size:0.8rem;" onclick="addSubQ('${id}', 5)">➕ Add Sub-Question (H5)</button>`;
+        
+        document.getElementById('contentList').appendChild(div);
+        if(type === 'table') updateGrid(id);
+    }
+
+    function toggleAnswerBox(id, isHidden) {
+        const ansArea = document.getElementById(`ans-area-${id}`);
+        if(isHidden) {
+            ansArea.style.display = 'none';
+        } else {
+            ansArea.style.display = 'block';
+        }
+    }
+
+    // Add Sub-question (Level 5 or 6)
+    function addSubQ(parentId, level) {
+        const subQId = 'subq-' + Date.now();
+        const subQContainer = document.getElementById(`subq-${parentId}`);
+        const div = document.createElement('div');
+        
+        let isLevel6 = level === 6;
+        div.className = `input-group ${isLevel6 ? 'sub-sub-q-group' : 'sub-q-group'} item`;
+        div.dataset.type = isLevel6 ? 'subsubq' : 'subq';
+        div.id = subQId;
+
+        div.innerHTML = `<button class="remove-btn" onclick="this.parentElement.remove()">×</button>
+        <label>Sub-Question (H${level})</label><input type="text" class="q-input" placeholder="e.g. a) Define...">
+        <label>Sub-Answer (HTML allowed)</label><textarea class="a-input" rows="3" placeholder="Write sub-answer..."></textarea>
+        ${!isLevel6 ? `<div class="sub-q-container" id="subq-${subQId}"></div>
+        <button class="btn" style="background:#555; margin-top:10px; font-size:0.7rem; padding: 8px;" onclick="addSubQ('${subQId}', 6)">➕ Add Sub-Sub-Question (H6)</button>` : ''}`;
+        
+        subQContainer.appendChild(div);
+    }
+
+    // 2. Formatting Helpers
+    function formatText(id, tag) {
+        const area = document.getElementById('txt-' + id);
+        const start = area.selectionStart; const end = area.selectionEnd; const text = area.value;
+        area.value = text.substring(0, start) + `<${tag}>` + text.substring(start, end) + `</${tag}>` + text.substring(end);
+        area.focus();
+    }
+
+    function addBullet(id) {
+        const area = document.getElementById('txt-' + id);
+        const start = area.selectionStart;
+        area.value = area.value.substring(0, start) + "\n• " + area.value.substring(start);
+        area.focus();
+    }
+
+    function showPrev(input, id) { 
+        const p = document.getElementById('prev-'+id); 
+        p.src = input.value; p.style.display = input.value ? 'block' : 'none'; 
+    }
+
+    function updateGrid(id) {
+        const container = document.getElementById(`grid-${id}`);
+        const rows = container.parentElement.querySelector('.t-rows').value;
+        const cols = container.parentElement.querySelector('.t-cols').value;
+        container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`; container.innerHTML = '';
+        for (let i = 0; i < rows * cols; i++) { 
+            const input = document.createElement('input'); 
+            input.type = 'text'; input.className = 'cell-data'; input.placeholder = 'Cell...';
+            container.appendChild(input); 
+        }
+    }
+
+    function addTopic() {
+        const div = document.createElement('div'); div.className = 'input-group item'; div.dataset.type = 'topic';
+        div.innerHTML = `<button class="remove-btn" onclick="this.parentElement.remove()">×</button><label>Sub-Heading / Section Title (H2)</label><input type="text" class="t-input" placeholder="e.g. English Workshop">`;
+        document.getElementById('contentList').appendChild(div);
+    }
+
+    // 3. MAIN GENERATOR ENGINE
+    function generateCode() {
+        const mTitle = document.getElementById('metaTitle').value || "ParthNew Solutions";
+        const mDesc = document.getElementById('metaDesc').value || "";
+        const mKeys = document.getElementById('metaKeys').value || "";
+        const mAuth = document.getElementById('metaAuth').value || "ParthNew";
+        const cTitle = document.getElementById('chapterTitle').value || "Exercise Solution";
+        const back = document.getElementById('backLink').value;
+        const prev = document.getElementById('prevLink').value;
+        const next = document.getElementById('nextLink').value;
+        const includeTOC = document.getElementById('addTOC').checked;
+
+        let bodyHtml = "";
+        let tocHtml = "";
+        let h2Count = 0;
+        
+        document.querySelectorAll('#contentList > .item').forEach(item => {
+            
+            if(item.dataset.type === 'topic') {
+                h2Count++;
+                const h2Text = item.querySelector('.t-input').value;
+                const h2Id = "section-" + h2Count;
+                bodyHtml += `\n        <div class="topic-note"><h2 id="${h2Id}">${h2Text}</h2></div>\n`;
+                tocHtml += `<li><a href="#${h2Id}">${h2Text}</a></li>`;
+                return;
+            }
+
+            const q = item.querySelector('.q-input')?.value || "";
+            let a = "";
+            let subQsHtml = "";
+            
+            // Recursive function to process Sub-questions
+            function processSubQuestions(container) {
+                let html = "";
+                container.querySelectorAll(':scope > .item').forEach(subQ => {
+                    const sq = subQ.querySelector('.q-input').value;
+                    const sa = subQ.querySelector('.a-input').value;
+                    const isLevel6 = subQ.dataset.type === 'subsubq';
+                    
+                    html += `
+                        <div class="${isLevel6 ? 'sub-sub-q-block' : 'sub-q-block'}">
+                            <h${isLevel6 ? '6' : '5'} class="${isLevel6 ? 'sub-sub-q-title' : 'sub-q-title'}">${sq}</h${isLevel6 ? '6' : '5'}>
+                            <div class="${isLevel6 ? 'sub-sub-q-ans' : 'sub-q-ans'}">${sa}</div>
+                            ${!isLevel6 ? processSubQuestions(subQ.querySelector('.sub-q-container')) : ''}
+                        </div>`;
+                });
+                return html;
+            }
+
+            subQsHtml = processSubQuestions(item.querySelector('.sub-q-container'));
+
+            // Process Main Answer Content
+            if(item.dataset.type === 'text') { 
+                const ansArea = item.querySelector('.answer-box-area');
+                if(ansArea.style.display !== 'none') {
+                    const lines = item.querySelector('.a-input').value.split('\n');
+                    a = lines.map(l => l.trim() ? `\n                    <div style="margin-bottom:10px;"><h4>${l}</h4></div>` : "").join('');
+                }
+            }
+            else if(item.dataset.type === 'table') {
+                const r = item.querySelector('.t-rows').value; const c = item.querySelector('.t-cols').value; const cells = item.querySelectorAll('.cell-data');
+                a = '\n                    <div style="overflow-x:auto;"><table border="1" style="width:100%; border-collapse:collapse; margin:10px 0; background:white;">';
+                let idx = 0; for(let i=0; i<r; i++) { 
+                    a += '\n                        <tr>'; 
+                    for(let j=0; j<c; j++) { a += `\n                            <td style="padding:12px; border:1px solid #ddd;"><h4>${cells[idx]?.value || ''}</h4></td>`; idx++; } 
+                    a += '\n                        </tr>';
+                } a += '\n                    </table></div>';
+            }
+            else if(item.dataset.type === 'image') {
+                const src = item.querySelector('.img-src').value; const alt = item.querySelector('.img-alt').value;
+                a = `\n                    <img src="${src}" alt="${alt}" style="max-width:100%; border-radius:8px; display:block; margin:15px auto; box-shadow:0 2px 8px rgba(0,0,0,0.1);">`;
+                if(alt) a += `\n                    <p style="text-align:center; font-size:0.85rem; color:#666; font-style:italic;">${alt}</p>`;
+            }
+
+            bodyHtml += `
+        <div class="q-card">
+            <div class="q-header" onclick="toggleAns(this)"><h3>${q}</h3></div>
+            <div class="ans-panel">
+                <div class="ans-body">${a}${subQsHtml}
+                </div>
+            </div>
+            <button class="btn-toggle" onclick="toggleAns(this.parentElement.querySelector('.q-header'))">View Solution ▾</button>
+        </div>\n`; 
+        });
+
+        // Add TOC HTML if enabled
+        let finalTOC = "";
+        if(includeTOC && tocHtml) {
+            finalTOC = `
+        <div class="toc-container">
+            <h3>Table of Contents</h3>
+            <ul>${tocHtml}</ul>
+        </div>`;
+        }
+
+        let nav = `\n        <div class="nav-bar">`;
+        nav += prev ? `\n            <a href="${prev}" class="nav-btn">← Previous</a>` : `\n            <span></span>`;
+        nav += next ? `\n            <a href="${next}" class="nav-btn">Next →</a>` : `\n            <span></span>`;
+        nav += `\n        </div>`;
+
+        // THE FINAL TEMPLATE
+        const finalCode = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${mTitle}</title>
+    <meta name="description" content="${mDesc}">
+    <meta name="keywords" content="${mKeys}">
+    <meta name="author" content="${mAuth}">
+    
+    <script src="/load-common.js" defer><\/script>
+
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f8; padding: 0; margin:0; line-height:1.6; color:#333; }
+        .container { max-width: 850px; margin: auto; padding: 25px 15px; position: relative; min-height: 80vh; }
+        .back-btn { position: absolute; top: 25px; right: 15px; background: #0056b3; color: white; text-decoration: none; padding: 10px 18px; border-radius: 6px; font-weight: bold; font-size: 0.9rem; z-index: 10; transition: 0.3s; }
+        .back-btn:hover { background: #003d82; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .main-title { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin: 65px 0 35px; border-bottom: 6px solid #0056b3; text-align: center; }
+        .main-title h1 { margin:0; font-size: 1.8rem; color: #111; }
+        .q-card { background: white; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 3px 15px rgba(0,0,0,0.06); overflow: hidden; border: 1px solid #eee; }
+        .q-header { padding: 22px; cursor: pointer; font-size: 1.15rem; color:#111; font-weight: 500; }
+        .q-header h3 { margin: 0; font-size: 1.15rem; font-weight: 500; }
+        .ans-panel { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0, 1, 0, 1); background: #fcfcfc; }
+        .ans-body { padding: 20px; border-left: 6px solid #28a745; margin: 15px; background: white; border-radius: 4px; box-shadow: inset 0 0 10px rgba(0,0,0,0.02); }
+        .ans-body h4 { margin: 0 0 10px 0; font-weight: normal; font-size: 1rem; }
+        
+        /* TOC Styles */
+        .toc-container { background: #fff; padding: 20px; border-radius: 12px; border: 2px solid #e0e0e0; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .toc-container h3 { margin-top: 0; color: #0056b3; }
+        .toc-container ul { margin-bottom: 0; padding-left: 20px; }
+        .toc-container li { margin-bottom: 8px; }
+        .toc-container a { color: #333; text-decoration: none; transition: 0.2s; }
+        .toc-container a:hover { color: #0056b3; text-decoration: underline; }
+        
+        /* Sub-question styles */
+        .sub-q-block { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ccc; }
+        .sub-q-title { margin: 0 0 8px 0; color: #0056b3; font-size: 1rem; }
+        .sub-q-ans { font-size: 0.95rem; color: #444; padding-left: 10px; }
+
+        /* Sub-sub-question styles */
+        .sub-sub-q-block { margin-top: 10px; padding-top: 10px; border-left: 3px solid #eee; padding-left: 15px; }
+        .sub-sub-q-title { margin: 0 0 5px 0; color: #17a2b8; font-size: 0.95rem; }
+        .sub-sub-q-ans { font-size: 0.9rem; color: #555; }
+
+        .btn-toggle { width: 100%; padding: 14px; border: none; background: #f9f9f9; color: #0056b3; font-weight: bold; cursor: pointer; border-top: 1px solid #eee; transition: 0.3s; }
+        .btn-toggle:hover { background: #f0f7ff; }
+        .topic-note { background: #e7f3ff; padding: 18px; border-radius: 10px; margin: 35px 0 20px; font-weight: bold; color: #004085; text-align: center; border: 1px solid #b8daff; font-size: 1.2rem; }
+        .topic-note h2 { margin: 0; font-size: 1.2rem; }
+        .nav-bar { display: flex; justify-content: space-between; margin: 50px 0 30px; }
+        .nav-btn { background: #0056b3; color: white; text-decoration: none; padding: 14px 30px; border-radius: 10px; font-weight: bold; transition: 0.3s; }
+        .nav-btn:hover { background: #003d82; transform: translateY(-2px); }
+        .footer-disclaimer { background: white; padding: 25px; text-align: center; border-radius: 12px; margin-top: 50px; border: 1px solid #ddd; font-size: 0.95rem; color: #444; }
+    </style>
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <div class="container">
+        <a href="${back}" class="back-btn">← Back</a>
+        <div class="main-title"><h1>${cTitle}</h1></div>
+        
+        ${finalTOC}
+        
+        ${bodyHtml}
+        
+        ${nav}
+        
+        <div class="footer-disclaimer">
+            <b>Disclaimer: </b>The questions are property of Maharashtra State Board. Solutions are provided for educational help by <b>${mAuth}</b>.
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        function toggleAns(h) {
+            const p = h.nextElementSibling;
+            const b = h.parentElement.querySelector('.btn-toggle');
+            if(p.style.maxHeight) {
+                p.style.maxHeight = null;
+                b.innerHTML = "View Solution ▾";
+            } else {
+                p.style.maxHeight = p.scrollHeight + "px";
+                b.innerHTML = "Hide Solution ▴";
+            }
+        }
+    <\/script>
+</body>
+</html>`;
+        document.getElementById('output').value = finalCode;
+        document.getElementById('output').style.display = "block";
+        document.getElementById('output').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>

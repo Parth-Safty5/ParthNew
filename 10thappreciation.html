@@ -1,109 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>SSC Class 10th English Poem Appreciation | Maharashtra Board | ParthNew</title>
-    <meta name="description" content="Solved poem appreciation for all 8 poems of SSC Class 10th Maharashtra Board English. Detailed marking scheme, figures of speech, and central ideas.">
-    <meta name="keywords" content="SSC English Poem Appreciation, 10th Standard Maharashtra Board, Teenager's Prayer appreciation, Basketful of Moonlight, O Captain My Captain, ParthNew">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <link rel="icon" type="image/png" href="./logo.png">
-    
-    <!-- Open Graph (MINIMAL & SAFE) -->
-    <meta property="og:site_name" content="ParthNew">
-    <meta property="og:image" content="/logo.png">
+  gtag('config', 'G-S146W8G7MB');
+</script>
 
-    <!-- PWA -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#004aad">
-    <link rel="apple-touch-icon" href="/logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>SSC Class 10th English Poem Appreciation | Maharashtra Board | ParthNew</title>
+<meta name="description" content="Solved poem appreciation for all 8 poems of SSC Class 10th Maharashtra Board English. Detailed marking scheme, figures of speech, and central ideas.">
+<meta name="keywords" content="SSC English Poem Appreciation, 10th Standard Maharashtra Board, Teenager's Prayer appreciation, Basketful of Moonlight, O Captain My Captain, ParthNew">
 
-    <!-- Common JS Loader (DO NOT REMOVE) -->
-    <script src="/load-common.js" defer></script>
+<link rel="icon" type="image/png" href="./logo.png">
 
-    <style>
-        :root {
-            --primary-blue: #004aad;
-            --secondary-blue: #003087;
-            --accent-yellow: #ffc107;
-            --bg-light: #f1f4f8;
-        }
+<!-- PWA -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#004aad">
+<link rel="apple-touch-icon" href="/logo.png">
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; font-display: swap; }
-        body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
+<!-- Load common JS if needed -->
+<script src="/load-common.js" defer></script>
 
-        /* Hero */
-        .hero {
-            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
-            padding: 60px 10%; color: white;
-        }
-        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+<style>
+/* ================= Navbar Styles ================= */
+.main-nav {
+    background: #fff;
+    padding: 0 10%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+}
+.logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+.logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; }
+.logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; }
+.logo h3 span { color: #ffc107; }
 
-        .container { max-width: 1000px; margin: -40px auto 50px; padding: 0 20px; }
+.nav-links { display: flex; list-style: none; margin: 0; padding: 0; }
+.nav-links li a { text-decoration: none; color: #333; margin-left: 25px; font-weight: 500; }
 
-        /* Marking Card */
-        .marking-card {
-            background: white; padding: 25px; border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px;
-            border-top: 5px solid var(--accent-yellow);
-        }
-        .marking-table { width: 100%; border-collapse: collapse; }
-        .marking-table td { padding: 12px 0; border-bottom: 1px solid #eee; }
-        .marking-table td:last-child { text-align: right; font-weight: bold; color: var(--primary-blue); }
+.hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+.hamburger span { width: 25px; height: 3px; background: #333; transition: 0.3s; }
 
-        /* Accordion */
-        .poem-item { background: white; margin-bottom: 12px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .poem-header {
-            padding: 18px 20px; background: white; cursor: pointer;
-            display: flex; justify-content: space-between; align-items: center;
-            font-weight: 700; color: var(--secondary-blue);
-        }
-        .poem-header::after { content: '▼'; font-size: 0.8rem; color: var(--accent-yellow); transition: 0.3s; }
-        .poem-item.active .poem-header::after { transform: rotate(180deg); }
+/* ================= Footer Styles ================= */
+.mini-footer {
+    background: #003087;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.footer-links-container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+.footer-link:hover {
+    color: #ffc107;
+    opacity: 1;
+}
+.footer-separator {
+    color: rgba(255, 255, 255, 0.3);
+    display: inline;
+}
+.copyright-text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
 
-        .poem-content { 
-            max-height: 0; overflow: hidden; transition: 0.4s ease-out; background: #fafafa;
-        }
-        .poem-item.active .poem-content { max-height: 1200px; padding: 20px; border-top: 1px solid #eee; }
+/* ================= Hero + Content ================= */
+:root {
+    --primary-blue: #004aad;
+    --secondary-blue: #003087;
+    --accent-yellow: #ffc107;
+    --bg-light: #f1f4f8;
+}
 
-        .info-label { font-weight: bold; color: var(--primary-blue); display: block; margin-top: 12px; }
-        .poem-text { color: #555; margin-bottom: 5px; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; font-display: swap; }
+body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
 
-        @media (max-width: 768px) { .hero { text-align: center; padding: 40px 5%; } .hero h1 { font-size: 1.8rem; } }
-    </style>
+.hero {
+    background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+    padding: 60px 10%; color: white;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+.hero p { opacity: 0.9; font-size: 1rem; }
+
+.container { max-width: 1000px; margin: -40px auto 50px; padding: 0 20px; }
+
+.marking-card {
+    background: white; padding: 25px; border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px;
+    border-top: 5px solid var(--accent-yellow);
+}
+.marking-table { width: 100%; border-collapse: collapse; }
+.marking-table td { padding: 12px 0; border-bottom: 1px solid #eee; }
+.marking-table td:last-child { text-align: right; font-weight: bold; color: var(--primary-blue); }
+
+/* Accordion */
+.poem-item { background: white; margin-bottom: 12px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.poem-header {
+    padding: 18px 20px; background: white; cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center;
+    font-weight: 700; color: var(--secondary-blue);
+}
+.poem-header::after { content: '▼'; font-size: 0.8rem; color: var(--accent-yellow); transition: 0.3s; }
+.poem-item.active .poem-header::after { transform: rotate(180deg); }
+.poem-content { max-height: 0; overflow: hidden; transition: 0.4s ease-out; background: #fafafa; }
+.poem-item.active .poem-content { max-height: 1200px; padding: 20px; border-top: 1px solid #eee; }
+
+.info-label { font-weight: bold; color: var(--primary-blue); display: block; margin-top: 12px; }
+.poem-text { color: #555; margin-bottom: 5px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger { display: flex; }
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 75px; left: 0; width: 100%; background: white; padding: 20px 0; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+    .nav-links.active { display: flex !important; }
+    .nav-links li { margin: 15px 0; text-align: center; }
+    .nav-links li a { margin: 0; font-size: 1.2rem; }
+    .hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+    .footer-links-container { flex-direction: column; gap: 10px; }
+    .footer-separator { display: none; }
+}
+</style>
 </head>
 <body>
 
-    <div id="navbar-placeholder"></div>
+<!-- Navbar -->
+<nav class="main-nav">
+    <a href="index.html" class="logo">
+        <img src="logo.webp" alt="Logo" class="logo-img">
+        <h3>Parth<span>New</span></h3>
+    </a>
 
-    <header class="hero">
-        <h1>SSC Poem Appreciation</h1>
-        <p>Expertly solved appreciation for all 8 poems of Maharashtra State Board Class 10th English.</p>
-    </header>
+    <div class="hamburger" onclick="this.classList.toggle('active'); document.getElementById('navMenu').classList.toggle('active');">
+        <span></span><span></span><span></span>
+    </div>
 
-    <main class="container">
-        
-        <section class="marking-card" aria-labelledby="marking-title">
-            <h2 id="marking-title" style="margin-bottom:15px; font-size: 1.5rem;">🎯 SSC Board Official Marking Scheme</h2>
-            <table class="marking-table">
-                <thead>
-                    <tr style="display:none;"><th>Criteria</th><th>Marks</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Title & Poet</td><td>1 Mark (½ each)</td></tr>
-                    <tr><td>Rhyme Scheme</td><td>1 Mark</td></tr>
-                    <tr><td>Figure of Speech</td><td>1 Mark</td></tr>
-                    <tr><td>Theme / Central Idea (2-3 lines)</td><td>2 Marks</td></tr>
-                    <tr style="border-top: 2px solid #333;"><td><strong>Total Marks</strong></td><td><strong>5 Marks</strong></td></tr>
-                </tbody>
-            </table>
-        </section>
+    <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+</nav>
 
-        <section class="poem-accordion">
-            <h2 style="margin-bottom: 20px; font-size: 1.4rem; color: var(--secondary-blue);">Unit-wise Solved Poems</h2>
-            
+<!-- Hero -->
+<header class="hero">
+    <h1>SSC Poem Appreciation</h1>
+    <p>Expertly solved appreciation for all 8 poems of Maharashtra State Board Class 10th English.</p>
+</header>
+
+<main class="container">
+    <section class="marking-card">
+        <h2 style="margin-bottom:15px; font-size: 1.5rem;">🎯 SSC Board Official Marking Scheme</h2>
+        <table class="marking-table">
+            <tbody>
+                <tr><td>Title & Poet</td><td>1 Mark (½ each)</td></tr>
+                <tr><td>Rhyme Scheme</td><td>1 Mark</td></tr>
+                <tr><td>Figure of Speech</td><td>1 Mark</td></tr>
+                <tr><td>Theme / Central Idea (2-3 lines)</td><td>2 Marks</td></tr>
+                <tr style="border-top: 2px solid #333;"><td><strong>Total Marks</strong></td><td><strong>5 Marks</strong></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="poem-accordion">
+        <h2 style="margin-bottom: 20px; font-size: 1.4rem; color: var(--secondary-blue);">Unit-wise Solved Poems</h2>
+
+        <!-- Poem Items -->
             <article class="poem-item">
                 <h3 class="poem-header" onclick="togglePoem(this)">1.1 A Teenager's Prayer</h3>
                 <div class="poem-content">
@@ -187,15 +279,26 @@
         </section>
     </main>
 
-    <div id="footer-placeholder"></div>
+<!-- Footer -->
+<footer class="mini-footer">
+    <div class="footer-links-container">
+        <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+        <span class="footer-separator">|</span>
+        <a href="contact.html" class="footer-link">Contact Us</a>
+        <span class="footer-separator">|</span>
+        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+    </div>
+    <p class="copyright-text">© 2026 ParthNew | Excellence in Learning</p>
+</footer>
 
-    <script>
-        function togglePoem(header) {
-            const item = header.parentElement;
-            const isActive = item.classList.contains('active');
-            document.querySelectorAll('.poem-item').forEach(i => i.classList.remove('active'));
-            if(!isActive) item.classList.add('active');
-        }
-    </script>
+<script>
+function togglePoem(header) {
+    const item = header.parentElement;
+    const isActive = item.classList.contains('active');
+    document.querySelectorAll('.poem-item').forEach(i => i.classList.remove('active'));
+    if(!isActive) item.classList.add('active');
+}
+</script>
+
 </body>
 </html>

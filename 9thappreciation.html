@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S146W8G7MB');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -10,7 +20,7 @@
 
     <link rel="icon" type="image/png" href="./logo.png">
 
-    <!-- Open Graph (MINIMAL & SAFE) -->
+    <!-- Open Graph -->
     <meta property="og:site_name" content="ParthNew">
     <meta property="og:image" content="/logo.png">
 
@@ -19,6 +29,7 @@
     <meta name="theme-color" content="#004aad">
     <link rel="apple-touch-icon" href="/logo.png">
 
+    <!-- Common JS Loader -->
     <script src="/load-common.js" defer></script>
 
     <style>
@@ -29,21 +40,17 @@
             --bg-light: #f1f4f8;
         }
 
-        /* Standardized Styling */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; font-display: swap; }
         body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
             padding: 60px 10%; color: white; text-align: left;
         }
         .hero h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 700; }
 
-        /* Container */
         .container { max-width: 1000px; margin: -40px auto 50px; padding: 0 20px; }
 
-        /* Marking Scheme Card */
         .marking-card {
             background: white; padding: 30px; border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 30px;
@@ -53,10 +60,8 @@
         .marking-table td { padding: 10px; border-bottom: 1px solid #eee; }
         .marking-table td:last-child { text-align: right; font-weight: bold; color: var(--primary-blue); }
 
-        /* Accordion Style for Poems */
         .poem-accordion { margin-top: 20px; }
         .poem-item { background: white; margin-bottom: 15px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        
         .poem-header {
             padding: 20px; background: white; cursor: pointer;
             display: flex; justify-content: space-between; align-items: center;
@@ -66,34 +71,135 @@
         .poem-header::after { content: '+'; font-size: 1.5rem; color: var(--accent-yellow); }
         .poem-item.active .poem-header::after { content: '-'; }
 
-        .poem-content { 
-            padding: 0 20px; max-height: 0; overflow: hidden; 
-            transition: max-height 0.4s ease-out, padding 0.3s ease;
-            background: #fafafa;
-        }
+        .poem-content { padding: 0 20px; max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out, padding 0.3s ease; background: #fafafa; }
         .poem-item.active .poem-content { max-height: 1000px; padding: 20px; border-top: 1px solid #eee; }
 
         .info-row { margin-bottom: 12px; }
         .info-label { font-weight: bold; color: var(--primary-blue); display: block; margin-bottom: 2px; }
 
-        /* Mobile Adjustments */
         @media (max-width: 768px) {
             .hero { padding: 40px 5%; text-align: center; }
             .hero h1 { font-size: 1.8rem; }
         }
+
+        /* ---------------- Navbar ---------------- */
+        .main-nav {
+            background: #fff;
+            padding: 0 10%;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .logo { display: flex; align-items: center; text-decoration: none; gap: 12px; }
+        .logo-img { height: 50px; width: 50px; border-radius: 50%; object-fit: cover; }
+        .logo h3 { font-size: 1.6rem; font-weight: 700; color: #000; margin: 0; }
+        .logo h3 span { color: #ffc107; }
+
+        .nav-links { display: flex; list-style: none; margin: 0; padding: 0; }
+        .nav-links li a { text-decoration: none; color: #333; margin-left: 25px; font-weight: 500; }
+
+        .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+        .hamburger span { width: 25px; height: 3px; background: #333; transition: 0.3s; }
+
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: white;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            .nav-links.active { display: flex !important; }
+            .nav-links li { margin: 15px 0; text-align: center; }
+            .nav-links li a { margin: 0; font-size: 1.2rem; }
+            .hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        }
+
+        /* ---------------- Footer ---------------- */
+        .mini-footer {
+            background: #003087;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        .footer-links-container {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-link {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: 0.3s;
+            padding: 5px 10px;
+        }
+
+        .footer-link:hover {
+            color: #ffc107;
+            opacity: 1;
+        }
+
+        .footer-separator { color: rgba(255, 255, 255, 0.3); display: inline; }
+        .copyright-text { font-size: 13px; color: rgba(255,255,255,0.6); margin: 0; }
+
+        @media (max-width: 768px) {
+            .footer-links-container { flex-direction: column; gap: 10px; }
+            .footer-separator { display: none; }
+        }
+
     </style>
 </head>
 <body>
 
-    <div id="navbar-placeholder"></div>
+    <!-- Navbar -->
+    <nav class="main-nav">
+        <a href="index.html" class="logo">
+            <img src="logo.webp" alt="Logo" class="logo-img">
+            <h3>Parth<span>New</span></h3>
+        </a>
 
+        <div class="hamburger" onclick="this.classList.toggle('active'); document.getElementById('navMenu').classList.toggle('active');">
+            <span></span><span></span><span></span>
+        </div>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
     <header class="hero">
         <h1>Poem Appreciation</h1>
         <p>Complete appreciation of all 8 poems for Class 9th Maharashtra Board students with 5-mark marking scheme.</p>
     </header>
 
+    <!-- Main Content -->
     <main class="container">
-        
         <section class="marking-card">
             <h2 style="color: var(--secondary-blue); margin-bottom: 10px;">🎯 Marking Scheme</h2>
             <table class="marking-table">
@@ -107,7 +213,7 @@
         </section>
 
         <div class="poem-accordion">
-            
+
             <div class="poem-item">
                 <div class="poem-header" onclick="togglePoem(this)">1.1 Walk a little slower...</div>
                 <div class="poem-content">
@@ -199,20 +305,26 @@
         </div>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <!-- Footer -->
+    <footer class="mini-footer">
+        <div class="footer-links-container">
+            <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+            <span class="footer-separator">|</span>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+            <span class="footer-separator">|</span>
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </div>
+        <p class="copyright-text">© 2026 ParthNew | Excellence in Learning</p>
+    </footer>
 
     <script>
         function togglePoem(header) {
             const item = header.parentElement;
             const isActive = item.classList.contains('active');
-            
-            // Close other open poems
             document.querySelectorAll('.poem-item').forEach(i => i.classList.remove('active'));
-            
-            if(!isActive) {
-                item.classList.add('active');
-            }
+            if(!isActive) item.classList.add('active');
         }
     </script>
+
 </body>
 </html>
