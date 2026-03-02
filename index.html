@@ -1,188 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="https://5gvci.com/act/files/tag.min.js?z=10668929" data-cfasync="false" async></script>
-
-
-
-
-<meta property="og:site_name" content="ParthNew">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "ParthNew",
-  "url": "https://parth-new.vercel.app"
-}
-</script>
+    <!-- Basic -->
     <meta charset="UTF-8">
-<meta name="google-site-verification" content="Qbp1KNOYBCN0YNJl5fguiZgnlFymjIdTXB5qJJzqC0A" />
+    <meta name="google-site-verification" content="Qbp1KNOYBCN0YNJl5fguiZgnlFymjIdTXB5qJJzqC0A" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>ParthNew | Class 9th & 10th English Workshop & Exercise Answers</title>
-    <meta name="description" content="ParthNew: Best learning platform for Maharashtra Board Class 9th and 10th. Get English workshop answers, poem appreciations, and SSC writing skills in simple language.">
+
+    <title>ParthNew - Class 9th & 10th English Workshop & Exercise Answers</title>
+
+    <meta name="description" content="ParthNew - Best learning platform for Maharashtra Board Class 9th and 10th. Get English workshop answers, poem appreciations, and SSC writing skills in simple language.">
     <meta name="keywords" content="Class 10 English Workshop, Class 9th Study Material, SSC Writing Skills, ParthNew, Maharashtra Board Exercise Solutions, Poem Appreciation 10th">
     <meta name="author" content="ParthNew">
+
     <link rel="canonical" href="https://parth-new.vercel.app/">
 
+    <link rel="icon" type="image/png" href="./logo.png">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="ParthNew">
     <meta property="og:title" content="ParthNew | Class 9th & 10th Learning Portal">
     <meta property="og:description" content="Ab Har Ghar Banega Topper! Maharashtra Board solutions made easy.">
     <meta property="og:image" content="/logo.png">
     <meta property="og:url" content="https://parth-new.vercel.app/">
 
+    <!-- PWA -->
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#004aad">
     <link rel="apple-touch-icon" href="/logo.png">
 
+    <!-- Common Loader (Navbar, Footer, Ads, Analytics, PWA) -->
     <script src="/load-common.js" defer></script>
 
-    <style>
-        :root {
-            --primary-blue: #004aad;
-            --secondary-blue: #003087;
-            --accent-yellow: #ffc107;
-            --bg-light: #f1f4f8;
-        }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ParthNew",
+  "alternateName": "ParthNew Learning Platform",
+  "url": "https://parth-new.vercel.app"
+}
+</script>
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; font-display: swap; }
-        body { background-color: var(--bg-light); color: #333; line-height: 1.6; }
+    <!-- Page Styles -->
+<style>
+    :root {
+        --primary-blue: #004aad;
+        --secondary-blue: #003087;
+        --accent-yellow: #ffc107;
+        --bg-light: #f1f4f8;
+    }
 
-        /* Hero Section */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-display: swap;
+    }
+
+    body {
+        background-color: var(--bg-light);
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+        padding: 80px 10%;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        color: white;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        opacity: 0.9;
+        max-width: 600px;
+    }
+
+    .hero-btn {
+        background: var(--accent-yellow);
+        color: #000 !important;
+        padding: 14px 30px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        width: fit-content;
+        transition: 0.3s;
+        display: inline-block;
+    }
+
+    /* Selection Section */
+    .selection-section {
+        padding: 60px 10%;
+        text-align: center;
+        min-height: 550px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .class-card {
+        background: white;
+        padding: 40px 25px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        text-decoration: none;
+        color: #333;
+        border: 1px solid #eee;
+        transition: 0.4s;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .class-card:hover {
+        transform: translateY(-10px);
+        border-color: var(--primary-blue);
+    }
+
+    .class-card h3 {
+        font-size: 1.8rem;
+        color: var(--secondary-blue);
+        margin-bottom: 10px;
+    }
+
+    .badge {
+        background: var(--accent-yellow);
+        color: #000 !important;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    /* MODAL */
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+    }
+
+    .modal-box {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        max-width: 400px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        animation: popIn 0.3s ease;
+    }
+
+    @keyframes popIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    .modal-box h4 {
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+        color: var(--secondary-blue);
+    }
+
+    .modal-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-btn {
+        padding: 12px;
+        border: 2px solid var(--primary-blue);
+        border-radius: 8px;
+        text-decoration: none;
+        color: var(--primary-blue);
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .modal-btn:hover {
+        background: var(--primary-blue);
+        color: white;
+    }
+
+    .close-modal {
+        margin-top: 15px;
+        display: block;
+        color: #999;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
         .hero {
-            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
-            padding: 80px 10%; min-height: 400px; display: flex; flex-direction: column;
-            justify-content: center; text-align: left; color: white;
-        }
-        .hero h1 { font-size: 2.8rem; margin-bottom: 15px; font-weight: 700; line-height: 1.2; }
-        .hero p { font-size: 1.1rem; margin-bottom: 25px; opacity: 0.9; max-width: 600px; }
-        .hero-btn {
-            background: var(--accent-yellow); color: #000 !important; padding: 14px 30px;
-            text-decoration: none; border-radius: 8px; font-weight: bold; width: fit-content;
-            transition: 0.3s; display: inline-block;
+            padding: 60px 5%;
+            text-align: center;
+            align-items: center;
         }
 
-        /* Selection Section & Cards */
-        .selection-section { padding: 60px 10%; text-align: center; min-height: 550px; }
-        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
-        
-        .class-card {
-            background: white; padding: 40px 25px; border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-decoration: none; color: #333;
-            border: 1px solid #eee; transition: 0.4s; position: relative;
-            display: flex; flex-direction: column; cursor: pointer;
+        .hero h1 {
+            font-size: 2rem;
         }
-        .class-card:hover { transform: translateY(-10px); border-color: var(--primary-blue); }
-        .class-card h3 { font-size: 1.8rem; color: var(--secondary-blue); margin-bottom: 10px; }
-
-        .badge {
-            background: var(--accent-yellow); color: #000 !important; 
-            padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: bold;
-            position: absolute; top: 15px; right: 15px;
-        }
-
-        /* MODAL STYLING */
-        .modal-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.6); display: none; 
-            justify-content: center; align-items: center; z-index: 2000;
-        }
-        .modal-box {
-            background: white; padding: 30px; border-radius: 15px;
-            max-width: 400px; width: 90%; text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2); animation: popIn 0.3s ease;
-        }
-        @keyframes popIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-        
-        .modal-box h4 { margin-bottom: 20px; font-size: 1.4rem; color: var(--secondary-blue); }
-        .modal-options { display: flex; flex-direction: column; gap: 10px; }
-        .modal-btn {
-            padding: 12px; border: 2px solid var(--primary-blue); border-radius: 8px;
-            text-decoration: none; color: var(--primary-blue); font-weight: bold; transition: 0.3s;
-        }
-        .modal-btn:hover { background: var(--primary-blue); color: white; }
-        .close-modal { margin-top: 15px; display: block; color: #999; font-size: 0.9rem; cursor: pointer; }
-
-        @media (max-width: 768px) {
-            .hero { padding: 60px 5%; text-align: center; align-items: center; }
-            .hero h1 { font-size: 2rem; }
-        }
-    </style>
-
-
+    }
+</style>
 </head>
+
 <body>
 
-    <div id="navbar-placeholder" style="min-height: 75px;"></div>
+<div id="navbar-placeholder" style="min-height:75px;"></div>
 
-    <div class="modal-overlay" id="appreciationModal">
-        <div class="modal-box">
-            <h4>Select Your Class</h4>
-            <div class="modal-options">
-                <a href="9thappreciation.html" class="modal-btn">Class 9th</a>
-                <a href="10thappreciation.html" class="modal-btn">Class 10th</a>
+<header class="hero">
+    <h1>ParthNew - Padhai Hogi Easy,<br>Ab Har Ghar Banega Topper!</h1>
+    <p>Maharashtra Board Class 9th aur 10th ke English solutions ab saral bhasha mein.</p>
+    <a href="#courses" class="hero-btn">Start Learning Now</a>
+</header>
+
+<main id="courses">
+    <section class="selection-section">
+        <h2>Select Your Category</h2>
+
+        <div class="grid-container">
+            <a href="testing1.html" class="class-card">
+                <span class="badge">NEW</span>
+                <h3>Class 9th</h3>
+                <p>English Workshop Answers</p>
+            </a>
+
+            <div class="class-card" onclick="openModal()">
+                <span class="badge">HOT</span>
+                <h3>Appreciations</h3>
+                <p>Poem Appreciation Guide</p>
             </div>
-            <span class="close-modal" onclick="closeModal()">Close</span>
+
+            <a href="testing2.html" class="class-card">
+                <span class="badge">NEW</span>
+                <h3>Class 10th</h3>
+                <p>SSC Board Solutions</p>
+            </a>
+
+            <a href="writing-skills.html" class="class-card">
+                <span class="badge">LATEST</span>
+                <h3>Writing Skills</h3>
+                <p>Essays, Letters & Reports</p>
+            </a>
         </div>
-    </div>
+    </section>
+</main>
 
-    <header class="hero">
-        <h1>Padhai Hogi Easy, <br>Ab Har Ghar Banega Topper!</h1>
-        <p>Maharashtra Board Class 9th aur 10th ke English Workshop answers aur solutions ab saral bhasha mein seekhein.</p>
-        <a href="#courses" class="hero-btn">Start Learning Now</a>
-    </header>
+<div id="footer-placeholder"></div>
 
-    <main id="courses">
-        <section class="selection-section">
-            <h2 style="margin-bottom: 10px; font-size: 2.2rem; color: #333;">Select Your Category</h2>
-            <p style="margin-bottom: 40px; color: #666;">Choose your standard or topic to access complete solutions.</p>
-            
-            <div class="grid-container">
-                <a href="testing1.html" class="class-card">
-                    <span class="badge">NEW</span>
-                    <h3>Class 9th</h3>
-                    <p>English Workshop Answers</p>
-                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Solutions →</div>
-                </a>
+<script>
+    function openModal() {
+        document.getElementById("appreciationModal").style.display = "flex";
+    }
 
-                <div class="class-card" onclick="openModal()">
-                    <span class="badge">HOT</span>
-                    <h3>Appreciations</h3>
-                    <p>Poem Appreciation Guide</p>
-                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">Select Class →</div>
-                </div>
+    function closeModal() {
+        document.getElementById("appreciationModal").style.display = "none";
+    }
 
-                <a href="testing2.html" class="class-card">
-                    <span class="badge">NEW</span>
-                    <h3>Class 10th</h3>
-                    <p>SSC Board Solutions</p>
-                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Solutions →</div>
-                </a>
-
-                <a href="writing-skills.html" class="class-card">
-                    <span class="badge">LATEST</span>
-                    <h3>Writing Skills</h3>
-                    <p>Essays, Letters & Reports</p>
-                    <div style="margin-top:20px; color:var(--primary-blue); font-weight:bold;">View Topics →</div>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <div id="footer-placeholder"></div>
-
-    <script>
-        // Modal Functions
-        function openModal() { document.getElementById("appreciationModal").style.display = "flex"; }
-        function closeModal() { document.getElementById("appreciationModal").style.display = "none"; }
-        window.onclick = function(event) {
-            let modal = document.getElementById("appreciationModal");
-            if (event.target == modal) { modal.style.display = "none"; }
+    window.onclick = function (event) {
+        const modal = document.getElementById("appreciationModal");
+        if (modal && event.target === modal) {
+            modal.style.display = "none";
         }
+    };
+</script>
 
-        // PWA Service Worker (Original Logic Kept)
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js'); });
-        }
-    </script>
 </body>
 </html>
