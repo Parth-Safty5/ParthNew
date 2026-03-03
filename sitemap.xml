@@ -4,263 +4,197 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
 <url>
   <loc>https://parth-new.vercel.app/</loc>
-  <lastmod>2026-03-02T14:15:08+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:44+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/index.html</loc>
-  <lastmod>2026-03-02T14:15:09+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/about.html</loc>
-  <lastmod>2026-03-02T14:15:09+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/contact.html</loc>
-  <lastmod>2026-03-02T14:15:10+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/privacy-policy.html</loc>
-  <lastmod>2026-03-02T14:15:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/testing1.html</loc>
-  <lastmod>2026-03-02T14:15:10+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/testing2.html</loc>
-  <lastmod>2026-03-02T14:15:10+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/writing-skills.html</loc>
-  <lastmod>2026-03-02T14:15:10+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/9thappreciation.html</loc>
-  <lastmod>2026-03-02T14:15:11+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/10thappreciation.html</loc>
-  <lastmod>2026-03-02T14:15:11+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/disclaimer.html</loc>
-  <lastmod>2026-03-02T14:15:11+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/9thEnglish.html</loc>
-  <lastmod>2026-03-02T14:15:11+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E1.html</loc>
+  <lastmod>2026-03-03T10:58:46+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/9thmarathi.html</loc>
-  <lastmod>2026-03-02T14:15:11+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E2.html</loc>
+  <lastmod>2026-03-03T10:58:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/9thhindi.html</loc>
-  <lastmod>2026-03-02T14:15:12+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E3.html</loc>
+  <lastmod>2026-03-03T10:58:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/9thhistory.html</loc>
-  <lastmod>2026-03-02T14:15:12+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E4.html</loc>
+  <lastmod>2026-03-03T10:58:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/9thcivics.html</loc>
-  <lastmod>2026-03-02T14:15:12+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E5.html</loc>
+  <lastmod>2026-03-03T10:58:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/9thgeography.html</loc>
-  <lastmod>2026-03-02T14:15:12+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E6.html</loc>
+  <lastmod>2026-03-03T10:58:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/10thEnglish.html</loc>
-  <lastmod>2026-03-02T14:15:12+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E7.html</loc>
+  <lastmod>2026-03-03T10:58:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/10thmarathi.html</loc>
-  <lastmod>2026-03-02T14:15:13+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E8.html</loc>
+  <lastmod>2026-03-03T10:58:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/10thhindi.html</loc>
-  <lastmod>2026-03-02T14:15:13+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E9.html</loc>
+  <lastmod>2026-03-03T10:58:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/10thhistory.html</loc>
-  <lastmod>2026-03-02T14:15:13+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E10.html</loc>
+  <lastmod>2026-03-03T10:58:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/10thcivics.html</loc>
-  <lastmod>2026-03-02T14:15:13+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E12.html</loc>
+  <lastmod>2026-03-03T10:58:48+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://parth-new.vercel.app/10thgeography.html</loc>
-  <lastmod>2026-03-02T14:15:13+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>https://parth-new.vercel.app/E131.html</loc>
+  <lastmod>2026-03-03T10:58:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/E132.html</loc>
+  <lastmod>2026-03-03T10:58:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/E14.html</loc>
+  <lastmod>2026-03-03T10:58:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/E15.html</loc>
+  <lastmod>2026-03-03T10:58:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/E16.html</loc>
+  <lastmod>2026-03-03T10:58:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/E17.html</loc>
+  <lastmod>2026-03-03T10:58:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/E18.html</loc>
+  <lastmod>2026-03-03T10:58:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/E19.html</loc>
+  <lastmod>2026-03-03T10:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/E20.html</loc>
+  <lastmod>2026-03-03T10:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/E21.html</loc>
+  <lastmod>2026-03-03T10:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://parth-new.vercel.app/coming-soon.html</loc>
+  <lastmod>2026-03-03T10:58:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/letter-writing.html</loc>
-  <lastmod>2026-03-02T14:15:13+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/report-writing.html</loc>
-  <lastmod>2026-03-02T14:15:14+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/dialogue-writing.html</loc>
-  <lastmod>2026-03-02T14:15:14+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/information.html</loc>
-  <lastmod>2026-03-02T14:15:14+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/expansion.html</loc>
-  <lastmod>2026-03-02T14:15:14+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/story-writing.html</loc>
-  <lastmod>2026-03-02T14:15:14+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:51+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://parth-new.vercel.app/essay.html</loc>
-  <lastmod>2026-03-02T14:15:15+00:00</lastmod>
+  <lastmod>2026-03-03T10:58:51+00:00</lastmod>
   <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E1.html</loc>
-  <lastmod>2026-03-02T14:15:15+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E2.html</loc>
-  <lastmod>2026-03-02T14:15:15+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E3.html</loc>
-  <lastmod>2026-03-02T14:15:15+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E4.html</loc>
-  <lastmod>2026-03-02T14:15:15+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E5.html</loc>
-  <lastmod>2026-03-02T14:15:15+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E6.html</loc>
-  <lastmod>2026-03-02T14:15:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E7.html</loc>
-  <lastmod>2026-03-02T14:15:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E8.html</loc>
-  <lastmod>2026-03-02T14:15:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E9.html</loc>
-  <lastmod>2026-03-02T14:15:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E10.html</loc>
-  <lastmod>2026-03-02T14:15:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E12.html</loc>
-  <lastmod>2026-03-02T14:15:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E131.html</loc>
-  <lastmod>2026-03-02T14:15:17+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E132.html</loc>
-  <lastmod>2026-03-02T14:15:17+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E14.html</loc>
-  <lastmod>2026-03-02T14:15:17+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E15.html</loc>
-  <lastmod>2026-03-02T14:15:17+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E16.html</loc>
-  <lastmod>2026-03-02T14:15:17+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E17.html</loc>
-  <lastmod>2026-03-02T14:15:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E18.html</loc>
-  <lastmod>2026-03-02T14:15:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E19.html</loc>
-  <lastmod>2026-03-02T14:15:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E20.html</loc>
-  <lastmod>2026-03-02T14:15:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://parth-new.vercel.app/E21.html</loc>
-  <lastmod>2026-03-02T14:15:18+00:00</lastmod>
-  <priority>0.51</priority>
 </url>
 
 
