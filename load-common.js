@@ -41,33 +41,25 @@ function enableProtection() {
 }
 
 // ===============================
-// Analytics (Deferred – 4s)
+// Vercel Analytics
 // ===============================
-function loadAnalytics() {
-    if (window.__analyticsLoaded) return;
-    window.__analyticsLoaded = true;
+function loadVercelInsights() {
 
-    setTimeout(() => {
-        const ga = document.createElement('script');
-        ga.async = true;
-        ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-S146W8G7MB';
-        document.head.appendChild(ga);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-S146W8G7MB');
-
+    if (!document.getElementById('vercelAnalytics')) {
         const va = document.createElement('script');
+        va.id = 'vercelAnalytics';
         va.src = '/_vercel/insights/script.js';
         va.defer = true;
+        document.head.appendChild(va);
+    }
 
+    if (!document.getElementById('vercelSpeed')) {
         const vsi = document.createElement('script');
+        vsi.id = 'vercelSpeed';
         vsi.src = '/_vercel/speed-insights/script.js';
         vsi.defer = true;
-
-        document.head.append(va, vsi);
-    }, 4000);
+        document.head.appendChild(vsi);
+    }
 }
 
 // ===============================
@@ -84,46 +76,9 @@ function registerPWA() {
 }
 
 // ===============================
-// PropellerAds (Deferred – 5s)
-// ===============================
-function loadPropellerAds() {
-
-    if (!document.getElementById('propellerInPage')) {
-        const s1 = document.createElement('script');
-        s1.id = 'propellerInPage';
-        s1.dataset.zone = '10668651';
-        s1.src = 'https://nap5k.com/tag.min.js';
-        s1.async = true;
-        document.body.appendChild(s1);
-    }
-
-    if (!document.getElementById('propellerVignette')) {
-        const s2 = document.createElement('script');
-        s2.id = 'propellerVignette';
-        s2.dataset.zone = '10668920';
-        s2.src = 'https://gizokraijaw.net/vignette.min.js';
-        s2.async = true;
-        document.body.appendChild(s2);
-    }
-
-    if (!document.getElementById('propellerPush')) {
-        const s3 = document.createElement('script');
-        s3.id = 'propellerPush';
-        s3.src = 'https://5gvci.com/act/files/tag.min.js?z=10668929';
-        s3.async = true;
-        s3.setAttribute('data-cfasync', 'false');
-        document.body.appendChild(s3);
-    }
-}
-
-// ===============================
 // EXECUTION
 // ===============================
 loadGoogleFonts();
 enableProtection();
-loadAnalytics();
+loadVercelInsights();
 registerPWA();
-
-window.addEventListener('load', () => {
-    setTimeout(loadPropellerAds, 5000);
-});

@@ -1,3 +1,12 @@
+self.options = {
+    "domain": "3nbf4.com",
+    "zoneId": 10668929
+}
+self.lary = ""
+importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
+
+
+
 const cacheName='parthnew-v4';
 const coreAssets=['./','./index.html','./manifest.json','./logo.webp','./load-common.js'];
 
