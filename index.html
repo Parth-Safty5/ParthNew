@@ -357,21 +357,6 @@ section p {
   }]
 }
 </script>
-<script>
-const scrollBtn = document.getElementById("scrollTopBtn");
-
-window.addEventListener("scroll", function() {
-    if (window.scrollY > 300) {
-        scrollBtn.style.display = "block";
-    } else {
-        scrollBtn.style.display = "none";
-    }
-});
-
-scrollBtn.addEventListener("click", function() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
-</script>
 
 </head>
 
@@ -734,6 +719,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <button id="scrollTopBtn" style="display:none;">↑</button>
+<script>
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 300) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+});
+
+scrollBtn.addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+
 <script>
 function toggleMenu() {
     var nav = document.getElementById("navLinks");
