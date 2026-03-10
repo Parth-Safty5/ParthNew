@@ -52,8 +52,7 @@ ParthNew includes many important writing skill topics such as:
 This project is built using lightweight and modern web technologies:
 
 - HTML5  
-- CSS3  
-- Tailwind CSS  
+- CSS3   
 - JavaScript  
 - Vercel (for hosting)  
 
